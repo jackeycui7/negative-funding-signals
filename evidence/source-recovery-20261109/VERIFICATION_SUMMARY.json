@@ -1,0 +1,247 @@
+{
+  "verified_at_utc": "2026-11-09T12:33:58.521233+00:00",
+  "result": "INDEPENDENT_SOURCE_CONNECTED_WITH_EXPLICIT_REMAINING_GAPS",
+  "providers": [
+    "Existing authorized Aurabit Datahub",
+    "Binance official public daily archive with SHA256 checksum"
+  ],
+  "closed_bar_coverage": {
+    "spot": {
+      "symbols_with_records": 328,
+      "symbols_at_required_source_time": 328,
+      "required_source_time_utc": "2026-11-09T11:00:00+00:00",
+      "latest_source_time_utc": "2026-11-09T11:00:00+00:00",
+      "latest_actual_receive_utc": "2026-11-09T12:26:55.743000+00:00"
+    },
+    "perp": {
+      "symbols_with_records": 330,
+      "symbols_at_required_source_time": 330,
+      "required_source_time_utc": "2026-11-09T11:00:00+00:00",
+      "latest_source_time_utc": "2026-11-09T11:00:00+00:00",
+      "latest_actual_receive_utc": "2026-11-09T12:26:55.743000+00:00"
+    },
+    "premium": {
+      "symbols_with_records": 330,
+      "symbols_at_required_source_time": 330,
+      "required_source_time_utc": "2026-11-09T11:00:00+00:00",
+      "latest_source_time_utc": "2026-11-09T11:00:00+00:00",
+      "latest_actual_receive_utc": "2026-11-09T12:27:08.861000+00:00"
+    }
+  },
+  "funding_settled_only": {
+    "symbols_with_records": 330,
+    "symbols_at_required_source_time": 330,
+    "required_source_time_utc": "2026-11-09T04:00:00+00:00",
+    "latest_source_time_utc": "2026-11-09T12:00:00.002000+00:00",
+    "latest_actual_receive_utc": "2026-11-09T12:31:37.074000+00:00"
+  },
+  "oi_native_timing_coverage": {
+    "symbols_with_records": 332,
+    "symbols_at_required_source_time": 269,
+    "required_source_time_utc": "2026-11-09T10:55:00+00:00",
+    "latest_source_time_utc": "2026-11-09T10:55:00+00:00",
+    "latest_actual_receive_utc": "2026-11-09T12:30:05.124000+00:00"
+  },
+  "official_checked_coin_days": 996,
+  "official_normalized_rows": 1425635,
+  "source_contract_tests": {
+    "passed": 17,
+    "evidence": "TEST_RESULTS.txt"
+  },
+  "representative_price_volume_funding_comparison": {
+    "at_utc": "2026-11-09T12:18:12.042000+00:00",
+    "representative_symbols": [
+      "BTCUSDT",
+      "1000PEPEUSDT",
+      "1000FLOKIUSDT",
+      "GRTUSDT"
+    ],
+    "compared_values": 639,
+    "overlap_rows": 391,
+    "mismatch_count": 0,
+    "mismatches": [],
+    "details": [
+      {
+        "symbol": "BTCUSDT",
+        "kind": "spot",
+        "overlap_rows": 32,
+        "compared_values": 64
+      },
+      {
+        "symbol": "BTCUSDT",
+        "kind": "perp",
+        "overlap_rows": 24,
+        "compared_values": 48
+      },
+      {
+        "symbol": "BTCUSDT",
+        "kind": "premium",
+        "overlap_rows": 24,
+        "compared_values": 24
+      },
+      {
+        "symbol": "BTCUSDT",
+        "kind": "funding",
+        "overlap_rows": 5,
+        "compared_values": 5
+      },
+      {
+        "symbol": "1000PEPEUSDT",
+        "kind": "spot",
+        "overlap_rows": 32,
+        "compared_values": 64
+      },
+      {
+        "symbol": "1000PEPEUSDT",
+        "kind": "perp",
+        "overlap_rows": 32,
+        "compared_values": 64
+      },
+      {
+        "symbol": "1000PEPEUSDT",
+        "kind": "premium",
+        "overlap_rows": 32,
+        "compared_values": 32
+      },
+      {
+        "symbol": "1000PEPEUSDT",
+        "kind": "funding",
+        "overlap_rows": 6,
+        "compared_values": 6
+      },
+      {
+        "symbol": "1000FLOKIUSDT",
+        "kind": "spot",
+        "overlap_rows": 32,
+        "compared_values": 64
+      },
+      {
+        "symbol": "1000FLOKIUSDT",
+        "kind": "perp",
+        "overlap_rows": 32,
+        "compared_values": 64
+      },
+      {
+        "symbol": "1000FLOKIUSDT",
+        "kind": "premium",
+        "overlap_rows": 32,
+        "compared_values": 32
+      },
+      {
+        "symbol": "1000FLOKIUSDT",
+        "kind": "funding",
+        "overlap_rows": 6,
+        "compared_values": 6
+      },
+      {
+        "symbol": "GRTUSDT",
+        "kind": "spot",
+        "overlap_rows": 32,
+        "compared_values": 64
+      },
+      {
+        "symbol": "GRTUSDT",
+        "kind": "perp",
+        "overlap_rows": 32,
+        "compared_values": 64
+      },
+      {
+        "symbol": "GRTUSDT",
+        "kind": "premium",
+        "overlap_rows": 32,
+        "compared_values": 32
+      },
+      {
+        "symbol": "GRTUSDT",
+        "kind": "funding",
+        "overlap_rows": 6,
+        "compared_values": 6
+      }
+    ],
+    "passed": true,
+    "all339pairs_not_claimed_exhaustively_crossverified": true
+  },
+  "representative_oi_comparison": {
+    "at_utc": "2026-11-09T12:30:05.152000+00:00",
+    "details": [
+      {
+        "symbol": "BTCUSDT",
+        "compared_native_quote_values": 288,
+        "mapping": "provider_period_end_minus5m_matches_native_timestamp",
+        "mismatch_count": 0,
+        "unmapped_timestamp_mismatches": 288,
+        "examples": []
+      },
+      {
+        "symbol": "1000PEPEUSDT",
+        "compared_native_quote_values": 288,
+        "mapping": "provider_period_end_minus5m_matches_native_timestamp",
+        "mismatch_count": 0,
+        "unmapped_timestamp_mismatches": 288,
+        "examples": []
+      },
+      {
+        "symbol": "1000FLOKIUSDT",
+        "compared_native_quote_values": 288,
+        "mapping": "provider_period_end_minus5m_matches_native_timestamp",
+        "mismatch_count": 0,
+        "unmapped_timestamp_mismatches": 288,
+        "examples": []
+      },
+      {
+        "symbol": "GRTUSDT",
+        "compared_native_quote_values": 288,
+        "mapping": "provider_period_end_minus5m_matches_native_timestamp",
+        "mismatch_count": 0,
+        "unmapped_timestamp_mismatches": 288,
+        "examples": []
+      }
+    ],
+    "compared_values": 1152,
+    "mismatch_count": 0,
+    "passed": true,
+    "frozen_oi_hourly_pre_lag_unchanged": true
+  },
+  "frozen_hashes": {
+    "checked_at_utc": "2026-11-09T12:33:16.493604+00:00",
+    "formal_rc2_files": 155,
+    "mismatches": [],
+    "original_pipeline_files": 334,
+    "v3_bound_files": 5,
+    "source_adapter_binding_files": 8,
+    "original_and_new_bindings_verified": true
+  },
+  "original_engine_diagnostic": {
+    "rows": 339,
+    "features": 125,
+    "eligible": 290,
+    "raw24_known": 269,
+    "median_missing_fraction": 0.1391622418879056,
+    "predictions_made": 0
+  },
+  "original_engine_cycle_status": "COMPLETED",
+  "persistent_history_queue": {
+    "DONE": 308,
+    "PENDING": 1490
+  },
+  "history_queue_may_contain_overlapping_intervals": true,
+  "automation": {
+    "id": "v3",
+    "status": "ACTIVE",
+    "new_source_entrypoint_verified": true,
+    "original_cadence_preserved": true
+  },
+  "real_predictions": 0,
+  "verified_mature_results": 0,
+  "remaining_gaps": [
+    "Unfinished Datahub history gaps remain queued and automatically resume",
+    "Current-day four positioning series await official publication or independently verified additional source",
+    "Bybit independent replacement has not been connected; existing last settlement is not proof of current full coverage",
+    "240h/1008h economic labels still require independent frozen-engine replay"
+  ],
+  "original_failure_evidence_retained": [
+    "run-1794226970251.json",
+    "OI_UNMAPPED_FAILURE_RETAINED.json"
+  ],
+  "does_not_claim_live_trading_or_forward_model_success": true
+}

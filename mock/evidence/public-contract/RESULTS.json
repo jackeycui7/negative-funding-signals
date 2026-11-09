@@ -1,0 +1,200 @@
+{
+  "cases": 20,
+  "passed": 20,
+  "failed": 0,
+  "failures": [],
+  "details": [
+    {
+      "case": "historical_negative",
+      "passed": true,
+      "expected_invalid": false,
+      "exit_code": 0,
+      "status": "DATA_OR_TIMING_LIMITED",
+      "forecasts": {
+        "p_new_negative_within72h": null,
+        "p_no_raw24_exit_next168h": 0.7793221471462668,
+        "p_qualified_entry_after72h_within7d": 0.7792939244851786,
+        "conditional_30d_reference_net_usdt": 6841.368499221455
+      }
+    },
+    {
+      "case": "historical_nonnegative",
+      "passed": true,
+      "expected_invalid": false,
+      "exit_code": 0,
+      "status": "DATA_OR_TIMING_LIMITED",
+      "forecasts": {
+        "p_new_negative_within72h": 0.23589924623350159,
+        "p_no_raw24_exit_next168h": null,
+        "p_qualified_entry_after72h_within7d": 0.18347471736394572,
+        "conditional_30d_reference_net_usdt": 8934.888642246702
+      }
+    },
+    {
+      "case": "key_order_invariance",
+      "passed": true,
+      "expected_invalid": false,
+      "exit_code": 0,
+      "status": "DATA_OR_TIMING_LIMITED",
+      "forecasts": {
+        "p_new_negative_within72h": null,
+        "p_no_raw24_exit_next168h": 0.7793221471462668,
+        "p_qualified_entry_after72h_within7d": 0.7792939244851786,
+        "conditional_30d_reference_net_usdt": 6841.368499221455
+      }
+    },
+    {
+      "case": "extra_feature",
+      "passed": true,
+      "expected_invalid": true,
+      "exit_code": 2,
+      "status": "INVALID_INPUT",
+      "forecasts": null
+    },
+    {
+      "case": "missing_feature",
+      "passed": true,
+      "expected_invalid": true,
+      "exit_code": 2,
+      "status": "INVALID_INPUT",
+      "forecasts": null
+    },
+    {
+      "case": "boolean_feature",
+      "passed": true,
+      "expected_invalid": true,
+      "exit_code": 2,
+      "status": "INVALID_INPUT",
+      "forecasts": null
+    },
+    {
+      "case": "nonfinite_feature",
+      "passed": true,
+      "expected_invalid": true,
+      "exit_code": 2,
+      "status": "INVALID_INPUT",
+      "forecasts": null
+    },
+    {
+      "case": "unknown_quantity_scenario",
+      "passed": true,
+      "expected_invalid": true,
+      "exit_code": 2,
+      "status": "INVALID_INPUT",
+      "forecasts": null
+    },
+    {
+      "case": "quantity_scenario_mismatch",
+      "passed": true,
+      "expected_invalid": true,
+      "exit_code": 2,
+      "status": "INVALID_INPUT",
+      "forecasts": null
+    },
+    {
+      "case": "missing_latest_settlement",
+      "passed": true,
+      "expected_invalid": true,
+      "exit_code": 2,
+      "status": "INVALID_INPUT",
+      "forecasts": null
+    },
+    {
+      "case": "boolean_quantity_fraction",
+      "passed": true,
+      "expected_invalid": true,
+      "exit_code": 2,
+      "status": "INVALID_INPUT",
+      "forecasts": null
+    },
+    {
+      "case": "off_daily_grid",
+      "passed": true,
+      "expected_invalid": true,
+      "exit_code": 2,
+      "status": "INVALID_INPUT",
+      "forecasts": null
+    },
+    {
+      "case": "future_uncompleted_feature_hour",
+      "passed": true,
+      "expected_invalid": true,
+      "exit_code": 2,
+      "status": "INVALID_INPUT",
+      "forecasts": null
+    },
+    {
+      "case": "unknown_raw24",
+      "passed": true,
+      "expected_invalid": false,
+      "exit_code": 0,
+      "status": "DATA_OR_TIMING_LIMITED",
+      "forecasts": {
+        "p_new_negative_within72h": null,
+        "p_no_raw24_exit_next168h": null,
+        "p_qualified_entry_after72h_within7d": 0.7792939244851786,
+        "conditional_30d_reference_net_usdt": 6841.368499221455
+      }
+    },
+    {
+      "case": "already_available_inventory",
+      "passed": true,
+      "expected_invalid": false,
+      "exit_code": 0,
+      "status": "DATA_OR_TIMING_LIMITED",
+      "forecasts": {
+        "p_new_negative_within72h": null,
+        "p_no_raw24_exit_next168h": 0.7793221471462668,
+        "p_qualified_entry_after72h_within7d": 0.7792939244851786,
+        "conditional_30d_reference_net_usdt": null
+      }
+    },
+    {
+      "case": "high_missingness",
+      "passed": true,
+      "expected_invalid": false,
+      "exit_code": 0,
+      "status": "DATA_OR_TIMING_LIMITED",
+      "forecasts": {
+        "p_new_negative_within72h": null,
+        "p_no_raw24_exit_next168h": null,
+        "p_qualified_entry_after72h_within7d": 0.6261473248261781,
+        "conditional_30d_reference_net_usdt": 15344.950967061233
+      }
+    },
+    {
+      "case": "invalid_information_mode",
+      "passed": true,
+      "expected_invalid": true,
+      "exit_code": 2,
+      "status": "INVALID_INPUT",
+      "forecasts": null
+    },
+    {
+      "case": "observed_future_snapshot",
+      "passed": true,
+      "expected_invalid": true,
+      "exit_code": 2,
+      "status": "INVALID_INPUT",
+      "forecasts": null
+    },
+    {
+      "case": "duplicate_json_keys",
+      "passed": true,
+      "expected_invalid": true,
+      "exit_code": 2,
+      "status": "INVALID_INPUT",
+      "forecasts": null
+    },
+    {
+      "case": "nonobject_json",
+      "passed": true,
+      "expected_invalid": true,
+      "exit_code": 2,
+      "status": "INVALID_INPUT",
+      "forecasts": null
+    }
+  ],
+  "real_forward_predictions_created": 0,
+  "network_used": false
+}

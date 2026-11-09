@@ -1,0 +1,1975 @@
+{
+  "mappings": [
+    {
+      "binance": "1000PEPEUSDT",
+      "bybit": "1000PEPEUSDT",
+      "base_asset": "1000PEPE",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "1000BONKUSDT",
+      "bybit": "1000BONKUSDT",
+      "base_asset": "1000BONK",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "1000LUNCUSDT",
+      "bybit": "1000LUNCUSDT",
+      "base_asset": "1000LUNC",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "1000FLOKIUSDT",
+      "bybit": "1000FLOKIUSDT",
+      "base_asset": "1000FLOKI",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "1000XECUSDT",
+      "bybit": "1000XECUSDT",
+      "base_asset": "1000XEC",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "HMSTRUSDT",
+      "bybit": "HMSTRUSDT",
+      "base_asset": "HMSTR",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "NOTUSDT",
+      "bybit": "NOTUSDT",
+      "base_asset": "NOT",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "REDUSDT",
+      "bybit": "REDUSDT",
+      "base_asset": "RED",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "CKBUSDT",
+      "bybit": "CKBUSDT",
+      "base_asset": "CKB",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ACEUSDT",
+      "bybit": "ACEUSDT",
+      "base_asset": "ACE",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "VETUSDT",
+      "bybit": "VETUSDT",
+      "base_asset": "VET",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "RSRUSDT",
+      "bybit": "RSRUSDT",
+      "base_asset": "RSR",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "BOMEUSDT",
+      "bybit": "BOMEUSDT",
+      "base_asset": "BOME",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "SLPUSDT",
+      "bybit": "SLPUSDT",
+      "base_asset": "SLP",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "DOGEUSDT",
+      "bybit": "DOGEUSDT",
+      "base_asset": "DOGE",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "JASMYUSDT",
+      "bybit": "JASMYUSDT",
+      "base_asset": "JASMY",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "PENGUUSDT",
+      "bybit": "PENGUUSDT",
+      "base_asset": "PENGU",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ZILUSDT",
+      "bybit": "ZILUSDT",
+      "base_asset": "ZIL",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "IOSTUSDT",
+      "bybit": "IOSTUSDT",
+      "base_asset": "IOST",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "MEMEUSDT",
+      "bybit": "MEMEUSDT",
+      "base_asset": "MEME",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ROSEUSDT",
+      "bybit": "ROSEUSDT",
+      "base_asset": "ROSE",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "LINEAUSDT",
+      "bybit": "LINEAUSDT",
+      "base_asset": "LINEA",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "USTCUSDT",
+      "bybit": "USTCUSDT",
+      "base_asset": "USTC",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "COTIUSDT",
+      "bybit": "COTIUSDT",
+      "base_asset": "COTI",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "HBARUSDT",
+      "bybit": "HBARUSDT",
+      "base_asset": "HBAR",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "XRPUSDT",
+      "bybit": "XRPUSDT",
+      "base_asset": "XRP",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "USDCUSDT",
+      "bybit": "USDCUSDT",
+      "base_asset": "USDC",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "TLMUSDT",
+      "bybit": "TLMUSDT",
+      "base_asset": "TLM",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ADAUSDT",
+      "bybit": "ADAUSDT",
+      "base_asset": "ADA",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "RVNUSDT",
+      "bybit": "RVNUSDT",
+      "base_asset": "RVN",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "TRXUSDT",
+      "bybit": "TRXUSDT",
+      "base_asset": "TRX",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ANKRUSDT",
+      "bybit": "ANKRUSDT",
+      "base_asset": "ANKR",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ACHUSDT",
+      "bybit": "ACHUSDT",
+      "base_asset": "ACH",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "PLUMEUSDT",
+      "bybit": "PLUMEUSDT",
+      "base_asset": "PLUME",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "XLMUSDT",
+      "bybit": "XLMUSDT",
+      "base_asset": "XLM",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ZKUSDT",
+      "bybit": "ZKUSDT",
+      "base_asset": "ZK",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "IOTXUSDT",
+      "bybit": "IOTXUSDT",
+      "base_asset": "IOTX",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "REZUSDT",
+      "bybit": "REZUSDT",
+      "base_asset": "REZ",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "CGPTUSDT",
+      "bybit": "CGPTUSDT",
+      "base_asset": "CGPT",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "NOMUSDT",
+      "bybit": "NOMUSDT",
+      "base_asset": "NOM",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "GRTUSDT",
+      "bybit": "GRTUSDT",
+      "base_asset": "GRT",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ENAUSDT",
+      "bybit": "ENAUSDT",
+      "base_asset": "ENA",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "CHZUSDT",
+      "bybit": "CHZUSDT",
+      "base_asset": "CHZ",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "NIGHTUSDT",
+      "bybit": "NIGHTUSDT",
+      "base_asset": "NIGHT",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "WUSDT",
+      "bybit": "WUSDT",
+      "base_asset": "W",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ALGOUSDT",
+      "bybit": "ALGOUSDT",
+      "base_asset": "ALGO",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "SUSDT",
+      "bybit": "SUSDT",
+      "base_asset": "S",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "IOTAUSDT",
+      "bybit": "IOTAUSDT",
+      "base_asset": "IOTA",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "STRKUSDT",
+      "bybit": "STRKUSDT",
+      "base_asset": "STRK",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "SEIUSDT",
+      "bybit": "SEIUSDT",
+      "base_asset": "SEI",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ASTRUSDT",
+      "bybit": "ASTRUSDT",
+      "base_asset": "ASTR",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "POLUSDT",
+      "bybit": "POLUSDT",
+      "base_asset": "POL",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ONDOUSDT",
+      "bybit": "ONDOUSDT",
+      "base_asset": "ONDO",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "GMTUSDT",
+      "bybit": "GMTUSDT",
+      "base_asset": "GMT",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "CETUSUSDT",
+      "bybit": "CETUSUSDT",
+      "base_asset": "CETUS",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "SKYUSDT",
+      "bybit": "SKYUSDT",
+      "base_asset": "SKY",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "WOOUSDT",
+      "bybit": "WOOUSDT",
+      "base_asset": "WOO",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ARBUSDT",
+      "bybit": "ARBUSDT",
+      "base_asset": "ARB",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "KMNOUSDT",
+      "bybit": "KMNOUSDT",
+      "base_asset": "KMNO",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "PYTHUSDT",
+      "bybit": "PYTHUSDT",
+      "base_asset": "PYTH",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "PEOPLEUSDT",
+      "bybit": "PEOPLEUSDT",
+      "base_asset": "PEOPLE",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "SKLUSDT",
+      "bybit": "SKLUSDT",
+      "base_asset": "SKL",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "GUNUSDT",
+      "bybit": "GUNUSDT",
+      "base_asset": "GUN",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ENJUSDT",
+      "bybit": "ENJUSDT",
+      "base_asset": "ENJ",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "XAIUSDT",
+      "bybit": "XAIUSDT",
+      "base_asset": "XAI",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "SUIUSDT",
+      "bybit": "SUIUSDT",
+      "base_asset": "SUI",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "PIXELUSDT",
+      "bybit": "PIXELUSDT",
+      "base_asset": "PIXEL",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ANIMEUSDT",
+      "bybit": "ANIMEUSDT",
+      "base_asset": "ANIME",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "WLFIUSDT",
+      "bybit": "WLFIUSDT",
+      "base_asset": "WLFI",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "FFUSDT",
+      "bybit": "FFUSDT",
+      "base_asset": "FF",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "MUBARAKUSDT",
+      "bybit": "MUBARAKUSDT",
+      "base_asset": "MUBARAK",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "TOWNSUSDT",
+      "bybit": "TOWNSUSDT",
+      "base_asset": "TOWNS",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "APEUSDT",
+      "bybit": "APEUSDT",
+      "base_asset": "APE",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "SPKUSDT",
+      "bybit": "SPKUSDT",
+      "base_asset": "SPK",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "FLUXUSDT",
+      "bybit": "FLUXUSDT",
+      "base_asset": "FLUX",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "CFXUSDT",
+      "bybit": "CFXUSDT",
+      "base_asset": "CFX",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "COOKIEUSDT",
+      "bybit": "COOKIEUSDT",
+      "base_asset": "COOKIE",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "PORTALUSDT",
+      "bybit": "PORTALUSDT",
+      "base_asset": "PORTAL",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ACTUSDT",
+      "bybit": "ACTUSDT",
+      "base_asset": "ACT",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "CHRUSDT",
+      "bybit": "CHRUSDT",
+      "base_asset": "CHR",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "TUSDT",
+      "bybit": "TUSDT",
+      "base_asset": "T",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "MANAUSDT",
+      "bybit": "MANAUSDT",
+      "base_asset": "MANA",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "KATUSDT",
+      "bybit": "KATUSDT",
+      "base_asset": "KAT",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "CFGUSDT",
+      "bybit": "CFGUSDT",
+      "base_asset": "CFG",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "DYDXUSDT",
+      "bybit": "DYDXUSDT",
+      "base_asset": "DYDX",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "MEGAUSDT",
+      "bybit": "MEGAUSDT",
+      "base_asset": "MEGA",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "SANDUSDT",
+      "bybit": "SANDUSDT",
+      "base_asset": "SAND",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "BIGTIMEUSDT",
+      "bybit": "BIGTIMEUSDT",
+      "base_asset": "BIGTIME",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "BBUSDT",
+      "bybit": "BBUSDT",
+      "base_asset": "BB",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "PHAUSDT",
+      "bybit": "PHAUSDT",
+      "base_asset": "PHA",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "MINAUSDT",
+      "bybit": "MINAUSDT",
+      "base_asset": "MINA",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ARPAUSDT",
+      "bybit": "ARPAUSDT",
+      "base_asset": "ARPA",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "USUALUSDT",
+      "bybit": "USUALUSDT",
+      "base_asset": "USUAL",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ZAMAUSDT",
+      "bybit": "ZAMAUSDT",
+      "base_asset": "ZAMA",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "AIXBTUSDT",
+      "bybit": "AIXBTUSDT",
+      "base_asset": "AIXBT",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "SUNUSDT",
+      "bybit": "SUNUSDT",
+      "base_asset": "SUN",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "BABYUSDT",
+      "bybit": "BABYUSDT",
+      "base_asset": "BABY",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "THETAUSDT",
+      "bybit": "THETAUSDT",
+      "base_asset": "THETA",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "CRVUSDT",
+      "bybit": "CRVUSDT",
+      "base_asset": "CRV",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "CHIPUSDT",
+      "bybit": "CHIPUSDT",
+      "base_asset": "CHIP",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "XPLUSDT",
+      "bybit": "XPLUSDT",
+      "base_asset": "XPL",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "AEVOUSDT",
+      "bybit": "AEVOUSDT",
+      "base_asset": "AEVO",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "SOPHUSDT",
+      "bybit": "SOPHUSDT",
+      "base_asset": "SOPH",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "SENTUSDT",
+      "bybit": "SENTUSDT",
+      "base_asset": "SENT",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "POLYXUSDT",
+      "bybit": "POLYXUSDT",
+      "base_asset": "POLYX",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "OGNUSDT",
+      "bybit": "OGNUSDT",
+      "base_asset": "OGN",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "EDUUSDT",
+      "bybit": "EDUUSDT",
+      "base_asset": "EDU",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ASTERUSDT",
+      "bybit": "ASTERUSDT",
+      "base_asset": "ASTER",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "JUPUSDT",
+      "bybit": "JUPUSDT",
+      "base_asset": "JUP",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "AEROUSDT",
+      "bybit": "AEROUSDT",
+      "base_asset": "AERO",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "NILUSDT",
+      "bybit": "NILUSDT",
+      "base_asset": "NIL",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "KAIAUSDT",
+      "bybit": "KAIAUSDT",
+      "base_asset": "KAIA",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "WIFUSDT",
+      "bybit": "WIFUSDT",
+      "base_asset": "WIF",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "OPUSDT",
+      "bybit": "OPUSDT",
+      "base_asset": "OP",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "TUTUSDT",
+      "bybit": "TUTUSDT",
+      "base_asset": "TUT",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "FUSDT",
+      "bybit": "FUSDT",
+      "base_asset": "F",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "WLDUSDT",
+      "bybit": "WLDUSDT",
+      "base_asset": "WLD",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "BIOUSDT",
+      "bybit": "BIOUSDT",
+      "base_asset": "BIO",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "CATIUSDT",
+      "bybit": "CATIUSDT",
+      "base_asset": "CATI",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "HUMAUSDT",
+      "bybit": "HUMAUSDT",
+      "base_asset": "HUMA",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "MANTAUSDT",
+      "bybit": "MANTAUSDT",
+      "base_asset": "MANTA",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "STXUSDT",
+      "bybit": "STXUSDT",
+      "base_asset": "STX",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "1INCHUSDT",
+      "bybit": "1INCHUSDT",
+      "base_asset": "1INCH",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "DOTUSDT",
+      "bybit": "DOTUSDT",
+      "base_asset": "DOT",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "BLURUSDT",
+      "bybit": "BLURUSDT",
+      "base_asset": "BLUR",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "BICOUSDT",
+      "bybit": "BICOUSDT",
+      "base_asset": "BICO",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "C98USDT",
+      "bybit": "C98USDT",
+      "base_asset": "C98",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "SAHARAUSDT",
+      "bybit": "SAHARAUSDT",
+      "base_asset": "SAHARA",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "SUPERUSDT",
+      "bybit": "SUPERUSDT",
+      "base_asset": "SUPER",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "SIGNUSDT",
+      "bybit": "SIGNUSDT",
+      "base_asset": "SIGN",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "GPSUSDT",
+      "bybit": "GPSUSDT",
+      "base_asset": "GPS",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "AUSDT",
+      "bybit": "AUSDT",
+      "base_asset": "A",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "MOVEUSDT",
+      "bybit": "MOVEUSDT",
+      "base_asset": "MOVE",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "DYMUSDT",
+      "bybit": "DYMUSDT",
+      "base_asset": "DYM",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "YGGUSDT",
+      "bybit": "YGGUSDT",
+      "base_asset": "YGG",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "FLOWUSDT",
+      "bybit": "FLOWUSDT",
+      "base_asset": "FLOW",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "TURTLEUSDT",
+      "bybit": "TURTLEUSDT",
+      "base_asset": "TURTLE",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "PNUTUSDT",
+      "bybit": "PNUTUSDT",
+      "base_asset": "PNUT",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "DUSKUSDT",
+      "bybit": "DUSKUSDT",
+      "base_asset": "DUSK",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "VIRTUALUSDT",
+      "bybit": "VIRTUALUSDT",
+      "base_asset": "VIRTUAL",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "RENDERUSDT",
+      "bybit": "RENDERUSDT",
+      "base_asset": "RENDER",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "IMXUSDT",
+      "bybit": "IMXUSDT",
+      "base_asset": "IMX",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "TWTUSDT",
+      "bybit": "TWTUSDT",
+      "base_asset": "TWT",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "GRAMUSDT",
+      "bybit": "GRAMUSDT",
+      "base_asset": "GRAM",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "HAEDALUSDT",
+      "bybit": "HAEDALUSDT",
+      "base_asset": "HAEDAL",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "FOGOUSDT",
+      "bybit": "FOGOUSDT",
+      "base_asset": "FOGO",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "SXTUSDT",
+      "bybit": "SXTUSDT",
+      "base_asset": "SXT",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "NEARUSDT",
+      "bybit": "NEARUSDT",
+      "base_asset": "NEAR",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "CELOUSDT",
+      "bybit": "CELOUSDT",
+      "base_asset": "CELO",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "HOMEUSDT",
+      "bybit": "HOMEUSDT",
+      "base_asset": "HOME",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ONTUSDT",
+      "bybit": "ONTUSDT",
+      "base_asset": "ONT",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "BMTUSDT",
+      "bybit": "BMTUSDT",
+      "base_asset": "BMT",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "FILUSDT",
+      "bybit": "FILUSDT",
+      "base_asset": "FIL",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "TIAUSDT",
+      "bybit": "TIAUSDT",
+      "base_asset": "TIA",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "MAVUSDT",
+      "bybit": "MAVUSDT",
+      "base_asset": "MAV",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "SYRUPUSDT",
+      "bybit": "SYRUPUSDT",
+      "base_asset": "SYRUP",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "RUNEUSDT",
+      "bybit": "RUNEUSDT",
+      "base_asset": "RUNE",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "KAVAUSDT",
+      "bybit": "KAVAUSDT",
+      "base_asset": "KAVA",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "BATUSDT",
+      "bybit": "BATUSDT",
+      "base_asset": "BAT",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "IDUSDT",
+      "bybit": "IDUSDT",
+      "base_asset": "ID",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "FIDAUSDT",
+      "bybit": "FIDAUSDT",
+      "base_asset": "FIDA",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "LDOUSDT",
+      "bybit": "LDOUSDT",
+      "base_asset": "LDO",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "JSTUSDT",
+      "bybit": "JSTUSDT",
+      "base_asset": "JST",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "EDENUSDT",
+      "bybit": "EDENUSDT",
+      "base_asset": "EDEN",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "PARTIUSDT",
+      "bybit": "PARTIUSDT",
+      "base_asset": "PARTI",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "LUMIAUSDT",
+      "bybit": "LUMIAUSDT",
+      "base_asset": "LUMIA",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "KITEUSDT",
+      "bybit": "KITEUSDT",
+      "base_asset": "KITE",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ARKMUSDT",
+      "bybit": "ARKMUSDT",
+      "base_asset": "ARKM",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ICPUSDT",
+      "bybit": "ICPUSDT",
+      "base_asset": "ICP",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "IOUSDT",
+      "bybit": "IOUSDT",
+      "base_asset": "IO",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "MTLUSDT",
+      "bybit": "MTLUSDT",
+      "base_asset": "MTL",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "CVCUSDT",
+      "bybit": "CVCUSDT",
+      "base_asset": "CVC",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "APTUSDT",
+      "bybit": "APTUSDT",
+      "base_asset": "APT",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "EIGENUSDT",
+      "bybit": "EIGENUSDT",
+      "base_asset": "EIGEN",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "RESOLVUSDT",
+      "bybit": "RESOLVUSDT",
+      "base_asset": "RESOLV",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "WCTUSDT",
+      "bybit": "WCTUSDT",
+      "base_asset": "WCT",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "SAPIENUSDT",
+      "bybit": "SAPIENUSDT",
+      "base_asset": "SAPIEN",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "XTZUSDT",
+      "bybit": "XTZUSDT",
+      "base_asset": "XTZ",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "FORMUSDT",
+      "bybit": "FORMUSDT",
+      "base_asset": "FORM",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "SUSHIUSDT",
+      "bybit": "SUSHIUSDT",
+      "base_asset": "SUSHI",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "SNXUSDT",
+      "bybit": "SNXUSDT",
+      "base_asset": "SNX",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "MAGICUSDT",
+      "bybit": "MAGICUSDT",
+      "base_asset": "MAGIC",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ZRXUSDT",
+      "bybit": "ZRXUSDT",
+      "base_asset": "ZRX",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "WALUSDT",
+      "bybit": "WALUSDT",
+      "base_asset": "WAL",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "LINKUSDT",
+      "bybit": "LINKUSDT",
+      "base_asset": "LINK",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "SHELLUSDT",
+      "bybit": "SHELLUSDT",
+      "base_asset": "SHELL",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "KNCUSDT",
+      "bybit": "KNCUSDT",
+      "base_asset": "KNC",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "TNSRUSDT",
+      "bybit": "TNSRUSDT",
+      "base_asset": "TNSR",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "DIAUSDT",
+      "bybit": "DIAUSDT",
+      "base_asset": "DIA",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "PUNDIXUSDT",
+      "bybit": "PUNDIXUSDT",
+      "base_asset": "PUNDIX",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "AVAUSDT",
+      "bybit": "AVAUSDT",
+      "base_asset": "AVA",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ESPUSDT",
+      "bybit": "ESPUSDT",
+      "base_asset": "ESP",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "RONINUSDT",
+      "bybit": "RONINUSDT",
+      "base_asset": "RONIN",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ZBTUSDT",
+      "bybit": "ZBTUSDT",
+      "base_asset": "ZBT",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "CAKEUSDT",
+      "bybit": "CAKEUSDT",
+      "base_asset": "CAKE",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "CUSDT",
+      "bybit": "CUSDT",
+      "base_asset": "C",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "STORJUSDT",
+      "bybit": "STORJUSDT",
+      "base_asset": "STORJ",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ZROUSDT",
+      "bybit": "ZROUSDT",
+      "base_asset": "ZRO",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ALICEUSDT",
+      "bybit": "ALICEUSDT",
+      "base_asset": "ALICE",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ETHFIUSDT",
+      "bybit": "ETHFIUSDT",
+      "base_asset": "ETHFI",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "2ZUSDT",
+      "bybit": "2ZUSDT",
+      "base_asset": "2Z",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ALLOUSDT",
+      "bybit": "ALLOUSDT",
+      "base_asset": "ALLO",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ATOMUSDT",
+      "bybit": "ATOMUSDT",
+      "base_asset": "ATOM",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "LSKUSDT",
+      "bybit": "LSKUSDT",
+      "base_asset": "LSK",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "OPENUSDT",
+      "bybit": "OPENUSDT",
+      "base_asset": "OPEN",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "0GUSDT",
+      "bybit": "0GUSDT",
+      "base_asset": "0G",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "API3USDT",
+      "bybit": "API3USDT",
+      "base_asset": "API3",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "GLMUSDT",
+      "bybit": "GLMUSDT",
+      "base_asset": "GLM",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "AVNTUSDT",
+      "bybit": "AVNTUSDT",
+      "base_asset": "AVNT",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ZKCUSDT",
+      "bybit": "ZKCUSDT",
+      "base_asset": "ZKC",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "AWEUSDT",
+      "bybit": "AWEUSDT",
+      "base_asset": "AWE",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "SOMIUSDT",
+      "bybit": "SOMIUSDT",
+      "base_asset": "SOMI",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "INITUSDT",
+      "bybit": "INITUSDT",
+      "base_asset": "INIT",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "KERNELUSDT",
+      "bybit": "KERNELUSDT",
+      "base_asset": "KERNEL",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "UNIUSDT",
+      "bybit": "UNIUSDT",
+      "base_asset": "UNI",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "TRUMPUSDT",
+      "bybit": "TRUMPUSDT",
+      "base_asset": "TRUMP",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "DOLOUSDT",
+      "bybit": "DOLOUSDT",
+      "base_asset": "DOLO",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ARUSDT",
+      "bybit": "ARUSDT",
+      "base_asset": "AR",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "AVAXUSDT",
+      "bybit": "AVAXUSDT",
+      "base_asset": "AVAX",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "JTOUSDT",
+      "bybit": "JTOUSDT",
+      "base_asset": "JTO",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "STOUSDT",
+      "bybit": "STOUSDT",
+      "base_asset": "STO",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "HYPERUSDT",
+      "bybit": "HYPERUSDT",
+      "base_asset": "HYPER",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "INJUSDT",
+      "bybit": "INJUSDT",
+      "base_asset": "INJ",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "BANDUSDT",
+      "bybit": "BANDUSDT",
+      "base_asset": "BAND",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "SOLUSDT",
+      "bybit": "SOLUSDT",
+      "base_asset": "SOL",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "RLCUSDT",
+      "bybit": "RLCUSDT",
+      "base_asset": "RLC",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "HYPEUSDT",
+      "bybit": "HYPEUSDT",
+      "base_asset": "HYPE",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "HOLOUSDT",
+      "bybit": "HOLOUSDT",
+      "base_asset": "HOLO",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "NXPCUSDT",
+      "bybit": "NXPCUSDT",
+      "base_asset": "NXPC",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "HEIUSDT",
+      "bybit": "HEIUSDT",
+      "base_asset": "HEI",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "PENDLEUSDT",
+      "bybit": "PENDLEUSDT",
+      "base_asset": "PENDLE",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ZKPUSDT",
+      "bybit": "ZKPUSDT",
+      "base_asset": "ZKP",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "LAUSDT",
+      "bybit": "LAUSDT",
+      "base_asset": "LA",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "COWUSDT",
+      "bybit": "COWUSDT",
+      "base_asset": "COW",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "GENIUSUSDT",
+      "bybit": "GENIUSUSDT",
+      "base_asset": "GENIUS",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "TREEUSDT",
+      "bybit": "TREEUSDT",
+      "base_asset": "TREE",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "METUSDT",
+      "bybit": "METUSDT",
+      "base_asset": "MET",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ROBOUSDT",
+      "bybit": "ROBOUSDT",
+      "base_asset": "ROBO",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ONGUSDT",
+      "bybit": "ONGUSDT",
+      "base_asset": "ONG",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "AXSUSDT",
+      "bybit": "AXSUSDT",
+      "base_asset": "AXS",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "MORPHOUSDT",
+      "bybit": "MORPHOUSDT",
+      "base_asset": "MORPHO",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "NEWTUSDT",
+      "bybit": "NEWTUSDT",
+      "base_asset": "NEWT",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "NEOUSDT",
+      "bybit": "NEOUSDT",
+      "base_asset": "NEO",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "LQTYUSDT",
+      "bybit": "LQTYUSDT",
+      "base_asset": "LQTY",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "PROVEUSDT",
+      "bybit": "PROVEUSDT",
+      "base_asset": "PROVE",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "CVXUSDT",
+      "bybit": "CVXUSDT",
+      "base_asset": "CVX",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "MIRAUSDT",
+      "bybit": "MIRAUSDT",
+      "base_asset": "MIRA",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "BREVUSDT",
+      "bybit": "BREVUSDT",
+      "base_asset": "BREV",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "YBUSDT",
+      "bybit": "YBUSDT",
+      "base_asset": "YB",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "REUSDT",
+      "bybit": "REUSDT",
+      "base_asset": "RE",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "BERAUSDT",
+      "bybit": "BERAUSDT",
+      "base_asset": "BERA",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "AGLDUSDT",
+      "bybit": "AGLDUSDT",
+      "base_asset": "AGLD",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ERAUSDT",
+      "bybit": "ERAUSDT",
+      "base_asset": "ERA",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ETCUSDT",
+      "bybit": "ETCUSDT",
+      "base_asset": "ETC",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "MASKUSDT",
+      "bybit": "MASKUSDT",
+      "base_asset": "MASK",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "MMTUSDT",
+      "bybit": "MMTUSDT",
+      "base_asset": "MMT",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "LITUSDT",
+      "bybit": "LITUSDT",
+      "base_asset": "LIT",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "MOVRUSDT",
+      "bybit": "MOVRUSDT",
+      "base_asset": "MOVR",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "MEUSDT",
+      "bybit": "MEUSDT",
+      "base_asset": "ME",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "LTCUSDT",
+      "bybit": "LTCUSDT",
+      "base_asset": "LTC",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "GASUSDT",
+      "bybit": "GASUSDT",
+      "base_asset": "GAS",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ZENUSDT",
+      "bybit": "ZENUSDT",
+      "base_asset": "ZEN",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ENSOUSDT",
+      "bybit": "ENSOUSDT",
+      "base_asset": "ENSO",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "CYBERUSDT",
+      "bybit": "CYBERUSDT",
+      "base_asset": "CYBER",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "UMAUSDT",
+      "bybit": "UMAUSDT",
+      "base_asset": "UMA",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ORDIUSDT",
+      "bybit": "ORDIUSDT",
+      "base_asset": "ORDI",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "KAITOUSDT",
+      "bybit": "KAITOUSDT",
+      "base_asset": "KAITO",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "QTUMUSDT",
+      "bybit": "QTUMUSDT",
+      "base_asset": "QTUM",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ALPINEUSDT",
+      "bybit": "ALPINEUSDT",
+      "base_asset": "ALPINE",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ORCAUSDT",
+      "bybit": "ORCAUSDT",
+      "base_asset": "ORCA",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "KSMUSDT",
+      "bybit": "KSMUSDT",
+      "base_asset": "KSM",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "EGLDUSDT",
+      "bybit": "EGLDUSDT",
+      "base_asset": "EGLD",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "EULUSDT",
+      "bybit": "EULUSDT",
+      "base_asset": "EUL",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "BARDUSDT",
+      "bybit": "BARDUSDT",
+      "base_asset": "BARD",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "XMRUSDT",
+      "bybit": "XMRUSDT",
+      "base_asset": "XMR",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "DASHUSDT",
+      "bybit": "DASHUSDT",
+      "base_asset": "DASH",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "METISUSDT",
+      "bybit": "METISUSDT",
+      "base_asset": "METIS",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "LPTUSDT",
+      "bybit": "LPTUSDT",
+      "base_asset": "LPT",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "DEXEUSDT",
+      "bybit": "DEXEUSDT",
+      "base_asset": "DEXE",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "TAOUSDT",
+      "bybit": "TAOUSDT",
+      "base_asset": "TAO",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ETHUSDT",
+      "bybit": "ETHUSDT",
+      "base_asset": "ETH",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "QNTUSDT",
+      "bybit": "QNTUSDT",
+      "base_asset": "QNT",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ENSUSDT",
+      "bybit": "ENSUSDT",
+      "base_asset": "ENS",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ILVUSDT",
+      "bybit": "ILVUSDT",
+      "base_asset": "ILV",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ZECUSDT",
+      "bybit": "ZECUSDT",
+      "base_asset": "ZEC",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "SSVUSDT",
+      "bybit": "SSVUSDT",
+      "base_asset": "SSV",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "BNBUSDT",
+      "bybit": "BNBUSDT",
+      "base_asset": "BNB",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "BANANAUSDT",
+      "bybit": "BANANAUSDT",
+      "base_asset": "BANANA",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "GMXUSDT",
+      "bybit": "GMXUSDT",
+      "base_asset": "GMX",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "AUCTIONUSDT",
+      "bybit": "AUCTIONUSDT",
+      "base_asset": "AUCTION",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "AAVEUSDT",
+      "bybit": "AAVEUSDT",
+      "base_asset": "AAVE",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "VANAUSDT",
+      "bybit": "VANAUSDT",
+      "base_asset": "VANA",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "TRBUSDT",
+      "bybit": "TRBUSDT",
+      "base_asset": "TRB",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "POWRUSDT",
+      "bybit": "POWRUSDT",
+      "base_asset": "POWR",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "RPLUSDT",
+      "bybit": "RPLUSDT",
+      "base_asset": "RPL",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "NMRUSDT",
+      "bybit": "NMRUSDT",
+      "base_asset": "NMR",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "COMPUSDT",
+      "bybit": "COMPUSDT",
+      "base_asset": "COMP",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "BCHUSDT",
+      "bybit": "BCHUSDT",
+      "base_asset": "BCH",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "BTCUSDT",
+      "bybit": "BTCUSDT",
+      "base_asset": "BTC",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "GIGGLEUSDT",
+      "bybit": "GIGGLEUSDT",
+      "base_asset": "GIGGLE",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "PAXGUSDT",
+      "bybit": "PAXGUSDT",
+      "base_asset": "PAXG",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "XAUTUSDT",
+      "bybit": "XAUTUSDT",
+      "base_asset": "XAUT",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "BNTUSDT",
+      "bybit": "BNTUSDT",
+      "base_asset": "BNT",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "YFIUSDT",
+      "bybit": "YFIUSDT",
+      "base_asset": "YFI",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "XVSUSDT",
+      "bybit": "XVSUSDT",
+      "base_asset": "XVS",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    },
+    {
+      "binance": "ALTUSDT",
+      "bybit": "ALTUSDT",
+      "base_asset": "ALT",
+      "identity": "Official exact current base/quote/settle metadata; historical contract-address identity unverified"
+    }
+  ],
+  "excluded": [
+    {
+      "binance": "1000SHIBUSDT",
+      "reason": "missing_or_ambiguous_exact_current_metadata_match"
+    },
+    {
+      "binance": "DOGSUSDT",
+      "reason": "missing_or_ambiguous_exact_current_metadata_match"
+    },
+    {
+      "binance": "PUMPUSDT",
+      "reason": "missing_or_ambiguous_exact_current_metadata_match"
+    },
+    {
+      "binance": "VTHOUSDT",
+      "reason": "missing_or_ambiguous_exact_current_metadata_match"
+    },
+    {
+      "binance": "TURBOUSDT",
+      "reason": "missing_or_ambiguous_exact_current_metadata_match"
+    },
+    {
+      "binance": "ONEUSDT",
+      "reason": "missing_or_ambiguous_exact_current_metadata_match"
+    },
+    {
+      "binance": "VANRYUSDT",
+      "reason": "missing_or_ambiguous_exact_current_metadata_match"
+    },
+    {
+      "binance": "CELRUSDT",
+      "reason": "missing_or_ambiguous_exact_current_metadata_match"
+    },
+    {
+      "binance": "FETUSDT",
+      "reason": "missing_or_ambiguous_exact_current_metadata_match"
+    },
+    {
+      "binance": "MANTRAUSDT",
+      "reason": "missing_or_ambiguous_exact_current_metadata_match"
+    },
+    {
+      "binance": "NEIROUSDT",
+      "reason": "missing_or_ambiguous_exact_current_metadata_match"
+    },
+    {
+      "binance": "TSTUSDT",
+      "reason": "missing_or_ambiguous_exact_current_metadata_match"
+    },
+    {
+      "binance": "GUSDT",
+      "reason": "missing_or_ambiguous_exact_current_metadata_match"
+    },
+    {
+      "binance": "SOLVUSDT",
+      "reason": "missing_or_ambiguous_exact_current_metadata_match"
+    },
+    {
+      "binance": "HFTUSDT",
+      "reason": "missing_or_ambiguous_exact_current_metadata_match"
+    },
+    {
+      "binance": "ICXUSDT",
+      "reason": "missing_or_ambiguous_exact_current_metadata_match"
+    },
+    {
+      "binance": "CTSIUSDT",
+      "reason": "missing_or_ambiguous_exact_current_metadata_match"
+    },
+    {
+      "binance": "SCRUSDT",
+      "reason": "missing_or_ambiguous_exact_current_metadata_match"
+    },
+    {
+      "binance": "SCRTUSDT",
+      "reason": "missing_or_ambiguous_exact_current_metadata_match"
+    },
+    {
+      "binance": "SYNUSDT",
+      "reason": "missing_or_ambiguous_exact_current_metadata_match"
+    },
+    {
+      "binance": "STGUSDT",
+      "reason": "missing_or_ambiguous_exact_current_metadata_match"
+    },
+    {
+      "binance": "SPELLUSDT",
+      "reason": "missing_or_ambiguous_exact_current_metadata_match"
+    },
+    {
+      "binance": "GTCUSDT",
+      "reason": "missing_or_ambiguous_exact_current_metadata_match"
+    },
+    {
+      "binance": "EPICUSDT",
+      "reason": "missing_or_ambiguous_exact_current_metadata_match"
+    },
+    {
+      "binance": "ACXUSDT",
+      "reason": "missing_or_ambiguous_exact_current_metadata_match"
+    },
+    {
+      "binance": "SFPUSDT",
+      "reason": "missing_or_ambiguous_exact_current_metadata_match"
+    },
+    {
+      "binance": "LISTAUSDT",
+      "reason": "missing_or_ambiguous_exact_current_metadata_match"
+    },
+    {
+      "binance": "LAYERUSDT",
+      "reason": "missing_or_ambiguous_exact_current_metadata_match"
+    },
+    {
+      "binance": "FRAXUSDT",
+      "reason": "missing_or_ambiguous_exact_current_metadata_match"
+    },
+    {
+      "binance": "PROMUSDT",
+      "reason": "missing_or_ambiguous_exact_current_metadata_match"
+    },
+    {
+      "binance": "AERGOUSDT",
+      "reason": "missing_or_ambiguous_exact_current_metadata_match"
+    },
+    {
+      "binance": "RIFUSDT",
+      "reason": "missing_or_ambiguous_exact_current_metadata_match"
+    },
+    {
+      "binance": "SANTOSUSDT",
+      "reason": "missing_or_ambiguous_exact_current_metadata_match"
+    }
+  ],
+  "uses_historical_surviving_metadata": true
+}

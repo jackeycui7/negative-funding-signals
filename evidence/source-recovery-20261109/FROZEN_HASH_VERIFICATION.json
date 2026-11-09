@@ -1,0 +1,9 @@
+{
+  "checked_at_utc": "2026-11-09T12:33:16.493604+00:00",
+  "formal_rc2_files": 155,
+  "mismatches": [],
+  "original_pipeline_files": 334,
+  "v3_bound_files": 5,
+  "source_adapter_binding_files": 8,
+  "original_and_new_bindings_verified": true
+}

@@ -1,0 +1,111 @@
+{
+  "purpose": "Public scoring contract, adversarial input and metamorphic audit",
+  "cases": [
+    {
+      "name": "historical_negative",
+      "expected_invalid": false,
+      "check": null
+    },
+    {
+      "name": "historical_nonnegative",
+      "expected_invalid": false,
+      "check": null
+    },
+    {
+      "name": "key_order_invariance",
+      "expected_invalid": false,
+      "check": "same_predictions"
+    },
+    {
+      "name": "extra_feature",
+      "expected_invalid": true,
+      "check": null
+    },
+    {
+      "name": "missing_feature",
+      "expected_invalid": true,
+      "check": null
+    },
+    {
+      "name": "boolean_feature",
+      "expected_invalid": true,
+      "check": null
+    },
+    {
+      "name": "nonfinite_feature",
+      "expected_invalid": true,
+      "check": null
+    },
+    {
+      "name": "unknown_quantity_scenario",
+      "expected_invalid": true,
+      "check": null
+    },
+    {
+      "name": "quantity_scenario_mismatch",
+      "expected_invalid": true,
+      "check": null
+    },
+    {
+      "name": "missing_latest_settlement",
+      "expected_invalid": true,
+      "check": null
+    },
+    {
+      "name": "boolean_quantity_fraction",
+      "expected_invalid": true,
+      "check": null
+    },
+    {
+      "name": "off_daily_grid",
+      "expected_invalid": true,
+      "check": null
+    },
+    {
+      "name": "future_uncompleted_feature_hour",
+      "expected_invalid": true,
+      "check": null
+    },
+    {
+      "name": "unknown_raw24",
+      "expected_invalid": false,
+      "check": "survival_null"
+    },
+    {
+      "name": "already_available_inventory",
+      "expected_invalid": false,
+      "check": "economic_null"
+    },
+    {
+      "name": "high_missingness",
+      "expected_invalid": false,
+      "check": "quality_limited"
+    },
+    {
+      "name": "invalid_information_mode",
+      "expected_invalid": true,
+      "check": null
+    },
+    {
+      "name": "observed_future_snapshot",
+      "expected_invalid": true,
+      "check": null
+    },
+    {
+      "name": "duplicate_json_keys",
+      "expected_invalid": true,
+      "check": null
+    },
+    {
+      "name": "nonobject_json",
+      "expected_invalid": true,
+      "check": null
+    }
+  ],
+  "source_sha256": {
+    "mock/run_contract_audit.py": "f4dbf127aaa73eb411fe2ea01f3ee6937bfa1882e32f04bcbd7e16354e7f4da8",
+    "scripts/score.py": "3019dbd7cb7cfca141345356a93dc5c2e1a760a209b1bca83c4137182fb355ef"
+  },
+  "model_predictions_not_accuracy_measure": true,
+  "real_forward_predictions_created": 0
+}

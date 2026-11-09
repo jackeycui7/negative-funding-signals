@@ -1,0 +1,937 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "request_id",
+    "symbol",
+    "asof_utc",
+    "feature_hour_start_utc",
+    "conditional_arrival_fraction",
+    "inventory_status",
+    "raw24_known",
+    "information_mode",
+    "features"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "nfb.signal-input.v3"
+    },
+    "request_id": {
+      "type": "string"
+    },
+    "symbol": {
+      "type": "string"
+    },
+    "asof_utc": {
+      "type": "string"
+    },
+    "feature_hour_start_utc": {
+      "type": "string"
+    },
+    "conditional_arrival_fraction": {
+      "type": "number",
+      "minimum": 0.5,
+      "maximum": 1.0
+    },
+    "inventory_status": {
+      "enum": [
+        "NOT_REQUESTED",
+        "PENDING_72H",
+        "AVAILABLE"
+      ]
+    },
+    "raw24_known": {
+      "type": "boolean"
+    },
+    "information_mode": {
+      "enum": [
+        "historical_hourly_proxy",
+        "observed_asof_snapshot"
+      ]
+    },
+    "features": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "settled_r8_bp",
+        "funding_observation_age_hours",
+        "latest_settled_interval_hours",
+        "known_negative_age_hours",
+        "r8_mean_24h_bp",
+        "negative_fraction_24h",
+        "deep_fraction_24h",
+        "r8_mean_72h_bp",
+        "negative_fraction_72h",
+        "deep_fraction_72h",
+        "r8_mean_168h_bp",
+        "negative_fraction_168h",
+        "deep_fraction_168h",
+        "r8_mean_720h_bp",
+        "negative_fraction_720h",
+        "deep_fraction_720h",
+        "r8_change_24h_bp",
+        "r8_std_168h_bp",
+        "spot_return_24h",
+        "perp_minus_spot_return_24h",
+        "spot_minus_BTC_return_24h",
+        "coin_OI_log_change_24h",
+        "spot_return_72h",
+        "perp_minus_spot_return_72h",
+        "spot_minus_BTC_return_72h",
+        "coin_OI_log_change_72h",
+        "spot_return_168h",
+        "perp_minus_spot_return_168h",
+        "spot_minus_BTC_return_168h",
+        "coin_OI_log_change_168h",
+        "basis_bp",
+        "basis_change_24h_bp",
+        "log_spot_volume_24h",
+        "log_perp_spot_volume_ratio_24h",
+        "log_OI_to_paired_volume",
+        "spot_volatility_24h",
+        "premium_close_bp",
+        "premium_mean_24h_bp",
+        "premium_mean_72h_bp",
+        "premium_mean_168h_bp",
+        "premium_change_24h_bp",
+        "global_accounts_log_ratio",
+        "global_accounts_mean_24h",
+        "top_accounts_log_ratio",
+        "top_accounts_mean_24h",
+        "top_positions_log_ratio",
+        "top_positions_mean_24h",
+        "taker_flow_log_ratio",
+        "taker_flow_mean_24h",
+        "ema_r8_24h_bp",
+        "ema_r8_24h_change_24h_bp",
+        "ema_negative_24h",
+        "ema_deep_24h",
+        "ema_r8_72h_bp",
+        "ema_r8_72h_change_24h_bp",
+        "ema_negative_72h",
+        "ema_deep_72h",
+        "ema_r8_168h_bp",
+        "ema_r8_168h_change_24h_bp",
+        "ema_negative_168h",
+        "ema_deep_168h",
+        "ema_r8_24_minus_72_bp",
+        "ema_r8_24_minus_168_bp",
+        "raw_net_sum_8h_bp",
+        "raw_positive_sum_8h_bp",
+        "raw_negative_sum_8h_bp",
+        "raw_net_sum_24h_bp",
+        "raw_positive_sum_24h_bp",
+        "raw_negative_sum_24h_bp",
+        "raw_net_sum_72h_bp",
+        "raw_positive_sum_72h_bp",
+        "raw_negative_sum_72h_bp",
+        "raw_net_sum_168h_bp",
+        "raw_positive_sum_168h_bp",
+        "raw_negative_sum_168h_bp",
+        "raw_positive_settlements_24h",
+        "raw_negative_settlements_24h",
+        "actual_settlements_24h",
+        "raw24_balance_change_8h_bp",
+        "raw24_balance_change_24h_bp",
+        "known_nonpositive_raw24_age_hours",
+        "raw24_no_new_payments_after_1h_bp",
+        "raw24_no_new_payments_after_4h_bp",
+        "raw24_no_new_payments_after_8h_bp",
+        "market_negative_fraction",
+        "market_deep_fraction",
+        "market_median_r8_bp",
+        "market_negative_fraction_change_24h",
+        "current_r8_cross_section_percentile",
+        "r8_minus_market_median_bp",
+        "cash_nonpositive_age_uncapped_h",
+        "last_completed_cash_cycle_h",
+        "completed_cash_cycles_720h",
+        "completed_cycle_mean_h_720h",
+        "completed_long_cycle_share_720h",
+        "cash_nonpositive_fraction_720h",
+        "completed_cash_cycles_2160h",
+        "completed_cycle_mean_h_2160h",
+        "completed_long_cycle_share_2160h",
+        "cash_nonpositive_fraction_2160h",
+        "raw_payment_EMA_72h_bp_per_h",
+        "raw_payment_EMA_720h_bp_per_h",
+        "funding_prints_30d",
+        "ema_r8_720h_bp",
+        "frozen_roundtrip_fee_spread_bp",
+        "causal_sigma_bp",
+        "cross_funding_available",
+        "bybit_observation_age_h",
+        "bybit_last_interval_inferred_h",
+        "bybit_r8_bp_inferred",
+        "bybit_cash_sum_24h_bp",
+        "binance_minus_bybit_cash_sum_24h_bp",
+        "bybit_cash_sum_72h_bp",
+        "binance_minus_bybit_cash_sum_72h_bp",
+        "bybit_cash_sum_168h_bp",
+        "binance_minus_bybit_cash_sum_168h_bp",
+        "log_received_notional",
+        "log_effective_capacity",
+        "capacity_OI_ratio",
+        "capacity_paired_ADV_ratio",
+        "entry_hours_prior_volume_proxy",
+        "exit_hours_prior_volume_proxy",
+        "conditional_quantity_fraction",
+        "capacity_EMA72_score_usdt",
+        "capacity_raw_cash_EMA720_score_usdt"
+      ],
+      "properties": {
+        "settled_r8_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "funding_observation_age_hours": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "latest_settled_interval_hours": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "known_negative_age_hours": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "r8_mean_24h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "negative_fraction_24h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "deep_fraction_24h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "r8_mean_72h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "negative_fraction_72h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "deep_fraction_72h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "r8_mean_168h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "negative_fraction_168h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "deep_fraction_168h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "r8_mean_720h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "negative_fraction_720h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "deep_fraction_720h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "r8_change_24h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "r8_std_168h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "spot_return_24h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "perp_minus_spot_return_24h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "spot_minus_BTC_return_24h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "coin_OI_log_change_24h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "spot_return_72h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "perp_minus_spot_return_72h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "spot_minus_BTC_return_72h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "coin_OI_log_change_72h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "spot_return_168h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "perp_minus_spot_return_168h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "spot_minus_BTC_return_168h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "coin_OI_log_change_168h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "basis_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "basis_change_24h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "log_spot_volume_24h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "log_perp_spot_volume_ratio_24h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "log_OI_to_paired_volume": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "spot_volatility_24h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "premium_close_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "premium_mean_24h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "premium_mean_72h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "premium_mean_168h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "premium_change_24h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "global_accounts_log_ratio": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "global_accounts_mean_24h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "top_accounts_log_ratio": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "top_accounts_mean_24h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "top_positions_log_ratio": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "top_positions_mean_24h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "taker_flow_log_ratio": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "taker_flow_mean_24h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "ema_r8_24h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "ema_r8_24h_change_24h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "ema_negative_24h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "ema_deep_24h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "ema_r8_72h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "ema_r8_72h_change_24h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "ema_negative_72h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "ema_deep_72h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "ema_r8_168h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "ema_r8_168h_change_24h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "ema_negative_168h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "ema_deep_168h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "ema_r8_24_minus_72_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "ema_r8_24_minus_168_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "raw_net_sum_8h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "raw_positive_sum_8h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "raw_negative_sum_8h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "raw_net_sum_24h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "raw_positive_sum_24h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "raw_negative_sum_24h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "raw_net_sum_72h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "raw_positive_sum_72h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "raw_negative_sum_72h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "raw_net_sum_168h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "raw_positive_sum_168h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "raw_negative_sum_168h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "raw_positive_settlements_24h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "raw_negative_settlements_24h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "actual_settlements_24h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "raw24_balance_change_8h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "raw24_balance_change_24h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "known_nonpositive_raw24_age_hours": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "raw24_no_new_payments_after_1h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "raw24_no_new_payments_after_4h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "raw24_no_new_payments_after_8h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "market_negative_fraction": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "market_deep_fraction": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "market_median_r8_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "market_negative_fraction_change_24h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "current_r8_cross_section_percentile": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "r8_minus_market_median_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "cash_nonpositive_age_uncapped_h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "last_completed_cash_cycle_h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "completed_cash_cycles_720h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "completed_cycle_mean_h_720h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "completed_long_cycle_share_720h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "cash_nonpositive_fraction_720h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "completed_cash_cycles_2160h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "completed_cycle_mean_h_2160h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "completed_long_cycle_share_2160h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "cash_nonpositive_fraction_2160h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "raw_payment_EMA_72h_bp_per_h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "raw_payment_EMA_720h_bp_per_h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "funding_prints_30d": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "ema_r8_720h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "frozen_roundtrip_fee_spread_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "causal_sigma_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "cross_funding_available": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "bybit_observation_age_h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "bybit_last_interval_inferred_h": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "bybit_r8_bp_inferred": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "bybit_cash_sum_24h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "binance_minus_bybit_cash_sum_24h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "bybit_cash_sum_72h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "binance_minus_bybit_cash_sum_72h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "bybit_cash_sum_168h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "binance_minus_bybit_cash_sum_168h_bp": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "log_received_notional": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "log_effective_capacity": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "capacity_OI_ratio": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "capacity_paired_ADV_ratio": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "entry_hours_prior_volume_proxy": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "exit_hours_prior_volume_proxy": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "conditional_quantity_fraction": {
+          "type": "number",
+          "minimum": 0.5,
+          "maximum": 1.0
+        },
+        "capacity_EMA72_score_usdt": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "capacity_raw_cash_EMA720_score_usdt": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

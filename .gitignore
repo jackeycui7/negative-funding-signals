@@ -1,0 +1,25 @@
+.DS_Store
+.venv/
+**/__pycache__/
+*.pyc
+*.sqlite*
+*.log
+.env
+.env.*
+!.env.example
+local-data/
+local-output/
+audit/research-scratch/
+
+bundle/**/raw/
+bundle/**/private/
+bundle/**/.venv/
+bundle/**/*.npz
+bundle/outputs/neg-funding-v3-forward-20261109/data/
+bundle/outputs/neg-funding-v3-forward-20261109/RUNTIME_BINDING.json
+bundle/outputs/neg-funding-v3-source-recovery-20261109/SOURCE_BINDING.json
+bundle/LOCAL_BOOTSTRAP.json
+
+# Exclude environment symlinks as well as directories.
+.venv
+bundle/**/.venv

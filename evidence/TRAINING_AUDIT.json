@@ -1,0 +1,12 @@
+{
+  "created_at": "2026-11-09T10:56:10.074255+08:00",
+  "component_fits": 99,
+  "models_per_month": 7,
+  "month_fits": 9,
+  "warnings": [],
+  "models_sha256": "1823a55cd15cf1d32d4ab5b0adcb2ac9c77f0861fc81a9858f1ac111991ab659",
+  "elapsed_seconds": 64.32563220901648,
+  "every_train_label_end_before_fit": true,
+  "no_test_based_family_selection": true,
+  "hurdle_probability_calibrated": false
+}

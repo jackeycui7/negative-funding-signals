@@ -1,0 +1,160 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "nfb.signal-output.v3.handoff.schema",
+  "title": "Frozen v3 signal output and invalid-input response",
+  "oneOf": [
+    {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": "nfb.signal-output.v3"
+        },
+        "request_id": {
+          "type": "string"
+        },
+        "symbol": {
+          "type": "string"
+        },
+        "asof_utc": {
+          "type": "string"
+        },
+        "feature_hour_start_utc": {
+          "type": "string"
+        },
+        "valid_until_utc": {
+          "type": "string"
+        },
+        "model_version": {
+          "type": "string"
+        },
+        "fit_month": {
+          "type": "string"
+        },
+        "research_only": {
+          "const": true
+        },
+        "submission_allowed": {
+          "const": false
+        },
+        "status": {
+          "enum": [
+            "WATCH_ONLY",
+            "DATA_OR_TIMING_LIMITED"
+          ]
+        },
+        "inventory_status": {
+          "type": "string"
+        },
+        "conditional_arrival_fraction": {
+          "type": "number",
+          "minimum": 0.5,
+          "maximum": 1
+        },
+        "forecasts": {
+          "type": "object",
+          "properties": {
+            "p_new_negative_within72h": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 1
+            },
+            "p_no_raw24_exit_next168h": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 1
+            },
+            "p_qualified_entry_after72h_within7d": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 1
+            },
+            "conditional_30d_reference_net_usdt": {
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "p_new_negative_within72h",
+            "p_no_raw24_exit_next168h",
+            "p_qualified_entry_after72h_within7d",
+            "conditional_30d_reference_net_usdt"
+          ],
+          "additionalProperties": false
+        },
+        "forecast_definitions": {
+          "type": "object"
+        },
+        "data_quality": {
+          "type": "object"
+        },
+        "economic_training": {
+          "type": "object"
+        },
+        "event_training": {
+          "type": "object"
+        },
+        "execution_actions": {
+          "type": "array",
+          "maxItems": 0
+        }
+      },
+      "required": [
+        "schema_version",
+        "request_id",
+        "symbol",
+        "asof_utc",
+        "feature_hour_start_utc",
+        "valid_until_utc",
+        "model_version",
+        "fit_month",
+        "research_only",
+        "submission_allowed",
+        "status",
+        "inventory_status",
+        "conditional_arrival_fraction",
+        "forecasts",
+        "forecast_definitions",
+        "data_quality",
+        "economic_training",
+        "event_training",
+        "execution_actions"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": "nfb.signal-output.v3"
+        },
+        "status": {
+          "const": "INVALID_INPUT"
+        },
+        "submission_allowed": {
+          "const": false
+        },
+        "error": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "schema_version",
+        "status",
+        "submission_allowed",
+        "error"
+      ],
+      "additionalProperties": false
+    }
+  ]
+}

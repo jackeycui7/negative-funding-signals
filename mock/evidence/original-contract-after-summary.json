@@ -1,0 +1,150 @@
+{
+  "cases": 20,
+  "passed": 20,
+  "failed": 0,
+  "real_forward_predictions_created": 0,
+  "network_used": false,
+  "scope": "original private fixtures; only contract results exported; public synthetic fixtures rerun separately",
+  "details": [
+    {
+      "case": "historical_negative",
+      "passed": true,
+      "expected_invalid": false,
+      "exit_code": 0,
+      "status": "DATA_OR_TIMING_LIMITED"
+    },
+    {
+      "case": "historical_nonnegative",
+      "passed": true,
+      "expected_invalid": false,
+      "exit_code": 0,
+      "status": "DATA_OR_TIMING_LIMITED"
+    },
+    {
+      "case": "key_order_invariance",
+      "passed": true,
+      "expected_invalid": false,
+      "exit_code": 0,
+      "status": "DATA_OR_TIMING_LIMITED"
+    },
+    {
+      "case": "extra_feature",
+      "passed": true,
+      "expected_invalid": true,
+      "exit_code": 2,
+      "status": "INVALID_INPUT"
+    },
+    {
+      "case": "missing_feature",
+      "passed": true,
+      "expected_invalid": true,
+      "exit_code": 2,
+      "status": "INVALID_INPUT"
+    },
+    {
+      "case": "boolean_feature",
+      "passed": true,
+      "expected_invalid": true,
+      "exit_code": 2,
+      "status": "INVALID_INPUT"
+    },
+    {
+      "case": "nonfinite_feature",
+      "passed": true,
+      "expected_invalid": true,
+      "exit_code": 2,
+      "status": "INVALID_INPUT"
+    },
+    {
+      "case": "unknown_quantity_scenario",
+      "passed": true,
+      "expected_invalid": true,
+      "exit_code": 2,
+      "status": "INVALID_INPUT"
+    },
+    {
+      "case": "quantity_scenario_mismatch",
+      "passed": true,
+      "expected_invalid": true,
+      "exit_code": 2,
+      "status": "INVALID_INPUT"
+    },
+    {
+      "case": "missing_latest_settlement",
+      "passed": true,
+      "expected_invalid": true,
+      "exit_code": 2,
+      "status": "INVALID_INPUT"
+    },
+    {
+      "case": "boolean_quantity_fraction",
+      "passed": true,
+      "expected_invalid": true,
+      "exit_code": 2,
+      "status": "INVALID_INPUT"
+    },
+    {
+      "case": "off_daily_grid",
+      "passed": true,
+      "expected_invalid": true,
+      "exit_code": 2,
+      "status": "INVALID_INPUT"
+    },
+    {
+      "case": "future_uncompleted_feature_hour",
+      "passed": true,
+      "expected_invalid": true,
+      "exit_code": 2,
+      "status": "INVALID_INPUT"
+    },
+    {
+      "case": "unknown_raw24",
+      "passed": true,
+      "expected_invalid": false,
+      "exit_code": 0,
+      "status": "DATA_OR_TIMING_LIMITED"
+    },
+    {
+      "case": "already_available_inventory",
+      "passed": true,
+      "expected_invalid": false,
+      "exit_code": 0,
+      "status": "DATA_OR_TIMING_LIMITED"
+    },
+    {
+      "case": "high_missingness",
+      "passed": true,
+      "expected_invalid": false,
+      "exit_code": 0,
+      "status": "DATA_OR_TIMING_LIMITED"
+    },
+    {
+      "case": "invalid_information_mode",
+      "passed": true,
+      "expected_invalid": true,
+      "exit_code": 2,
+      "status": "INVALID_INPUT"
+    },
+    {
+      "case": "observed_future_snapshot",
+      "passed": true,
+      "expected_invalid": true,
+      "exit_code": 2,
+      "status": "INVALID_INPUT"
+    },
+    {
+      "case": "duplicate_json_keys",
+      "passed": true,
+      "expected_invalid": true,
+      "exit_code": 2,
+      "status": "INVALID_INPUT"
+    },
+    {
+      "case": "nonobject_json",
+      "passed": true,
+      "expected_invalid": true,
+      "exit_code": 2,
+      "status": "INVALID_INPUT"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "landmark_utc": "2026-11-05T00:00:00+00:00",
+  "rows": 328,
+  "features": 125,
+  "cells": 41000,
+  "mismatch_cells": 0,
+  "details": [],
+  "passed": true,
+  "frozen_files_written": false
+}

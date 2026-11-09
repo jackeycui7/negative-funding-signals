@@ -1,0 +1,41 @@
+{
+  "at_utc": "2026-11-09T12:30:05.152000+00:00",
+  "details": [
+    {
+      "symbol": "BTCUSDT",
+      "compared_native_quote_values": 288,
+      "mapping": "provider_period_end_minus5m_matches_native_timestamp",
+      "mismatch_count": 0,
+      "unmapped_timestamp_mismatches": 288,
+      "examples": []
+    },
+    {
+      "symbol": "1000PEPEUSDT",
+      "compared_native_quote_values": 288,
+      "mapping": "provider_period_end_minus5m_matches_native_timestamp",
+      "mismatch_count": 0,
+      "unmapped_timestamp_mismatches": 288,
+      "examples": []
+    },
+    {
+      "symbol": "1000FLOKIUSDT",
+      "compared_native_quote_values": 288,
+      "mapping": "provider_period_end_minus5m_matches_native_timestamp",
+      "mismatch_count": 0,
+      "unmapped_timestamp_mismatches": 288,
+      "examples": []
+    },
+    {
+      "symbol": "GRTUSDT",
+      "compared_native_quote_values": 288,
+      "mapping": "provider_period_end_minus5m_matches_native_timestamp",
+      "mismatch_count": 0,
+      "unmapped_timestamp_mismatches": 288,
+      "examples": []
+    }
+  ],
+  "compared_values": 1152,
+  "mismatch_count": 0,
+  "passed": true,
+  "frozen_oi_hourly_pre_lag_unchanged": true
+}

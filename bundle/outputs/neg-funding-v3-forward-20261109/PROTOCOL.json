@@ -1,0 +1,2449 @@
+{
+  "registered_at_utc": "2026-11-09T08:12:50.474000+00:00",
+  "activation_ms": 1794211970474,
+  "version": "nfb.inventory-value.v3.20261109",
+  "status": "WATCH_ONLY",
+  "grid": "daily00UTC",
+  "recording_deadline_minutes": 5,
+  "feature_cutoff": "preceding completed hour; only sources actually received before issue",
+  "diagnostic_probability_threshold": 0.5,
+  "daily_top_k": 10,
+  "same_coin_cooldown_hours": 72,
+  "scenarios": [
+    1.0,
+    0.5
+  ],
+  "primary_fraction": 1.0,
+  "model_stale_at_utc": "2026-12-01T00:00:00+00:00",
+  "model_stale_action": "STOP_PREDICTIONS_CONTINUE_COLLECTION_NO_RETRAIN",
+  "model_bindings": {
+    "data/models.joblib": "1823a55cd15cf1d32d4ab5b0adcb2ac9c77f0861fc81a9858f1ac111991ab659",
+    "data/event_models.joblib": "445d2a1cd793ca4026ffd81923efa89f7078c8047f1b1539fd105b33752c353b",
+    "src/signal_cli.py": "b8c1f53fa2c3202044f78fd03f3f2de532e276436079c8689559fa4c34705a9d",
+    "src/model.py": "b8f4fcc487d32be60ea0e112e5877b267a6dca5c8c63a982d00cfa806b4a5f2e",
+    "src/common.py": "90da5a7655374211886eb4a5712434a5ed1f6430931a3c5b40b214796c3ed9c9"
+  },
+  "warm_history_imports": {
+    "/Users/leslie/Documents/同花顺/outputs/neg-funding-last30d-20261108/data/ds/dataset_meta.csv": {
+      "sha256": "55de5b157d1dccf0b3b5f681f800be8bb6648be21b20d7fea5ed0a1babecaf4c",
+      "imported_at_utc": "2026-11-09T08:12:50.474000+00:00",
+      "provenance": "pre-existing historical cache; historical received_at unavailable; imported before future forecasts"
+    },
+    "/Users/leslie/Documents/同花顺/outputs/neg-funding-last30d-20261108/data/ds/dataset.npz": {
+      "sha256": "8ea6ddcd7af077f2334a8f05cc517acbaff4b0efe02ced71331b9f155e383b72",
+      "imported_at_utc": "2026-11-09T08:12:50.806000+00:00",
+      "provenance": "pre-existing historical cache; historical received_at unavailable; imported before future forecasts"
+    },
+    "/Users/leslie/Documents/同花顺/outputs/neg-funding-strategy-phase1-20261106/data/ds/dataset.npz": {
+      "sha256": "fdb2ff0fcc8eeb93780c14685eae03c189b2da60ae286c070d4bb35cc71b7375",
+      "imported_at_utc": "2026-11-09T08:12:51.109000+00:00",
+      "provenance": "pre-existing historical cache; historical received_at unavailable; imported before future forecasts"
+    },
+    "/Users/leslie/Documents/同花顺/outputs/neg-funding-strategy-phase2-20261107/model_v1/extra_features.npz": {
+      "sha256": "b197378d6a82a1cc41f7186f5d0eadcd04737ce8743d67d7b352e23ec4ad4508",
+      "imported_at_utc": "2026-11-09T08:12:51.145000+00:00",
+      "provenance": "pre-existing historical cache; historical received_at unavailable; imported before future forecasts"
+    },
+    "/Users/leslie/Documents/同花顺/neg-funding-strategy-v1/private/inventory_caps.csv": {
+      "sha256": "1b0de3cbc003cae6bb66527667246eb030c57fe4dc5d999fbec7951cf219334e",
+      "imported_at_utc": "2026-11-09T08:12:51.146000+00:00",
+      "provenance": "pre-existing historical cache; historical received_at unavailable; imported before future forecasts"
+    }
+  },
+  "universe": [
+    {
+      "fut": "1000PEPEUSDT",
+      "spot": "PEPEUSDT",
+      "mult": 1000.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "1000SHIBUSDT",
+      "spot": "SHIBUSDT",
+      "mult": 1000.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "1000BONKUSDT",
+      "spot": "BONKUSDT",
+      "mult": 1000.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "1000LUNCUSDT",
+      "spot": "LUNCUSDT",
+      "mult": 1000.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "1000FLOKIUSDT",
+      "spot": "FLOKIUSDT",
+      "mult": 1000.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "1000XECUSDT",
+      "spot": "XECUSDT",
+      "mult": 1000.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "DOGSUSDT",
+      "spot": "DOGSUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "HMSTRUSDT",
+      "spot": "HMSTRUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "NOTUSDT",
+      "spot": "NOTUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "REDUSDT",
+      "spot": "REDUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "PUMPUSDT",
+      "spot": "PUMPUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "VTHOUSDT",
+      "spot": "VTHOUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "CKBUSDT",
+      "spot": "CKBUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ACEUSDT",
+      "spot": "ACEUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "VETUSDT",
+      "spot": "VETUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "RSRUSDT",
+      "spot": "RSRUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "BOMEUSDT",
+      "spot": "BOMEUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "SLPUSDT",
+      "spot": "SLPUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "DOGEUSDT",
+      "spot": "DOGEUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "TURBOUSDT",
+      "spot": "TURBOUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ONEUSDT",
+      "spot": "ONEUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "JASMYUSDT",
+      "spot": "JASMYUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "PENGUUSDT",
+      "spot": "PENGUUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ZILUSDT",
+      "spot": "ZILUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "IOSTUSDT",
+      "spot": "IOSTUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "MEMEUSDT",
+      "spot": "MEMEUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ROSEUSDT",
+      "spot": "ROSEUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "LINEAUSDT",
+      "spot": "LINEAUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "USTCUSDT",
+      "spot": "USTCUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "COTIUSDT",
+      "spot": "COTIUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "HBARUSDT",
+      "spot": "HBARUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "XRPUSDT",
+      "spot": "XRPUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "USDCUSDT",
+      "spot": "USDCUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "TLMUSDT",
+      "spot": "TLMUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ADAUSDT",
+      "spot": "ADAUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "RVNUSDT",
+      "spot": "RVNUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "TRXUSDT",
+      "spot": "TRXUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ANKRUSDT",
+      "spot": "ANKRUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ACHUSDT",
+      "spot": "ACHUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "PLUMEUSDT",
+      "spot": "PLUMEUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "XLMUSDT",
+      "spot": "XLMUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ZKUSDT",
+      "spot": "ZKUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "IOTXUSDT",
+      "spot": "IOTXUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "VANRYUSDT",
+      "spot": "VANRYUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "REZUSDT",
+      "spot": "REZUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "CELRUSDT",
+      "spot": "CELRUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "CGPTUSDT",
+      "spot": "CGPTUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "NOMUSDT",
+      "spot": "NOMUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "GRTUSDT",
+      "spot": "GRTUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ENAUSDT",
+      "spot": "ENAUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "CHZUSDT",
+      "spot": "CHZUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "NIGHTUSDT",
+      "spot": "NIGHTUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "WUSDT",
+      "spot": "WUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ALGOUSDT",
+      "spot": "ALGOUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "SUSDT",
+      "spot": "SUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "IOTAUSDT",
+      "spot": "IOTAUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "STRKUSDT",
+      "spot": "STRKUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "SEIUSDT",
+      "spot": "SEIUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ASTRUSDT",
+      "spot": "ASTRUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "FETUSDT",
+      "spot": "FETUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "POLUSDT",
+      "spot": "POLUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ONDOUSDT",
+      "spot": "ONDOUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "GMTUSDT",
+      "spot": "GMTUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "CETUSUSDT",
+      "spot": "CETUSUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "SKYUSDT",
+      "spot": "SKYUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "MANTRAUSDT",
+      "spot": "MANTRAUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "WOOUSDT",
+      "spot": "WOOUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ARBUSDT",
+      "spot": "ARBUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "NEIROUSDT",
+      "spot": "NEIROUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "KMNOUSDT",
+      "spot": "KMNOUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "PYTHUSDT",
+      "spot": "PYTHUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "PEOPLEUSDT",
+      "spot": "PEOPLEUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "SKLUSDT",
+      "spot": "SKLUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "GUNUSDT",
+      "spot": "GUNUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ENJUSDT",
+      "spot": "ENJUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "XAIUSDT",
+      "spot": "XAIUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "SUIUSDT",
+      "spot": "SUIUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "PIXELUSDT",
+      "spot": "PIXELUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ANIMEUSDT",
+      "spot": "ANIMEUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "TSTUSDT",
+      "spot": "TSTUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "WLFIUSDT",
+      "spot": "WLFIUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "FFUSDT",
+      "spot": "FFUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "GUSDT",
+      "spot": "GUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "MUBARAKUSDT",
+      "spot": "MUBARAKUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "TOWNSUSDT",
+      "spot": "TOWNSUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "APEUSDT",
+      "spot": "APEUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "SPKUSDT",
+      "spot": "SPKUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "FLUXUSDT",
+      "spot": "FLUXUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "CFXUSDT",
+      "spot": "CFXUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "COOKIEUSDT",
+      "spot": "COOKIEUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "PORTALUSDT",
+      "spot": "PORTALUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ACTUSDT",
+      "spot": "ACTUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "CHRUSDT",
+      "spot": "CHRUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "TUSDT",
+      "spot": "TUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "MANAUSDT",
+      "spot": "MANAUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "KATUSDT",
+      "spot": "KATUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "CFGUSDT",
+      "spot": "CFGUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "DYDXUSDT",
+      "spot": "DYDXUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "MEGAUSDT",
+      "spot": "MEGAUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "SANDUSDT",
+      "spot": "SANDUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "BIGTIMEUSDT",
+      "spot": "BIGTIMEUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "BBUSDT",
+      "spot": "BBUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "PHAUSDT",
+      "spot": "PHAUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "MINAUSDT",
+      "spot": "MINAUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "SOLVUSDT",
+      "spot": "SOLVUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ARPAUSDT",
+      "spot": "ARPAUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "USUALUSDT",
+      "spot": "USUALUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ZAMAUSDT",
+      "spot": "ZAMAUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "AIXBTUSDT",
+      "spot": "AIXBTUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "SUNUSDT",
+      "spot": "SUNUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "BABYUSDT",
+      "spot": "BABYUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "THETAUSDT",
+      "spot": "THETAUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "CRVUSDT",
+      "spot": "CRVUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "CHIPUSDT",
+      "spot": "CHIPUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "XPLUSDT",
+      "spot": "XPLUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "AEVOUSDT",
+      "spot": "AEVOUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "SOPHUSDT",
+      "spot": "SOPHUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "HFTUSDT",
+      "spot": "HFTUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "SENTUSDT",
+      "spot": "SENTUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "POLYXUSDT",
+      "spot": "POLYXUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "OGNUSDT",
+      "spot": "OGNUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "EDUUSDT",
+      "spot": "EDUUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ASTERUSDT",
+      "spot": "ASTERUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "JUPUSDT",
+      "spot": "JUPUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "AEROUSDT",
+      "spot": "AEROUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "NILUSDT",
+      "spot": "NILUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "KAIAUSDT",
+      "spot": "KAIAUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "WIFUSDT",
+      "spot": "WIFUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "OPUSDT",
+      "spot": "OPUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "TUTUSDT",
+      "spot": "TUTUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "FUSDT",
+      "spot": "FUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "WLDUSDT",
+      "spot": "WLDUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "BIOUSDT",
+      "spot": "BIOUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "CATIUSDT",
+      "spot": "CATIUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "HUMAUSDT",
+      "spot": "HUMAUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "MANTAUSDT",
+      "spot": "MANTAUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "STXUSDT",
+      "spot": "STXUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "1INCHUSDT",
+      "spot": "1INCHUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "DOTUSDT",
+      "spot": "DOTUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "BLURUSDT",
+      "spot": "BLURUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "BICOUSDT",
+      "spot": "BICOUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "C98USDT",
+      "spot": "C98USDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "SAHARAUSDT",
+      "spot": "SAHARAUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "SUPERUSDT",
+      "spot": "SUPERUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "SIGNUSDT",
+      "spot": "SIGNUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "GPSUSDT",
+      "spot": "GPSUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ICXUSDT",
+      "spot": "ICXUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "AUSDT",
+      "spot": "AUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "CTSIUSDT",
+      "spot": "CTSIUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "MOVEUSDT",
+      "spot": "MOVEUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "DYMUSDT",
+      "spot": "DYMUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "YGGUSDT",
+      "spot": "YGGUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "FLOWUSDT",
+      "spot": "FLOWUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "TURTLEUSDT",
+      "spot": "TURTLEUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "PNUTUSDT",
+      "spot": "PNUTUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "DUSKUSDT",
+      "spot": "DUSKUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "VIRTUALUSDT",
+      "spot": "VIRTUALUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "RENDERUSDT",
+      "spot": "RENDERUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "IMXUSDT",
+      "spot": "IMXUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "TWTUSDT",
+      "spot": "TWTUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "GRAMUSDT",
+      "spot": "GRAMUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "HAEDALUSDT",
+      "spot": "HAEDALUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "FOGOUSDT",
+      "spot": "FOGOUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "SXTUSDT",
+      "spot": "SXTUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "NEARUSDT",
+      "spot": "NEARUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "CELOUSDT",
+      "spot": "CELOUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "HOMEUSDT",
+      "spot": "HOMEUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ONTUSDT",
+      "spot": "ONTUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "SCRUSDT",
+      "spot": "SCRUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "BMTUSDT",
+      "spot": "BMTUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "FILUSDT",
+      "spot": "FILUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "TIAUSDT",
+      "spot": "TIAUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "MAVUSDT",
+      "spot": "MAVUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "SYRUPUSDT",
+      "spot": "SYRUPUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "RUNEUSDT",
+      "spot": "RUNEUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "KAVAUSDT",
+      "spot": "KAVAUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "BATUSDT",
+      "spot": "BATUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "IDUSDT",
+      "spot": "IDUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "FIDAUSDT",
+      "spot": "FIDAUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "LDOUSDT",
+      "spot": "LDOUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "JSTUSDT",
+      "spot": "JSTUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "EDENUSDT",
+      "spot": "EDENUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "PARTIUSDT",
+      "spot": "PARTIUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "LUMIAUSDT",
+      "spot": "LUMIAUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "KITEUSDT",
+      "spot": "KITEUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ARKMUSDT",
+      "spot": "ARKMUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ICPUSDT",
+      "spot": "ICPUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "IOUSDT",
+      "spot": "IOUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "SCRTUSDT",
+      "spot": "SCRTUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "MTLUSDT",
+      "spot": "MTLUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "CVCUSDT",
+      "spot": "CVCUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "APTUSDT",
+      "spot": "APTUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "EIGENUSDT",
+      "spot": "EIGENUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "RESOLVUSDT",
+      "spot": "RESOLVUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "WCTUSDT",
+      "spot": "WCTUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "SAPIENUSDT",
+      "spot": "SAPIENUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "XTZUSDT",
+      "spot": "XTZUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "FORMUSDT",
+      "spot": "FORMUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "SUSHIUSDT",
+      "spot": "SUSHIUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "SYNUSDT",
+      "spot": "SYNUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "SNXUSDT",
+      "spot": "SNXUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "MAGICUSDT",
+      "spot": "MAGICUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ZRXUSDT",
+      "spot": "ZRXUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "WALUSDT",
+      "spot": "WALUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "LINKUSDT",
+      "spot": "LINKUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "SHELLUSDT",
+      "spot": "SHELLUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "KNCUSDT",
+      "spot": "KNCUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "TNSRUSDT",
+      "spot": "TNSRUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "DIAUSDT",
+      "spot": "DIAUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "PUNDIXUSDT",
+      "spot": "PUNDIXUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "AVAUSDT",
+      "spot": "AVAUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ESPUSDT",
+      "spot": "ESPUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "STGUSDT",
+      "spot": "STGUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "SPELLUSDT",
+      "spot": "SPELLUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "RONINUSDT",
+      "spot": "RONINUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ZBTUSDT",
+      "spot": "ZBTUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "CAKEUSDT",
+      "spot": "CAKEUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "CUSDT",
+      "spot": "CUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "STORJUSDT",
+      "spot": "STORJUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ZROUSDT",
+      "spot": "ZROUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ALICEUSDT",
+      "spot": "ALICEUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ETHFIUSDT",
+      "spot": "ETHFIUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "2ZUSDT",
+      "spot": "2ZUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ALLOUSDT",
+      "spot": "ALLOUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ATOMUSDT",
+      "spot": "ATOMUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "LSKUSDT",
+      "spot": "LSKUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "OPENUSDT",
+      "spot": "OPENUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "0GUSDT",
+      "spot": "0GUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "API3USDT",
+      "spot": "API3USDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "GLMUSDT",
+      "spot": "GLMUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "AVNTUSDT",
+      "spot": "AVNTUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ZKCUSDT",
+      "spot": "ZKCUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "AWEUSDT",
+      "spot": "AWEUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "SOMIUSDT",
+      "spot": "SOMIUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "INITUSDT",
+      "spot": "INITUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "KERNELUSDT",
+      "spot": "KERNELUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "UNIUSDT",
+      "spot": "UNIUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "TRUMPUSDT",
+      "spot": "TRUMPUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "DOLOUSDT",
+      "spot": "DOLOUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ARUSDT",
+      "spot": "ARUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "AVAXUSDT",
+      "spot": "AVAXUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "JTOUSDT",
+      "spot": "JTOUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "STOUSDT",
+      "spot": "STOUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "GTCUSDT",
+      "spot": "GTCUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "HYPERUSDT",
+      "spot": "HYPERUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "INJUSDT",
+      "spot": "INJUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "EPICUSDT",
+      "spot": "EPICUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "BANDUSDT",
+      "spot": "BANDUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "SOLUSDT",
+      "spot": "SOLUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "RLCUSDT",
+      "spot": "RLCUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "HYPEUSDT",
+      "spot": "HYPEUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "HOLOUSDT",
+      "spot": "HOLOUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "NXPCUSDT",
+      "spot": "NXPCUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "HEIUSDT",
+      "spot": "HEIUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ACXUSDT",
+      "spot": "ACXUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "PENDLEUSDT",
+      "spot": "PENDLEUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ZKPUSDT",
+      "spot": "ZKPUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "LAUSDT",
+      "spot": "LAUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "COWUSDT",
+      "spot": "COWUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "GENIUSUSDT",
+      "spot": "GENIUSUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "TREEUSDT",
+      "spot": "TREEUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "METUSDT",
+      "spot": "METUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ROBOUSDT",
+      "spot": "ROBOUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "SFPUSDT",
+      "spot": "SFPUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ONGUSDT",
+      "spot": "ONGUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "LISTAUSDT",
+      "spot": "LISTAUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "AXSUSDT",
+      "spot": "AXSUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "MORPHOUSDT",
+      "spot": "MORPHOUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "NEWTUSDT",
+      "spot": "NEWTUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "NEOUSDT",
+      "spot": "NEOUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "LQTYUSDT",
+      "spot": "LQTYUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "PROVEUSDT",
+      "spot": "PROVEUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "CVXUSDT",
+      "spot": "CVXUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "MIRAUSDT",
+      "spot": "MIRAUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "BREVUSDT",
+      "spot": "BREVUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "YBUSDT",
+      "spot": "YBUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "REUSDT",
+      "spot": "REUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "BERAUSDT",
+      "spot": "BERAUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "AGLDUSDT",
+      "spot": "AGLDUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ERAUSDT",
+      "spot": "ERAUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ETCUSDT",
+      "spot": "ETCUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "MASKUSDT",
+      "spot": "MASKUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "LAYERUSDT",
+      "spot": "LAYERUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "MMTUSDT",
+      "spot": "MMTUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "LITUSDT",
+      "spot": "LITUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "MOVRUSDT",
+      "spot": "MOVRUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "MEUSDT",
+      "spot": "MEUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "LTCUSDT",
+      "spot": "LTCUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "GASUSDT",
+      "spot": "GASUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "FRAXUSDT",
+      "spot": "FRAXUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ZENUSDT",
+      "spot": "ZENUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ENSOUSDT",
+      "spot": "ENSOUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "CYBERUSDT",
+      "spot": "CYBERUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "UMAUSDT",
+      "spot": "UMAUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ORDIUSDT",
+      "spot": "ORDIUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "KAITOUSDT",
+      "spot": "KAITOUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "QTUMUSDT",
+      "spot": "QTUMUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ALPINEUSDT",
+      "spot": "ALPINEUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ORCAUSDT",
+      "spot": "ORCAUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "KSMUSDT",
+      "spot": "KSMUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "EGLDUSDT",
+      "spot": "EGLDUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "EULUSDT",
+      "spot": "EULUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "BARDUSDT",
+      "spot": "BARDUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "XMRUSDT",
+      "spot": "XMRUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "DASHUSDT",
+      "spot": "DASHUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "PROMUSDT",
+      "spot": "PROMUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "METISUSDT",
+      "spot": "METISUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "LPTUSDT",
+      "spot": "LPTUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "DEXEUSDT",
+      "spot": "DEXEUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "TAOUSDT",
+      "spot": "TAOUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ETHUSDT",
+      "spot": "ETHUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "QNTUSDT",
+      "spot": "QNTUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ENSUSDT",
+      "spot": "ENSUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ILVUSDT",
+      "spot": "ILVUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ZECUSDT",
+      "spot": "ZECUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "SSVUSDT",
+      "spot": "SSVUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "BNBUSDT",
+      "spot": "BNBUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "BANANAUSDT",
+      "spot": "BANANAUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "GMXUSDT",
+      "spot": "GMXUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "AUCTIONUSDT",
+      "spot": "AUCTIONUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "AAVEUSDT",
+      "spot": "AAVEUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "VANAUSDT",
+      "spot": "VANAUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "TRBUSDT",
+      "spot": "TRBUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "POWRUSDT",
+      "spot": "POWRUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "RPLUSDT",
+      "spot": "RPLUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "NMRUSDT",
+      "spot": "NMRUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "COMPUSDT",
+      "spot": "COMPUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "BCHUSDT",
+      "spot": "BCHUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "BTCUSDT",
+      "spot": "BTCUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "GIGGLEUSDT",
+      "spot": "GIGGLEUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "PAXGUSDT",
+      "spot": "PAXGUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "XAUTUSDT",
+      "spot": "XAUTUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "AERGOUSDT",
+      "spot": "AERGOUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "BNTUSDT",
+      "spot": "BNTUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "YFIUSDT",
+      "spot": "YFIUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "XVSUSDT",
+      "spot": "XVSUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "RIFUSDT",
+      "spot": "RIFUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "SANTOSUSDT",
+      "spot": "SANTOSUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    },
+    {
+      "fut": "ALTUSDT",
+      "spot": "ALTUSDT",
+      "mult": 1.0,
+      "delisted": "False",
+      "dl_exit": "1000000000.0"
+    }
+  ],
+  "windows_hours": {
+    "new_negative_72h": [
+      0,
+      72
+    ],
+    "survival_168h": [
+      0,
+      168
+    ],
+    "arrival_entry_7d": [
+      72,
+      240
+    ],
+    "economic_reference": [
+      72,
+      1008
+    ]
+  },
+  "execution": false,
+  "retraining": false,
+  "selection_note": "Frozen339pair research universe, no performance-driven filtering.501inventorycoverage is separate. Threshold/ranking are diagnostics, not trading instructions."
+}

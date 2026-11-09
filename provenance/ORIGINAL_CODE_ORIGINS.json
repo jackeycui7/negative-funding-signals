@@ -1,0 +1,106 @@
+{
+  "verified_at_utc": "2026-11-09T12:46:51.827441+00:00",
+  "original_forward_files": 334,
+  "included_code_and_metadata": [
+    {
+      "path": "outputs/neg-funding-v3-forward-20261109/src/collect.py",
+      "sha256": "fc873e775911803e3163d2f57644d9c94251d9d96c26627ce7592923322c5aea"
+    },
+    {
+      "path": "outputs/neg-funding-v3-forward-20261109/src/outcome_worker.py",
+      "sha256": "85af8a1e643a76b84c53c10d2683807d3cb2f72aecf8be5f0de5a64ee0d97787"
+    },
+    {
+      "path": "outputs/neg-funding-v3-forward-20261109/src/ledger.py",
+      "sha256": "35258400e5599b9b93133608a07afe308a4024e12192ebae10173ec5c1fda903"
+    },
+    {
+      "path": "outputs/neg-funding-v3-forward-20261109/src/common.py",
+      "sha256": "1bc61eec98c9e20cd198b70bd74a10a73073abe3ab59c6bb9bb5edb5cb66bc3e"
+    },
+    {
+      "path": "outputs/neg-funding-v3-forward-20261109/src/feature_worker.py",
+      "sha256": "09b6b022189a3ecf74f4965b83c41f6d0c41cdfee614391042c80d497670bb91"
+    },
+    {
+      "path": "outputs/neg-funding-v3-forward-20261109/src/public_store.py",
+      "sha256": "12518b8a2df1348320e852a16bb7f2ed9f0317864e2a2888b41b85180eb8338a"
+    },
+    {
+      "path": "outputs/neg-funding-v3-forward-20261109/run_once.py",
+      "sha256": "a7f039d69263430202612e02fc9a53bd9d3f7d48d6c6d28560a6b8083013f7ce"
+    },
+    {
+      "path": "outputs/neg-funding-v3-forward-20261109/PROTOCOL.json",
+      "sha256": "0a29f58f73c061de295dd0bb17b226bd10b508b063450b076b92958f220a4553"
+    },
+    {
+      "path": "outputs/neg-funding-v3-forward-20261109/tests/parity/parity.json",
+      "sha256": "fe91966543c883c5e1ee3ebb2360a1d19564075d0443911a4d71b61213d86d82"
+    },
+    {
+      "path": "outputs/neg-funding-last30d-20261108/data/ds/dataset_meta.csv",
+      "sha256": "55de5b157d1dccf0b3b5f681f800be8bb6648be21b20d7fea5ed0a1babecaf4c"
+    },
+    {
+      "path": "outputs/neg-funding-inventory-value-v3-20261109/src/features.py",
+      "sha256": "c32df56133248df79a351797e3ff959f1cb46b6c02a89e62ba5d3cd2b1473a77"
+    },
+    {
+      "path": "outputs/neg-funding-inventory-value-v3-20261109/SIGNAL_HEADS_PROTOCOL.json",
+      "sha256": "40d05bd962e27585f962bda4b1da5a4640faa4094603e46bdd2010c36611d919"
+    },
+    {
+      "path": "outputs/neg-funding-inventory-value-v3-20261109/ARRIVAL_GATE_PROTOCOL.json",
+      "sha256": "aceea78918b69bc2d9e4de469a8a1a052298c24a61ecd8f24b60fc874d9a35b0"
+    },
+    {
+      "path": "outputs/neg-funding-inventory-value-v3-20261109/PROTOCOL.json",
+      "sha256": "04df7351d06746410f5e9fa449e78ba6314712cd7a589c482737ae61773a6aa9"
+    },
+    {
+      "path": "outputs/neg-funding-inventory-value-v3-20261109/interface/FEATURES.json",
+      "sha256": "36f76f60786da74ce713542ad54ffbe7cbc4575a30180215da0a6703bf951f29"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/causal_features.py",
+      "sha256": "04031a89ea97e46019ab6033c619b7e3826a011e4d17abd0f12f47f14dd9f959"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/CROSS_VENUE_MAPPING.json",
+      "sha256": "af3c3d8d8c66c1e5945f1d681d9560e374138b0104e006e1ff7e6b3318884235"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/exit_aware_research_20261107/exit_core.py",
+      "sha256": "317f83d307dcc38f24c34903f863e96f93190a96a5a2f1ec5e5858c03a6784eb"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/model_comparison_v2/comparison_core.py",
+      "sha256": "fb413e306b7a2c4346b245268045d1f41cd8c73c08dff6be908a991adbdc0940"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-online-20261108/frozen_reference/research/causal_inputs.py",
+      "sha256": "6d0d9e50c77c046d41d6bab7f4a7dba426e3b53bb9dc0ec6871dc36c206802b9"
+    },
+    {
+      "path": "outputs/neg-funding-v3-forward-20261109/RUNBOOK.md",
+      "sha256": "b0b2cf2f65896c55ba9c7d58a8e1e0f6d73b23db32049bdc314cc2da959aedb7"
+    },
+    {
+      "path": "outputs/neg-funding-v3-forward-20261109/EVALUATION_PROTOCOL.json",
+      "sha256": "41755e764715ee189d755dfa91d599966ced30545e5bbd7135001714b0894ea8"
+    },
+    {
+      "path": "outputs/neg-funding-empirical-calibration-20261109/data/ds/dataset_meta.csv",
+      "sha256": "55de5b157d1dccf0b3b5f681f800be8bb6648be21b20d7fea5ed0a1babecaf4c"
+    }
+  ],
+  "frozen_model_bindings": {
+    "data/models.joblib": "1823a55cd15cf1d32d4ab5b0adcb2ac9c77f0861fc81a9858f1ac111991ab659",
+    "data/event_models.joblib": "445d2a1cd793ca4026ffd81923efa89f7078c8047f1b1539fd105b33752c353b",
+    "src/signal_cli.py": "b8c1f53fa2c3202044f78fd03f3f2de532e276436079c8689559fa4c34705a9d",
+    "src/model.py": "b8f4fcc487d32be60ea0e112e5877b267a6dca5c8c63a982d00cfa806b4a5f2e",
+    "src/common.py": "90da5a7655374211886eb4a5712434a5ed1f6430931a3c5b40b214796c3ed9c9"
+  },
+  "external_asset_count": 311
+}

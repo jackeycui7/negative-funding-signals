@@ -1,0 +1,17 @@
+{
+ "registered_before_first_real_prediction": true,
+ "primary_candidate": "existing fixed_HGB_full; no tuning, refit, head selection or threshold search",
+ "primary_quantity_scenario": 1.0,
+ "secondary_quantity_scenario": "0.5, conditional economics only; not another independent event sample",
+ "event_cohort": "all actually issued, active-head fraction1 predictions; include misses and data limitations in coverage denominator",
+ "probability_metrics": ["Brier across observed issued forecasts", "AP across observed issued forecasts", "fixed calibration bins [0,.1,...,1]"],
+ "alert_metrics": "fixedp>=.5,top10daily,72h samecoin/head cooldown; report selected, mature, missing, censored, late, hits and observed precision separately",
+ "labels": "full72/168/240/1008h maturity, no early peeking; 240/1008h not scored until frozen strategy independently recomputed",
+ "late_repair": "retain first mature assessment and append source repairs; revised late labels excluded from primary evaluation, shown separately",
+ "dependence": "samecoin overlapping horizons are dependent; never claim independent binomial significance from row count",
+ "comparison": "only frozen existing EMA/reference baselines, same prospective timestamp, coverage and alert budget; no retrospective replacement of primary",
+ "review_checkpoint": "first descriptive review after at least14 fullymatured daily cohorts and100 observed selectedalerts per head; if not reached report insufficient sample; this checkpoint cannot authorize promotion",
+ "acceptance": "WATCH_ONLY throughout this protocol; no automatic production adoption regardless of observed hit rate",
+ "model_expiry": "2026-12-01 stop new predictions; continue collection and maturation; no silent extension or retraining",
+ "external_limits": ["exchange restrictions and missing data", "static339pair inventory research universe", "no actual execution receipts", "economic head retains frozen k4 and modeled costs; not realized returns", "no proven onchain control identity or actual borrow-delivery distribution"]
+}

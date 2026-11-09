@@ -1,0 +1,13 @@
+{
+  "created_at": "2026-11-09T11:03:59.280820+08:00",
+  "decision_boundary": "2026-07-01T00:00:00+00:00",
+  "perturbed_hour_and_later_only": true,
+  "checked_past_rows": 79973,
+  "past_feature_difference": 0.0,
+  "past_quantity_core_difference": 0.0,
+  "past_eligibility_unchanged": true,
+  "future_positive_control_changed": true,
+  "feature_file_unchanged": true,
+  "scope": "Newly computed features and core from perturbed market arrays; reused base90 carries prior causal audit; cross-source static files not perturbed. Historical received_at not proven by this property.",
+  "elapsed_seconds": 13.082594999985304
+}

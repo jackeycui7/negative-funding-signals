@@ -1,0 +1,30 @@
+{
+  "created_at": "2026-11-09T11:00:31.949627+08:00",
+  "economic_primary": "hurdle_full_fixed_before_training",
+  "economic_gate_passed": false,
+  "criteria": {
+    "beats_EMA72_both_periods": false,
+    "beats_EMA720_both_periods": true,
+    "beats_capacity_EMA72_both_periods": false,
+    "positive_increment_without_largest_coin_both_periods": false
+  },
+  "production_change": false,
+  "status": "WATCH_ONLY",
+  "no_test_based_family_switch": true,
+  "capital_competition_in_observed_allready_runs": {
+    "peak_cost_usdt": 5553367.970087168,
+    "binding_candidate_hours": 0.0
+  },
+  "independent_coin_label_is_reference_not_marginal_joint_value": true,
+  "cross_venue_effect_not_consistent": true,
+  "regressor_value_not_profit_probability": true,
+  "all_tested_model_families_reported": true,
+  "own_impact_k4_unidentified": true,
+  "prior_and_formal_runs_unchanged_pending_final_hash_check": true,
+  "signal_event_status": "RETROSPECTIVE_RESEARCH_WATCH_ONLY",
+  "candidate_added_features_beats_base90_consistently": false,
+  "actual_new_component_fits": 315,
+  "final_validation_passed": true,
+  "formal_files_unchanged_verified": 155,
+  "borrow_advisory_focus": "arrivalqualification after72h, not anyturnwithin72h"
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "historical_public_market_with_synthetic_inventory",
+  "not_original_private_inventory_scenario": true,
+  "frozen_model_changed": false,
+  "fixtures": [
+    {
+      "fixture": "historical-negative-input.json",
+      "historical_market_features": 116,
+      "synthetic_inventory_features": 9,
+      "synthetic_received_notional_usdt": 10000,
+      "input_sha256": "5059d2d7288d9fa6eafd550e8420b0120a6025dcdc2292ca17cc0cdb1bfc9ca3",
+      "output_sha256": "76e39979306801ca74fb92475e20d9ce94923cee19463d10605d6dc723f6709d"
+    },
+    {
+      "fixture": "historical-nonnegative-input.json",
+      "historical_market_features": 116,
+      "synthetic_inventory_features": 9,
+      "synthetic_received_notional_usdt": 10000,
+      "input_sha256": "d9cb119d6f8480ec51abc726f9e05738987c35a5aa5b723ccc16adfdee5403dd",
+      "output_sha256": "6f2f0edcc6accf0590ae0fbca219fe034c1a4f5f12ff22a954be652dc3d7459a"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "created_at_utc": "2026-11-09T12:40:12.054000+00:00",
+  "model_version": "nfb.inventory-value.v3.20261109",
+  "forecast_rows_including_quantity_scenarios": 0,
+  "issued_daily_cohorts": 0,
+  "distinct_scored_symbols": 0,
+  "primary_fraction1_prediction_rows": 0,
+  "grid_statuses": {
+    "MISSED_AT_START": 1
+  },
+  "alert_statuses": {},
+  "heads": {
+    "p_new_negative_within72h": {
+      "matured": 0,
+      "verified": 0,
+      "missing_late_censored": 0,
+      "hits": 0,
+      "hit_rate": null,
+      "probability_metrics": {
+        "n": 0,
+        "Brier": null,
+        "AP": null,
+        "fixed_bins": []
+      },
+      "frozen_baselines_same_observed_cohort": {
+        "EMA72_calibrated": {
+          "n": 0,
+          "Brier": null,
+          "AP": null,
+          "fixed_bins": []
+        },
+        "latest_or_age_calibrated": {
+          "n": 0,
+          "Brier": null,
+          "AP": null,
+          "fixed_bins": []
+        }
+      },
+      "selected_alert_observed": 0,
+      "selected_alert_precision_observed": null
+    },
+    "p_no_raw24_exit_next168h": {
+      "matured": 0,
+      "verified": 0,
+      "missing_late_censored": 0,
+      "hits": 0,
+      "hit_rate": null,
+      "probability_metrics": {
+        "n": 0,
+        "Brier": null,
+        "AP": null,
+        "fixed_bins": []
+      },
+      "frozen_baselines_same_observed_cohort": {
+        "EMA72_calibrated": {
+          "n": 0,
+          "Brier": null,
+          "AP": null,
+          "fixed_bins": []
+        },
+        "latest_or_age_calibrated": {
+          "n": 0,
+          "Brier": null,
+          "AP": null,
+          "fixed_bins": []
+        }
+      },
+      "selected_alert_observed": 0,
+      "selected_alert_precision_observed": null
+    },
+    "p_qualified_entry_after72h_within7d": {
+      "matured": 0,
+      "verified": 0,
+      "missing_late_censored": 0,
+      "hits": 0,
+      "hit_rate": null,
+      "probability_metrics": {
+        "n": 0,
+        "Brier": null,
+        "AP": null,
+        "fixed_bins": []
+      },
+      "frozen_baselines_same_observed_cohort": {
+        "EMA72_calibrated": {
+          "n": 0,
+          "Brier": null,
+          "AP": null,
+          "fixed_bins": []
+        },
+        "latest_or_age_calibrated": {
+          "n": 0,
+          "Brier": null,
+          "AP": null,
+          "fixed_bins": []
+        }
+      },
+      "selected_alert_observed": 0,
+      "selected_alert_precision_observed": null
+    },
+    "conditional_30d_reference_net_usdt": {
+      "matured": 0,
+      "verified": 0,
+      "missing_late_censored": 0,
+      "hits": null,
+      "hit_rate": null,
+      "probability_metrics": null,
+      "frozen_baselines_same_observed_cohort": {},
+      "selected_alert_observed": 0,
+      "selected_alert_precision_observed": null
+    }
+  },
+  "quantity_scenarios_not_independent_samples": true,
+  "adoption_status": "WATCH_ONLY",
+  "production_allowed": false
+}

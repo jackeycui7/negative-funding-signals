@@ -1,0 +1,9 @@
+{
+  "registered_at": "2026-11-09T11:03:17.515525+08:00",
+  "reason": "Ordinary-turn diagnostics found93.2% turn precision but14.7% qualified opportunities after72h delivery, below EMA22.8%. Add direct arrival-qualification event task; do not reinterpret ordinary-turn precision as borrow value. No change to economic primary or thresholds.",
+  "status": "Exploratory task extension after prior diagnostics",
+  "target": "Reuse frozen arrival_entry_7d label: any eligible flat-entry opportunity in[asof+72,asof+240), including rate strictlybelow−0.1%8h,basis<=−0.3%,frozen expected income>=2*cost,previoushourpositiveOI/volume,lifecycle and freshness. Not realized profit.",
+  "fit": "Same fixed families,monthly expanding train,past60day calibration,all239h labels maturebefore fit time. No hyperparameter search or test family selection.",
+  "features": "Same116scenario-independentfeatures, asof-1 only.",
+  "output": "Separate p_qualified_entry_after_72h_within7d; raw turn,7d survival and30dvalue remain separate."
+}

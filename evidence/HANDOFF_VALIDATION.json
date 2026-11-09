@@ -1,0 +1,41 @@
+{
+  "verified_at_utc": "2026-11-09T12:55:42.158591+00:00",
+  "offline_suites": [
+    {
+      "suite": "signal-interface",
+      "passed": true,
+      "log": "signal-interface.log",
+      "test_count": 3
+    },
+    {
+      "suite": "source-adapter",
+      "passed": true,
+      "log": "source-adapter.log",
+      "test_count": 17
+    },
+    {
+      "suite": "forward-contract",
+      "passed": true,
+      "log": "forward-contract.log",
+      "test_count": 16
+    },
+    {
+      "suite": "forward-timing",
+      "passed": true,
+      "log": "forward-timing.log",
+      "test_count": 5
+    }
+  ],
+  "frozen_historical_output_recomputed": true,
+  "production_acceptance": false,
+  "real_execution_tested": false,
+  "network_or_orders_used_in_tests": false,
+  "external_asset_bootstrap": {
+    "passed": true,
+    "original_files_hash_verified": 334,
+    "source_files_hash_verified": 8,
+    "preserved_model_files": 5,
+    "environment_import_verified": true,
+    "old_ledgers_imported": false
+  }
+}

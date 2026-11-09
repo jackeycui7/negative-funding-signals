@@ -1,0 +1,21 @@
+{
+  "version": "nfb.sources.20261109.r1",
+  "reason": "User requested actual alternative data sources after prolonged direct REST403/451; authorized existing Datahub and official public archives are independently available",
+  "preserved": "Original334pipeline bindings,5v3model bindings,thresholds,125features,daily00UTC5minute deadline,cohorts and all old ledgers unchanged",
+  "authorized_datahub": "https://datahub.aurabitcapital.space, existing user key kept outside workspace;API docs read through existing signed-in console profile",
+  "sources": {
+    "settled_funding": "/v1/funding and /v1/latest/funding, regularactualsettlements only;funding_ts_ms retained",
+    "hourly_ohlcv": "/v1/klines and batch/v1/latest/klines;trade/premium separate;complete=true and actuallyfinalized only",
+    "open_interest": "Datahub /v1/open-interest period5m: time_ms is period-end, normalize to native sample timestamp by minus300000ms. Native quote value preserved, no price reconstruction. The frozen subsequent1h pre-lag remains unchanged. Verified against288native observations per representative symbol.",
+    "positioning_history": "Checksumverified data.binance.vision daily metrics; four originalseries, no substitute",
+    "positioning_current": "Missing until official daily publication or an independent source is verified;never fabricated",
+    "bybit": "Missing on this provider;original crossvenue features remainmissing rather than using another exchange"
+  },
+  "history_receipts": "Provider's historical recv_ts is recorded separately; our actual request/receive timestamps are authoritative for forward availability. Backfills do not become past predictions",
+  "hourly_compaction": "Latest actual5m observation within each hour is equivalent to frozen feature aggregation; fullrawresponse retained",
+  "coverage": "Preserve meta.covered,unavailable,revision and incomplete rows; derive actual bar coverage from returned rows as well, without treating an empty200 as zero",
+  "restrictions": "Original REST cooldowns retained; no proxy,alternate REST hostname,cookie extraction or access-control workaround",
+  "money": "Existing data access only; no new paid subscription,purchases,orders,loans or transfers",
+  "promotion": "None;source recovery does not promote v3 beyondWATCH_ONLY",
+  "normalization_revisions": "Blank archive fields remain missing; prior blank and wrong-period-end normalization records retained with append-only corrective revisions. Original failed diagnostics and unmapped OI comparison retained."
+}

@@ -1,0 +1,1873 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "path": "outputs/neg-funding-last30d-20261108/data/ds/dataset.npz",
+      "sha256": "8ea6ddcd7af077f2334a8f05cc517acbaff4b0efe02ced71331b9f155e383b72",
+      "size_bytes": 402109424,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase1-20261106/data/ds/dataset.npz",
+      "sha256": "fdb2ff0fcc8eeb93780c14685eae03c189b2da60ae286c070d4bb35cc71b7375",
+      "size_bytes": 400425175,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "neg-funding-strategy-v1/private/inventory_caps.csv",
+      "sha256": "1b0de3cbc003cae6bb66527667246eb030c57fe4dc5d999fbec7951cf219334e",
+      "size_bytes": 15947,
+      "kind": "private_inventory"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/1000PEPEUSDT/series.json",
+      "sha256": "4f8596ef77113a341d202a333724e50257c5a30f1ced94a969062c8940fd1230",
+      "size_bytes": 147856,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/1000BONKUSDT/series.json",
+      "sha256": "17231385803c712a99d1e7d8b79ca3addda1de5048e6052cd9c3f07b2e41abf0",
+      "size_bytes": 296202,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/1000LUNCUSDT/series.json",
+      "sha256": "eccd39e7194833b152da37f447608853bcfd27cf042011e5a3047521bdd5bad9",
+      "size_bytes": 147338,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/1000FLOKIUSDT/series.json",
+      "sha256": "127ca5d07f208aeb2d0c15f1571d96e325d553173d42519d186966d5919d0efe",
+      "size_bytes": 149011,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/1000XECUSDT/series.json",
+      "sha256": "84910f9bb98b411acce9634cfdaa1b9456ac90d982e7f09c5d7aa026bc4e0bd2",
+      "size_bytes": 145174,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/HMSTRUSDT/series.json",
+      "sha256": "3bf59e4c8dbf9692ac58c614557350af0957f68c2e8670b24a29eeebafd4147f",
+      "size_bytes": 286177,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/NOTUSDT/series.json",
+      "sha256": "c9d4f1a77143c729d3acf6c1d54916b575cbc64b145cdb503f6eaf51f6d08af3",
+      "size_bytes": 280774,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/REDUSDT/series.json",
+      "sha256": "9c2d5366df9a3c939da11969f9c80dafdf099fa79407cc0a8481a1b36f7abda2",
+      "size_bytes": 643503,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/CKBUSDT/series.json",
+      "sha256": "5879232744911bb87bfecc5418283a3bc2981cb75bb3b2c3da08f22edc01ff61",
+      "size_bytes": 139215,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ACEUSDT/series.json",
+      "sha256": "4186512b66034b22140c69504deec24effe42587e6a405a70f732fd4873a7ce2",
+      "size_bytes": 442651,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/VETUSDT/series.json",
+      "sha256": "04760e63b5a41ea4d52bf6a595306c3a8c4d3199a270c5bb57f6ac0540f1c92e",
+      "size_bytes": 141013,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/RSRUSDT/series.json",
+      "sha256": "f039185d11bab59fb15b59b62b80dee97475161563e0045f9ea36ac430dfaaf8",
+      "size_bytes": 157234,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/BOMEUSDT/series.json",
+      "sha256": "e35e6713c22349f42bb0d7987c2c99ef551dfa9dfd3b1164b52cf46d82c448cd",
+      "size_bytes": 284269,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/SLPUSDT/series.json",
+      "sha256": "c07aaae507a911c05bfb64a1dcf4560fa82a00e957abd732aaefa323c5c76b27",
+      "size_bytes": 139511,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/DOGEUSDT/series.json",
+      "sha256": "323d2577ebdc138b95ac382eb65a981e8474b528e2aa2f81f636a9a4b72db44f",
+      "size_bytes": 143908,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/JASMYUSDT/series.json",
+      "sha256": "b9a09a923ac843b8833152847367376df4a2e657681b629c26e91c9f5699e0a9",
+      "size_bytes": 143508,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/PENGUUSDT/series.json",
+      "sha256": "e481f67b8d7dffcb99903afa7f06372362ea0a0226efe1f391a8fe09c957bb8e",
+      "size_bytes": 288583,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ZILUSDT/series.json",
+      "sha256": "0cd722abef8045e19654790a93187ece0a03a828a85f6f846389800c98be36fb",
+      "size_bytes": 195911,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/IOSTUSDT/series.json",
+      "sha256": "0f0c28a83c513882e1b3d644a4e6baf3adea16f644e67bca347b8a630bdf915a",
+      "size_bytes": 178591,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/MEMEUSDT/series.json",
+      "sha256": "05c7903f3431b5a0b29e2bc53a22820fb507540c0a79fe183952ee0c42dc66b3",
+      "size_bytes": 359209,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ROSEUSDT/series.json",
+      "sha256": "d697114918f940677c4c9a3f0c5c22e963816dd73c0a536727eaeb9561da33af",
+      "size_bytes": 141145,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/LINEAUSDT/series.json",
+      "sha256": "c3a6d2dd9c85cde66fe577f30c6b9bfc6a0e95b381b138712d71516056ecfe77",
+      "size_bytes": 292541,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/USTCUSDT/series.json",
+      "sha256": "0303262921a5a00fffb5de2304f4a26318690e3472d6664738c32105b4cb4b86",
+      "size_bytes": 283548,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/COTIUSDT/series.json",
+      "sha256": "47271597c582a94b963ecf14a17f1e2d87543cd80869de19854f71e53b326e48",
+      "size_bytes": 202407,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/HBARUSDT/series.json",
+      "sha256": "c426a586828aebaafe547f2a24bdda3f3a198f5affd52b21d01415e340eaaac6",
+      "size_bytes": 143941,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/XRPUSDT/series.json",
+      "sha256": "cc3aa0cc3fcb771b07b9a389d20270d930103dac888c6dc33e2833bff0938260",
+      "size_bytes": 142895,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/USDCUSDT/series.json",
+      "sha256": "26887ce10d10f8f65012d84d4e4e907cbb1441d8103ff226337f8b0c3ef7f7f8",
+      "size_bytes": 135664,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/TLMUSDT/series.json",
+      "sha256": "7586737c144b7e2a64f525ee206783f876b1c915927576037faa6b34bf6de788",
+      "size_bytes": 140392,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ADAUSDT/series.json",
+      "sha256": "223fa35492df9937f66df2b5c180aaea329b4fd53bd0042cabb050d85268abe5",
+      "size_bytes": 142145,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/RVNUSDT/series.json",
+      "sha256": "6329a153458dd4b105dec240cc50a6d2d00106de141867b09ed430fe8d2ee1da",
+      "size_bytes": 644768,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/TRXUSDT/series.json",
+      "sha256": "47af4686a93913ee885a747b542d64404e5ccb9120e11eed7e406deb6b7c3700",
+      "size_bytes": 143144,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ANKRUSDT/series.json",
+      "sha256": "a4b8cbdb8d44ba6c3e9f1edc5b3ce8564c2ac0c2b2e69a5e134688dea3fe1a6e",
+      "size_bytes": 146306,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ACHUSDT/series.json",
+      "sha256": "a18e8961ff60b5961ae8eaedafc5ba044b8b546cc47351f556757536d9b14fc3",
+      "size_bytes": 280930,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/PLUMEUSDT/series.json",
+      "sha256": "ca90963cf0a5eb7db0bb2bb9f6156c9d129c136c842fa8c86cfe65ef76a9df5b",
+      "size_bytes": 473516,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/XLMUSDT/series.json",
+      "sha256": "95b9338f8c23b36feebc8163fd987bf415124b7582ec787bb64d666a23369957",
+      "size_bytes": 141910,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ZKUSDT/series.json",
+      "sha256": "01d24f280f2b5eb6eac2c99d0ccc6534864e4c36594edc491fb4678ddb8b56ba",
+      "size_bytes": 329927,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/IOTXUSDT/series.json",
+      "sha256": "38da0ca050490a8cf96205a5a117509d2b4d06ef601a370de9234134d047e2b7",
+      "size_bytes": 141242,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/REZUSDT/series.json",
+      "sha256": "41b5cb46b01e910915bd1d05699f8fafe7c5f4b5eb34bac2e1d2575798be8b2c",
+      "size_bytes": 282521,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/CGPTUSDT/series.json",
+      "sha256": "a2b3bf82fba80a75d4bc15de646bf16492749164db3c523ee8401dc100004397",
+      "size_bytes": 404049,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/NOMUSDT/series.json",
+      "sha256": "791e632e28c264061abf9af64bba758c71bb493c5f8d1a7db40c3971c9511667",
+      "size_bytes": 279086,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/GRTUSDT/series.json",
+      "sha256": "cf49d84e7d87461cce2d68420276cb4de2da64148026e6038f28d7edee312b40",
+      "size_bytes": 140841,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ENAUSDT/series.json",
+      "sha256": "b0840e99176b7aef5c842f7148646178ad1b41a2b269165b2e619cb0e7efe4b9",
+      "size_bytes": 283713,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/CHZUSDT/series.json",
+      "sha256": "3b101b51732ff06915b14fabae75f838b482249dff447fac176842536644ffed",
+      "size_bytes": 141952,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/NIGHTUSDT/series.json",
+      "sha256": "540db5cdba273632a33d86269ade3d7372cd4476250dd98499f4c616776f856a",
+      "size_bytes": 382502,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/WUSDT/series.json",
+      "sha256": "19ae7119a871d0c671e186d7cc2dce7f7e6ea953b038c38ebb21aed8ac1be127",
+      "size_bytes": 276438,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ALGOUSDT/series.json",
+      "sha256": "f73139d19d2cd7e0f3d7a682f4149f96b25520fee3d397ecdd681f69f7b49723",
+      "size_bytes": 142607,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/SUSDT/series.json",
+      "sha256": "d45117e9a9aaa99302a59569ae45e721cd08f58ba98e0d500a75f02ebc0a1169",
+      "size_bytes": 276350,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/IOTAUSDT/series.json",
+      "sha256": "d01a873d82e7e96fc67495763788705f6f20f24263ca3588ae5cece9ada51259",
+      "size_bytes": 142087,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/STRKUSDT/series.json",
+      "sha256": "7fffb2a28bc0eea0c1f9035ac31c9a3f13bbe2a6c9c011eeb284d252bb885555",
+      "size_bytes": 285127,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/SEIUSDT/series.json",
+      "sha256": "35125433e1be8993f058bc09948b8d75a750fbc3b40083542f1b2aa4f95b3a3b",
+      "size_bytes": 142258,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ASTRUSDT/series.json",
+      "sha256": "b309da1c1d451962614a56fc5b94138ba7d287a4ec4fcffa722873523f9291b3",
+      "size_bytes": 140759,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/POLUSDT/series.json",
+      "sha256": "05bcd3164b0437bda932eff73fb039213ab5b702ffc0514c1b5cb5d80691843d",
+      "size_bytes": 283553,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ONDOUSDT/series.json",
+      "sha256": "822df12f3ae208b2803b598131e6898f9174010e8bbe481ba3da953070e75a1e",
+      "size_bytes": 285830,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/GMTUSDT/series.json",
+      "sha256": "3970bbcb5aff8a174d39e5b7e8a017514c5982bbe70f81c9c40d78cb6f2f2e65",
+      "size_bytes": 283916,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/CETUSUSDT/series.json",
+      "sha256": "0bab994e83afa296ec547412c8771fc4826b691b7c70626ae00a81263f599fdf",
+      "size_bytes": 285097,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/SKYUSDT/series.json",
+      "sha256": "6c9fc33edaa5b8d6a590ca1902b565235e820bdbb84e8a1a92b155bf7194df65",
+      "size_bytes": 283004,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/WOOUSDT/series.json",
+      "sha256": "197fb65c7ad2d16e860dc81c4c838a8dd87401b373e5d7150b3a4ae27a461110",
+      "size_bytes": 139919,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ARBUSDT/series.json",
+      "sha256": "2a4b15fa8fd17536a1d72725bb6e47be9af20adb746d4fddc75d52b7e79d0572",
+      "size_bytes": 141927,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/KMNOUSDT/series.json",
+      "sha256": "374434622004a485847a5222cf3ddfaabfd72711d3a300440ced303b2b6a6eda",
+      "size_bytes": 285824,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/PYTHUSDT/series.json",
+      "sha256": "e4386ac650597958f8788fc73f2130b4792100daa151e88b578eda48dfcbe17d",
+      "size_bytes": 285526,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/PEOPLEUSDT/series.json",
+      "sha256": "d3c86a75bec81bd4562d22c59c8450b20d6810b6ddb8e357d2c18a1653daefcc",
+      "size_bytes": 144893,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/SKLUSDT/series.json",
+      "sha256": "9610702e4f5bc57dedbb4cb1b07fa6a9a6a98ba5c5e083292026ba849cc5bc79",
+      "size_bytes": 143790,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/GUNUSDT/series.json",
+      "sha256": "20a6314405e4bcf0fa764e86edfe6931b58e11846075beb25a5e91365b76d9d2",
+      "size_bytes": 280745,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ENJUSDT/series.json",
+      "sha256": "1d90fc2eb005a5bb8774c0ce69a35ab12afa79289008800f4dcd5a79130cc1e2",
+      "size_bytes": 159114,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/XAIUSDT/series.json",
+      "sha256": "6c633f3a75269dbae421f2ba2cbc42935aeadd016a49fc24532e64c4654b6883",
+      "size_bytes": 282314,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/SUIUSDT/series.json",
+      "sha256": "4c9fb3073d397d01a80614ac78a95da0e29bf84d1c423710f5990ca5f55acd75",
+      "size_bytes": 141765,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/PIXELUSDT/series.json",
+      "sha256": "969f236af9d050bc7e825fc99bd71301263097d31f3bd2b3f8a56983ec046a6b",
+      "size_bytes": 288446,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ANIMEUSDT/series.json",
+      "sha256": "5f1fb9073e8e16d9f61defbce23e8be50ccab6356e8cb449465be40d576b7991",
+      "size_bytes": 508328,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/WLFIUSDT/series.json",
+      "sha256": "239e31d0eb77aa63abb7ad96083b3bb9be8a9f99f0deeb23ade428a5bd064b21",
+      "size_bytes": 286407,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/FFUSDT/series.json",
+      "sha256": "a5736f165311a0031bbbd68d15ea35442730ba7e0e2915e7d7a9a5324f2ffc73",
+      "size_bytes": 568257,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/MUBARAKUSDT/series.json",
+      "sha256": "df31317340550fb45830baafbae005616fbe9dd3adc6040bf8778db566910651",
+      "size_bytes": 290524,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/TOWNSUSDT/series.json",
+      "sha256": "4bf5992b37487e712a601dd9df69108b577d655d28809118b41cbe16a505bdef",
+      "size_bytes": 286714,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/APEUSDT/series.json",
+      "sha256": "8463f987988611924bd15b043f2519775ddaf266af9465116ca4d083d7ee6387",
+      "size_bytes": 141674,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/SPKUSDT/series.json",
+      "sha256": "94a06c76d522b3cb304882d36f96a2834a62dbedca0746c1b926a584cf13f535",
+      "size_bytes": 282482,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/FLUXUSDT/series.json",
+      "sha256": "9a1afd43534cc5286a00857a14d673376a0fbac5a577abe8088773e9490085ec",
+      "size_bytes": 285217,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/CFXUSDT/series.json",
+      "sha256": "70130cb2111003fc09dd69010843023259ee3e570d686b444f182df82ab044f9",
+      "size_bytes": 140261,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/COOKIEUSDT/series.json",
+      "sha256": "f355d61f717dbafa024f34cbfa86a6429e5cdc7c059956a245a406607f2f0bf7",
+      "size_bytes": 288849,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/PORTALUSDT/series.json",
+      "sha256": "b25e79c6a2fcf8e6563da48680cef2c5ac8e16033aaf4546b067560aef794f08",
+      "size_bytes": 289044,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ACTUSDT/series.json",
+      "sha256": "a52c1a6a8eb61b858f0108137d62acf29e05547bd5215eb6ac5dc9a1bdfb0af0",
+      "size_bytes": 281162,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/CHRUSDT/series.json",
+      "sha256": "2bf8e414331436a9539ea622fc0dd5efb178f34824227c98a34f317cd745d848",
+      "size_bytes": 138926,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/TUSDT/series.json",
+      "sha256": "99926cfa7bb99efe14292e47b723ee624fb08c7d4311faf849bfe3e66d48a04e",
+      "size_bytes": 415946,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/MANAUSDT/series.json",
+      "sha256": "6c9b8db115267e14d10c4591ede99abd69163af795e4b38f0027a16bcb043f3a",
+      "size_bytes": 145548,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/KATUSDT/series.json",
+      "sha256": "1878ef521017505dafc448860ab73de2f987322a350a116a62ca5527945c9e3f",
+      "size_bytes": 162348,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/CFGUSDT/series.json",
+      "sha256": "9e18564421ae3a4f8f7798ae3fcba909769551cda7c229d248662c0fc4ab1a91",
+      "size_bytes": 152923,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/DYDXUSDT/series.json",
+      "sha256": "de3d5f6c9580faa0656adb98bafb25c9871cc099f113e217ff11a906a963f9dd",
+      "size_bytes": 142450,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/MEGAUSDT/series.json",
+      "sha256": "7ddd5f18b2f52262b3c257bc1656c485c6288e965424ed731060212e75cb645e",
+      "size_bytes": 249072,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/SANDUSDT/series.json",
+      "sha256": "7f5e031c8c112d06e8df6a9f83bef26118cd9272264a98db60f69af2ab86065f",
+      "size_bytes": 162001,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/BIGTIMEUSDT/series.json",
+      "sha256": "dade1e71a0d4e9dd3cc2c8b7ea37c2b772303630fbf6e5d28bade861acbf18e6",
+      "size_bytes": 290392,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/BBUSDT/series.json",
+      "sha256": "31a683d0189adabceafc26f8e38ecabece33f85fb851f1946f5030ded550a068",
+      "size_bytes": 279631,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/PHAUSDT/series.json",
+      "sha256": "a2bc26cc3bd6e8b718ad7b498074e02b0e9f995d318c027b1e8bda6602ef9ce6",
+      "size_bytes": 281385,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/MINAUSDT/series.json",
+      "sha256": "e0523193bf8c5c0d1a4bdaad781c7bff8faea1d3a177aa0abc4b9c9fcbc4578b",
+      "size_bytes": 285586,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ARPAUSDT/series.json",
+      "sha256": "645044adbd3c41d6898cc6416f1a84614755092a81df9b7825dd76345989d591",
+      "size_bytes": 141237,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/USUALUSDT/series.json",
+      "sha256": "1baf05b4a0cad19eb6952363b8b3c25e4a34d09b651b2466a76f6371da1c82b7",
+      "size_bytes": 534395,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ZAMAUSDT/series.json",
+      "sha256": "bc991b72ea560ef3532143fa0d82e0ac6ad53f2b72acb752896f6bdecff0eecc",
+      "size_bytes": 198865,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/AIXBTUSDT/series.json",
+      "sha256": "cbb5aac1710cfe68c44b3c45299c80b35a1ef89c169218c62cfbe187f92c5274",
+      "size_bytes": 286920,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/SUNUSDT/series.json",
+      "sha256": "2c0dc70f2164b1587e006c5ab6918aa67e4b3bda8201d40c29c89fd9d7f79bd6",
+      "size_bytes": 281791,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/BABYUSDT/series.json",
+      "sha256": "7c9036bdb7f74b942670116db22c2b9556f8e6025689785df04bf310d12d0a0c",
+      "size_bytes": 412358,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/THETAUSDT/series.json",
+      "sha256": "f1bb6794cd7e0974ecd05809031a59c81ae8edb4c47365692bee2dd10fd511cd",
+      "size_bytes": 143102,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/CRVUSDT/series.json",
+      "sha256": "a35580b9b2903e8f4ceed6163d31b6da2ca84ae96c32dad1359240d3b3c04205",
+      "size_bytes": 141612,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/CHIPUSDT/series.json",
+      "sha256": "1603672f53b0540edce03d9fcdfcc4051ef30d7e2d9f416ea39ba7352486aba4",
+      "size_bytes": 135478,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/XPLUSDT/series.json",
+      "sha256": "ec97a64e51adf5d320536825a7823a829c72733ee64f798694d702c0f1545b3d",
+      "size_bytes": 282671,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/AEVOUSDT/series.json",
+      "sha256": "b389dbc590e2e4046a44d4e316dd3423868df229dd04669e0ef686e711acab02",
+      "size_bytes": 283158,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/SOPHUSDT/series.json",
+      "sha256": "5fc9ef0663cd04eae8c1d62ae1e0b1f24df87b41216944953b1f30df0c13e656",
+      "size_bytes": 656410,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/SENTUSDT/series.json",
+      "sha256": "fc21656ef6fb99d14360bb7dde41bc480ffb99a3f6f7c78f7e9ac4633e8c2b23",
+      "size_bytes": 303150,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/POLYXUSDT/series.json",
+      "sha256": "27003fab2ca511b2878b4c1219ab25feeb0d90b61869182e364b7715097d5d8d",
+      "size_bytes": 286696,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/OGNUSDT/series.json",
+      "sha256": "88d2779dfb9f5d43866ebf2a9537548823d5ff83aea99721653c5955bb38a2d1",
+      "size_bytes": 141449,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/EDUUSDT/series.json",
+      "sha256": "8fcc41fe399e37f11d4f04f91bfffbda5b9f630c39a4f2f2b60f7eac541c0f75",
+      "size_bytes": 138829,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ASTERUSDT/series.json",
+      "sha256": "f5efa5fc0e145908f32fa4081d2ba4077108dbe2a12905d518cc824392cc50a0",
+      "size_bytes": 276149,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/JUPUSDT/series.json",
+      "sha256": "ec043af12e20ad9a92370238047b8a1e724cb5a5182ff4deff027c5bc8fe842b",
+      "size_bytes": 282984,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/AEROUSDT/series.json",
+      "sha256": "ae9122f8a2609989e29f0e2eb774198310da3c5a72e7ad69affe81910a98568f",
+      "size_bytes": 285658,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/NILUSDT/series.json",
+      "sha256": "31b15efed2b26b0de69c14cf93209ec8368b0ce1f8ab61dd5f6ec2d888fb736f",
+      "size_bytes": 280030,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/KAIAUSDT/series.json",
+      "sha256": "dff1040967681a5ce18eaa0a030aaf2ce5e2aed7fbbcd232a31fe824f1a1874d",
+      "size_bytes": 290370,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/WIFUSDT/series.json",
+      "sha256": "3243170c30971b68bec854fe13093c6e57a4a78f0a4da48048879d71c52e4afc",
+      "size_bytes": 282799,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/OPUSDT/series.json",
+      "sha256": "1a31952d726ef3262b03a1559b7783d2598f7095ea615d456486ea7763308b64",
+      "size_bytes": 140356,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/TUTUSDT/series.json",
+      "sha256": "1548be97cce3e01dd83dc6d4267782d11f92f6aa84468c50155fd8e883469e0e",
+      "size_bytes": 280453,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/FUSDT/series.json",
+      "sha256": "50a83b53a0a919cfeeb617d9b29a863a03e445a321ef30a0f234194da8961ba9",
+      "size_bytes": 517612,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/WLDUSDT/series.json",
+      "sha256": "e72fc551590807f60619b28b17d0f5e785a16bdbf1742f2f80055c7eca456aea",
+      "size_bytes": 142131,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/BIOUSDT/series.json",
+      "sha256": "e55aea0d103cf0a921523783b0124eb1253263a3d95f253a11add6bbdbcbe731",
+      "size_bytes": 547625,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/CATIUSDT/series.json",
+      "sha256": "9bb5f650c47525286d1bc30617eac54b45be3b6ecaab8913e283bd5cca585dea",
+      "size_bytes": 283838,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/HUMAUSDT/series.json",
+      "sha256": "8d908cd5792f22caed56d927c55b6047ab4b259edbbef7e0651fa57c0bbe6881",
+      "size_bytes": 285401,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/MANTAUSDT/series.json",
+      "sha256": "1f68cbdc72261e5fda90708374b321b904ad6f82faeca247f2a3f84567056dbb",
+      "size_bytes": 286641,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/STXUSDT/series.json",
+      "sha256": "43db51a2bb7555eff1e73622f0c97d5792f867add932bafa00d5041ce0f2b25d",
+      "size_bytes": 141201,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/1INCHUSDT/series.json",
+      "sha256": "8e33daa976c1e07ee3b50299bbc39e7ffebba8e1581ce1147b0955d8a2576ac8",
+      "size_bytes": 143447,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/DOTUSDT/series.json",
+      "sha256": "d7889f9cf02827368ce482b588217da305efbf5dd9de17032682bba200e42a13",
+      "size_bytes": 142260,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/BLURUSDT/series.json",
+      "sha256": "a6c368f79c14de884fb86482e0e4d14ccab8dea32315f7c347a5bec69e3b1397",
+      "size_bytes": 269595,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/BICOUSDT/series.json",
+      "sha256": "0e77861420397787d14cbde3734912af3cbd1f50d37b8ed1d113300c5037660d",
+      "size_bytes": 141062,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/C98USDT/series.json",
+      "sha256": "83bc341b16d6ecdaca20bf3c833bd43dd87c0379b017a0112199ba8d7d766b4f",
+      "size_bytes": 139685,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/SAHARAUSDT/series.json",
+      "sha256": "b6f506adca9541c75b4a729f78b1c1ebce755f38e5e9dc08cc400fa2e13d1e92",
+      "size_bytes": 686708,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/SUPERUSDT/series.json",
+      "sha256": "c020fa4e6dbca13ed327a5f841781a8a556aa868399464776b8fccc9a6b32f5d",
+      "size_bytes": 599233,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/SIGNUSDT/series.json",
+      "sha256": "6079afaf3aaf9622955496b2e877dad20d44f41880d105dc8bfa4fa89f25395b",
+      "size_bytes": 667147,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/GPSUSDT/series.json",
+      "sha256": "3c8fc50b51ea36af9176e20c0c32934093d0142cbe9f06d3be68ac788980b40c",
+      "size_bytes": 479656,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/AUSDT/series.json",
+      "sha256": "4a791f4b379f63d748ab17f10dba335ae0592d86987881f92c8e1bb947c2a19b",
+      "size_bytes": 276161,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/MOVEUSDT/series.json",
+      "sha256": "8c6c50fe6d515bf866558dc278c6f52dae9e569dce9e4d94bb83da442dd7e1bd",
+      "size_bytes": 506460,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/DYMUSDT/series.json",
+      "sha256": "7c12f69ad3b43cebee4265061e26aef0d1b37d3c0603729b201052d3f63a7dbd",
+      "size_bytes": 312670,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/YGGUSDT/series.json",
+      "sha256": "786404e39e02ffa205fbf6fb6eefcb7ebff1567298ddda2c9b348eab192be225",
+      "size_bytes": 281384,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/FLOWUSDT/series.json",
+      "sha256": "7a8b6bfcf027ac209d5408071b8af37e4ad79f364836ab764ecbe50f06396bf0",
+      "size_bytes": 288921,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/TURTLEUSDT/series.json",
+      "sha256": "add3563dcd8bacc01239faa8ae378b7a8bd9fa859af2238ceb84636f0f169c71",
+      "size_bytes": 517362,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/PNUTUSDT/series.json",
+      "sha256": "f7a84f21a1d5c2b2c3ee87a670b88bf95ba42499a097a81df3d07f36100e8329",
+      "size_bytes": 284474,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/DUSKUSDT/series.json",
+      "sha256": "2521f4772c119b1c427200b141534ae166ed88cec6037b21f9b2b6350f8f7f9f",
+      "size_bytes": 140983,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/VIRTUALUSDT/series.json",
+      "sha256": "19c1c9536ed10d0830b9c4e72274ea011d60e4ef061f393eef26ebfeb0387afa",
+      "size_bytes": 294162,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/RENDERUSDT/series.json",
+      "sha256": "aa84067682b64a432e958fe1c1154c15919f20c8692f7246d93cce00f3126b19",
+      "size_bytes": 290326,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/IMXUSDT/series.json",
+      "sha256": "dddd522794bf008b143688c07b4e66c42a9ca951787dfd895c131a181bd5b6ec",
+      "size_bytes": 281442,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/TWTUSDT/series.json",
+      "sha256": "f2e7862318f9a58f961ef152e647219062c6e0c3f6291f6a54f46fa2710a8859",
+      "size_bytes": 280305,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/GRAMUSDT/series.json",
+      "sha256": "333c337d63716e451b8ff3062b653953774d6e3e21f3b4e41711f5bc7f9160b2",
+      "size_bytes": 90234,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/HAEDALUSDT/series.json",
+      "sha256": "9903ae79336e01c7c25439c16f37dcf038e78b2a8bf313d31946df6292370235",
+      "size_bytes": 290229,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/FOGOUSDT/series.json",
+      "sha256": "9dfa1154ef229f8ca8749155e2a0fc3d233660d3be404b8aee166e6f2eb0f2ab",
+      "size_bytes": 196303,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/SXTUSDT/series.json",
+      "sha256": "3353411f5ac76f4fa653eef5cf14c5ab8d5164cc62d5142c5da928d10269160d",
+      "size_bytes": 281271,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/NEARUSDT/series.json",
+      "sha256": "9db697a5deb51b2ff721fc3d7493f20149f6073af564d2a2b69d82543dc16195",
+      "size_bytes": 142689,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/CELOUSDT/series.json",
+      "sha256": "70787878a8356d0e8fed8d4c18a2636891a07d7e4990551c2c404ce10b702e1d",
+      "size_bytes": 142525,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/HOMEUSDT/series.json",
+      "sha256": "622caa0adaf331f5075d473c2f61b9d9b0bba17024064da65c4a77992b60afb6",
+      "size_bytes": 342075,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ONTUSDT/series.json",
+      "sha256": "b30038d2f59082cf756dfb0577e1257b0cbe66738fcdd2a58b7c9842b92dbf94",
+      "size_bytes": 305493,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/BMTUSDT/series.json",
+      "sha256": "c87c298facfb66ab3a937bf9acdaa08bf3560bd0a1f28f0011c7824239d090b0",
+      "size_bytes": 293728,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/FILUSDT/series.json",
+      "sha256": "e4d340dd63fda1edf4db02fc4b6cd31712e02fbd578156ad151b26156a47ab4d",
+      "size_bytes": 142345,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/TIAUSDT/series.json",
+      "sha256": "7e58f3d4454b610f698441da039087df3263f073b40e0336ff930b1d80fc4cbf",
+      "size_bytes": 282809,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/MAVUSDT/series.json",
+      "sha256": "50948fb1516c7dea991c44dfe69ad7b7b2d6a922661104142072cfe777376788",
+      "size_bytes": 139313,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/SYRUPUSDT/series.json",
+      "sha256": "3f72eac26558b11d0b29a02f02d39f3b93db825db022375352452598b960c8bc",
+      "size_bytes": 285588,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/RUNEUSDT/series.json",
+      "sha256": "aa13e5feab1fa010360fa8e6ea6051bedc908b7a5d129aaa53c061e53d67df90",
+      "size_bytes": 142325,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/KAVAUSDT/series.json",
+      "sha256": "c48d6ef02c3d5ae9919774a09ea3627702d47b5362c04da01832b012765fd5fa",
+      "size_bytes": 142618,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/BATUSDT/series.json",
+      "sha256": "b7b056a1f4a6ce9373762d1685d78ee513a66792a122ad83c0d82c835c40afe5",
+      "size_bytes": 140892,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/IDUSDT/series.json",
+      "sha256": "a943f4acafc83200ec937de1affb0e6a8e05ad4dc58e737f4d28cce50e69a539",
+      "size_bytes": 149299,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/FIDAUSDT/series.json",
+      "sha256": "9e851eaea3767a600693ac82f0d6d9b0e32c388193703db18d215026b35b2a40",
+      "size_bytes": 289218,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/LDOUSDT/series.json",
+      "sha256": "fcb5712e4a11bce0e8ece55cb09d92b73f412f85580c95ed3dc5211caedcb654",
+      "size_bytes": 141707,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/JSTUSDT/series.json",
+      "sha256": "87e16cd767dce09744e191c0da6b5126f460992e92dcfa3a980bd83ce1043191",
+      "size_bytes": 141314,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/EDENUSDT/series.json",
+      "sha256": "bfe77e2bd2a6315bbce7533748eb01fce60306dd28dbb0600157fa31c736ae8c",
+      "size_bytes": 263627,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/PARTIUSDT/series.json",
+      "sha256": "c19bfbba8b0ebb291f7ed134a996205797ba1f5d46e5754d41c712533de75ce0",
+      "size_bytes": 288771,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/LUMIAUSDT/series.json",
+      "sha256": "5b4fda8208392916eb7e085c74e64eaf728868f665efebdb7b1df64a21ef49c3",
+      "size_bytes": 286037,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/KITEUSDT/series.json",
+      "sha256": "a5626901149fbfc27fad7233c1bb08b00cf92e576c96b71faf7a5a5f23e36af5",
+      "size_bytes": 502325,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ARKMUSDT/series.json",
+      "sha256": "ff363ffbace8f6df05014691a51b3eb4a44cfaafde154ee4612a4d323814b15e",
+      "size_bytes": 142811,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ICPUSDT/series.json",
+      "sha256": "9e1d411ff98face63cc12f661a5eaa16af90df01fda22ce8a27372d07d760390",
+      "size_bytes": 142189,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/IOUSDT/series.json",
+      "sha256": "2fd6def42d743415243dbcf4fd62e9b4fdc482baaea05953c34f3411bf722120",
+      "size_bytes": 280636,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/MTLUSDT/series.json",
+      "sha256": "50eef4cc792026fb1e3ae2ff422acf9ce6a954853cf9f53ce89b4cd1dc1b5401",
+      "size_bytes": 151225,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/CVCUSDT/series.json",
+      "sha256": "b1e5a319832e82edccefa395eeaabe7a8e20b40cda0d030665baebcf782561bb",
+      "size_bytes": 357599,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/APTUSDT/series.json",
+      "sha256": "1b04c63bc00f0f8bece8fdab79bd2b6528c5f56efc31e7a2674e33d8dcf032f6",
+      "size_bytes": 142805,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/EIGENUSDT/series.json",
+      "sha256": "2c4100cbb59e29bc683b52176e4e4504f500ece2cf548a89790306690961ad35",
+      "size_bytes": 287869,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/RESOLVUSDT/series.json",
+      "sha256": "811fce0c64f534f91b95f94b288c1f518d7390773cbdb0631bacbc77985dd83d",
+      "size_bytes": 505817,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/WCTUSDT/series.json",
+      "sha256": "0edf060d5661fa5c0a53008b452b60b07b0adcf05f5d15e692bfb41ad8fdd40f",
+      "size_bytes": 645611,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/SAPIENUSDT/series.json",
+      "sha256": "04fbcb6bad9facff2ddd93fed240e16757a15febb6e1d7e57fc8466485215a43",
+      "size_bytes": 288587,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/XTZUSDT/series.json",
+      "sha256": "85a85884d5a572a85dd9800de0f576a7b99982ddcd5e0707629a5e1dbf25c303",
+      "size_bytes": 647607,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/FORMUSDT/series.json",
+      "sha256": "36143ebb553ef2dd9079aacf6198ca7880638e441eb0a494bcb5542b729fdf77",
+      "size_bytes": 282963,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/SUSHIUSDT/series.json",
+      "sha256": "c700b76048d66d262100ffcacbb33ec25c1d9c1b5957421fa756b5e1bb72b74e",
+      "size_bytes": 144713,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/SNXUSDT/series.json",
+      "sha256": "4d867b37d19af1d52dc88c9550d210c60e9a0cfea1932fda52923d5e982226e6",
+      "size_bytes": 140836,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/MAGICUSDT/series.json",
+      "sha256": "1e03272fe712b4f4f4343430049ead93c9864aa2ce5eeebfec145c6778f0331e",
+      "size_bytes": 410650,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ZRXUSDT/series.json",
+      "sha256": "5d7064dd141cbe853732e2774e75692b472110bee11cfc48f1f84b765bc4b9f2",
+      "size_bytes": 278913,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/WALUSDT/series.json",
+      "sha256": "6a5d68fa1bc099fc3de02c96af667d801526ef0c62cea7ff56daa7120cd4d659",
+      "size_bytes": 648025,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/LINKUSDT/series.json",
+      "sha256": "f8b50f4b962921aca9d7b44215a4aacde2129daf390f6319d6e1bf7c2fba66b5",
+      "size_bytes": 143553,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/SHELLUSDT/series.json",
+      "sha256": "4894a0d0bb5d6eabbc1b894e76c6831b20a1e3205f715614bd7dd78d18f1efb5",
+      "size_bytes": 286393,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/KNCUSDT/series.json",
+      "sha256": "c175b7accff1f5362028c7350dd0b6294144d71f47e305648476cf4a116828c9",
+      "size_bytes": 139804,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/TNSRUSDT/series.json",
+      "sha256": "8d727ba4d013ce6e4de269253253a3d9dd4677792f811e262fdd4740cac26390",
+      "size_bytes": 485415,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/DIAUSDT/series.json",
+      "sha256": "95190f4c4e2fccf06ff71267021462db3440775ece9f75c96b498b5a8fc39422",
+      "size_bytes": 279707,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/PUNDIXUSDT/series.json",
+      "sha256": "ac1c628ef527eb1b09b3074da2ee5b51c75620cf7ce1f7efd3a9c4ff9fe0f00e",
+      "size_bytes": 288161,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/AVAUSDT/series.json",
+      "sha256": "67e9486edcd24f99ba9462573ca8c83858728dcaa22b2f79be07d0f8fb4d1259",
+      "size_bytes": 280812,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ESPUSDT/series.json",
+      "sha256": "af0f44da0e6e76175d6b03696e829527bcd68d9b2a0fec810993eb36f803ef65",
+      "size_bytes": 198742,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/RONINUSDT/series.json",
+      "sha256": "6f6cb4a9c8d6cc88207928feaf09a607c83fc43dba7405c41d6efdf102009707",
+      "size_bytes": 286253,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ZBTUSDT/series.json",
+      "sha256": "22f3513ec740f92a88a86174304086da251dc96190a368d80b0ba88a92c7e980",
+      "size_bytes": 521029,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/CAKEUSDT/series.json",
+      "sha256": "39e1472d137764ea4028226805ed7553e0df5edfb94d2518febd83e4d96264d4",
+      "size_bytes": 285163,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/CUSDT/series.json",
+      "sha256": "d0517a3925bda4a6a2285f5a73c6e339cebb89a391fbd5699c6eef5e29e6796c",
+      "size_bytes": 275883,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/STORJUSDT/series.json",
+      "sha256": "89e9c11d040186ee64c47d699c3537251ae7ec86cf94a401f4200e3969627253",
+      "size_bytes": 149030,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ZROUSDT/series.json",
+      "sha256": "dd1750579afcd4899dcd9799e3bcb0dbb63e6f2a29642b55857388618eda8900",
+      "size_bytes": 282218,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ALICEUSDT/series.json",
+      "sha256": "2b3ad7109e9c89917ed8d7dfd61ae09b22e128472d80f03753f6f2dea4e1db97",
+      "size_bytes": 142714,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ETHFIUSDT/series.json",
+      "sha256": "9570da9e4f033499219827ea78ea5fca81241b90099a663303c73adc131d10b6",
+      "size_bytes": 287913,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/2ZUSDT/series.json",
+      "sha256": "e63f8ec78ff3d728f92977e728609cc2d9c7718a241d8773a041afc9bb049265",
+      "size_bytes": 266500,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ALLOUSDT/series.json",
+      "sha256": "808f26b5fa5a2a02eaaec8ac03241ada50027a2b6ceffeb66a85ce8251c1fe59",
+      "size_bytes": 234814,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ATOMUSDT/series.json",
+      "sha256": "f4de937c3360d6464466021b20e00dec6d46e67ef3b60a98537480ae7d39faca",
+      "size_bytes": 144339,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/LSKUSDT/series.json",
+      "sha256": "08f9498c8d37245e14143d573ba5bd806da61470aee186f6afb39ee246232f26",
+      "size_bytes": 529510,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/OPENUSDT/series.json",
+      "sha256": "2740ff80317fd454162dec31c7c2e627430cedc48c6de001738616e1ada2820f",
+      "size_bytes": 278807,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/0GUSDT/series.json",
+      "sha256": "e46bbe3cca776627b1ca9864df7a7be8e15efdd1c94569848834ac6d80166683",
+      "size_bytes": 588837,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/API3USDT/series.json",
+      "sha256": "f72a5e8d1920b22f12cc049828a43eb6f7219d66d765ef2cf8d34cf5f1c670b0",
+      "size_bytes": 650703,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/GLMUSDT/series.json",
+      "sha256": "7a3bdf0b8a1b753a5b7e98c682473e3c21342ec1411e739315260dad4acc286a",
+      "size_bytes": 282791,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/AVNTUSDT/series.json",
+      "sha256": "68a18117465d80c823dd96a31bea72d96264d627d59fbde6b6ccca0a9762dbfb",
+      "size_bytes": 347576,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ZKCUSDT/series.json",
+      "sha256": "804d41e8ff9e210f141fa0aa1080dda122c40e80c2b2dc1bedef50481636b529",
+      "size_bytes": 279302,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/AWEUSDT/series.json",
+      "sha256": "5bec5cbcf8fd6741bb49efbe0a74e78de1f4b73fe91660396ef1699d995b9201",
+      "size_bytes": 280841,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/SOMIUSDT/series.json",
+      "sha256": "d6faadebd63af0f15c66a3c29aee5283bcc467a9468ea76a187c3a450fa7d6f2",
+      "size_bytes": 588349,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/INITUSDT/series.json",
+      "sha256": "1b2820ceb21fc4da7d4721c60f15753f13b9835af0dd90bbb1920396ee53577f",
+      "size_bytes": 310915,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/KERNELUSDT/series.json",
+      "sha256": "14cfd46d4a8176b7697fbf056dd0238266092171752b1a0c7acaa7f7a267a3e1",
+      "size_bytes": 291116,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/UNIUSDT/series.json",
+      "sha256": "304ea08dfbf46eedb87f14d1819e5a8a3af8d4532fd0610b60d3ce637fb99af2",
+      "size_bytes": 142307,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/TRUMPUSDT/series.json",
+      "sha256": "a0ada73844d0e6f63cb63c7271d8bac451ec4b0e53c3d5fea5e279be0d5d289f",
+      "size_bytes": 290489,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/DOLOUSDT/series.json",
+      "sha256": "a6d98229dd37d99c6272a4feeb3bd92e0a1e0b014472cff513d45052e3c6fd77",
+      "size_bytes": 283317,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ARUSDT/series.json",
+      "sha256": "4e4018ffae079836602eb0e20b56faf39836d31682bf59c1e7bdc32b0d2f53ce",
+      "size_bytes": 139536,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/AVAXUSDT/series.json",
+      "sha256": "a8faaa88eb9c2ef1c921dd079362d064dae71a9cde26cdec3000cb0211f3e8ad",
+      "size_bytes": 143621,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/JTOUSDT/series.json",
+      "sha256": "1d3b5cd696469939dd4317d7facfffdafb231a02552914cc55176a3ae5bbc683",
+      "size_bytes": 301984,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/STOUSDT/series.json",
+      "sha256": "17ba6d5c001ccf3035a442ace3398d6abb0122e44665d52223a22e56459def10",
+      "size_bytes": 369143,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/HYPERUSDT/series.json",
+      "sha256": "c33a381594fc80be436f5420577cf34a398d2e7803d428c7a70c3e277edc1037",
+      "size_bytes": 656380,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/INJUSDT/series.json",
+      "sha256": "2d9d9e8624223b4813dc6139cc74dc6676b9328d7dae657735bb88fa58ef8672",
+      "size_bytes": 158868,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/BANDUSDT/series.json",
+      "sha256": "1116eb964ed6112edb74f46dbe52ded7a760b508cc8f0fb459d25035f8e86796",
+      "size_bytes": 140704,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/SOLUSDT/series.json",
+      "sha256": "c9b0f152034ecd85b4955cad6b79bb16986dc7c99c5d7ca948a9b9e7b63bffa0",
+      "size_bytes": 142827,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/RLCUSDT/series.json",
+      "sha256": "310c0c8347439fd00d4630466fc81534af2aa9609e16cbc15cbfd13917ea3a26",
+      "size_bytes": 140384,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/HYPEUSDT/series.json",
+      "sha256": "5ddf6af2ea21a8ea356fe9fa02824306270d225f422be68f4ce1a48a83ee71a4",
+      "size_bytes": 143029,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/HOLOUSDT/series.json",
+      "sha256": "9d56cd1572e1380c67403f7fb4b79325615a436aec8f18a9a80318dd1cc27f0b",
+      "size_bytes": 281751,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/NXPCUSDT/series.json",
+      "sha256": "888f28653486f850cf17b4036eb5c4f40221302fe19fe6aa4fd45338519cd7f6",
+      "size_bytes": 284454,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/HEIUSDT/series.json",
+      "sha256": "27f52f35fc064e514369a454e0ab7d4142ce5ae5d5d4ba30adc489bd3c72226c",
+      "size_bytes": 280948,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/PENDLEUSDT/series.json",
+      "sha256": "fd1f8a4c498ddc14772ad48b54478b5e22cc41c53a7c37a7176c723f69c7b35a",
+      "size_bytes": 145054,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ZKPUSDT/series.json",
+      "sha256": "caf77f92de3e04485fa38ff13e5b1db400b7393abbcba4fbb1b4314a05d101b7",
+      "size_bytes": 333951,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/LAUSDT/series.json",
+      "sha256": "b2e81325781c200679af437caf8e5d04a877dc64b2c96929aeea394a2087200c",
+      "size_bytes": 640950,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/COWUSDT/series.json",
+      "sha256": "de5c9b39932237e2d19fb3258de6fc59d19dae2b6abe7fefc8434d6e06e8adcd",
+      "size_bytes": 408494,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/GENIUSUSDT/series.json",
+      "sha256": "5a16493b21f0f6842b724e7086d4c037fa55fe89c9576abdbf55d87033cf9790",
+      "size_bytes": 136198,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/TREEUSDT/series.json",
+      "sha256": "f97324c2e66414e0d99727c2b11e8bba4e044c72764758410779fe12df51f533",
+      "size_bytes": 649809,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/METUSDT/series.json",
+      "sha256": "cfc3c59d51764af158397ab841d88372a2af32433979161e048516dbb3fbd45d",
+      "size_bytes": 256157,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ROBOUSDT/series.json",
+      "sha256": "2824e60c1e86dcf6a01b0232cb03641062bcddb18674fc0e1170fffae1dbe0d0",
+      "size_bytes": 167177,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ONGUSDT/series.json",
+      "sha256": "61e9f5b1c0604810578486a540e246774b6fdc2dfb36519c94878e97eae14149",
+      "size_bytes": 313308,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/AXSUSDT/series.json",
+      "sha256": "74e18911b447e07193c0bc347abfb3814faa49372c6ffc3e737492981bbd531b",
+      "size_bytes": 252662,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/MORPHOUSDT/series.json",
+      "sha256": "caddcbbae0d56a73510553c39f774c1c8415a8a60cfd170984bdcc00d64334ad",
+      "size_bytes": 290942,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/NEWTUSDT/series.json",
+      "sha256": "b63ce894ddb863b9c460fc384aa0011ea6ebaaac933694e049d4c3d56ef4065c",
+      "size_bytes": 649932,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/NEOUSDT/series.json",
+      "sha256": "7ecba32bb234505289200bc53522685bc66832950615744db7b3416cc7f213ec",
+      "size_bytes": 141165,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/LQTYUSDT/series.json",
+      "sha256": "44972c1a99592645133996ba5220edb8ec8b36748399b43d4d8eafdfe9bcd4fc",
+      "size_bytes": 140212,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/PROVEUSDT/series.json",
+      "sha256": "cc93ab70831645965f0222a4dd485d4c20702fe69fbc027d8ed3eeb85cf5516d",
+      "size_bytes": 292276,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/CVXUSDT/series.json",
+      "sha256": "ae428afa3a73b5667b1003a0f498d8fcde3c9d910d5e1c221cd13a5ccd0c7520",
+      "size_bytes": 280525,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/MIRAUSDT/series.json",
+      "sha256": "66bde600fb97a470352be3ecbbd9837dda6754d389b4f2b49033043f88c4967a",
+      "size_bytes": 592541,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/BREVUSDT/series.json",
+      "sha256": "2c0f92adb89e24f2eb9b89a98595bf6de8277d4a75cdbcc410f4d236b16a9374",
+      "size_bytes": 313385,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/YBUSDT/series.json",
+      "sha256": "77a3aa01f6ac4366ef115c5dc454cd346867cdf0c2286f9c4244c2435db7a657",
+      "size_bytes": 252494,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/REUSDT/series.json",
+      "sha256": "7dd93a88b2f53a127695a9f84da2aed5d5e8785dd5e93f1976b2e2f1f3963ff4",
+      "size_bytes": 91980,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/BERAUSDT/series.json",
+      "sha256": "a3e61a2bf2f492064acfb496c34b9b124a5b228f3ebb8223617d8a970a9e04d4",
+      "size_bytes": 409367,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/AGLDUSDT/series.json",
+      "sha256": "a32016fdaef27701d27d1fbd8f9c6bfe2b2edc7aad4149dc260bbab2773a3e9c",
+      "size_bytes": 142081,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ERAUSDT/series.json",
+      "sha256": "44ddc0c61d2e1e22f3e3f463c11002bdf38070fc88ab05999b2cd63518d5623a",
+      "size_bytes": 686251,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ETCUSDT/series.json",
+      "sha256": "012de0ef0e74abe3192dee0ed8d4dcaabcbb4feafdf9bd297ab79cff76b84882",
+      "size_bytes": 142456,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/MASKUSDT/series.json",
+      "sha256": "77d891521a7812fc7e49d8809c080843abb985a0d8fed2aedc8ec1b885c2abb0",
+      "size_bytes": 650626,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/MMTUSDT/series.json",
+      "sha256": "4e55d1b42347cf5b3649ec07b3bef3ccd74c60e4a391030b185c6bccf433fa43",
+      "size_bytes": 472643,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/LITUSDT/series.json",
+      "sha256": "91c80a47aebdfd8f52799d2284e8fd858f5e38641f77e980f0b89e7bd9ecd755",
+      "size_bytes": 203043,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/MOVRUSDT/series.json",
+      "sha256": "1b197eb6909f23d01e3fe2a76457bea206ffd97b9cd79dd035719b2c2de450da",
+      "size_bytes": 283504,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/MEUSDT/series.json",
+      "sha256": "5f27c337d7354008c8968fca6aa3f8528add3d6a19b2cb365acbcb51c3bc6f98",
+      "size_bytes": 529252,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/LTCUSDT/series.json",
+      "sha256": "eed1331220b4456a0737bb3ad16f74757a87253c7fe6df4cc784393560525c76",
+      "size_bytes": 142665,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/GASUSDT/series.json",
+      "sha256": "91ecc1af00eff87f5fcacf9462270baf18fda7468d5574c2cc5fdbb0178b127f",
+      "size_bytes": 401024,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ZENUSDT/series.json",
+      "sha256": "a9ac6c837f14dcc281a6d19abc05a090c167ec8c392263325484ce19abd55275",
+      "size_bytes": 141359,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ENSOUSDT/series.json",
+      "sha256": "534cae2632c365cae0c0556e2a0d88e175ebd0331ffbb51812907c20187068db",
+      "size_bytes": 506270,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/CYBERUSDT/series.json",
+      "sha256": "f16ba476f2819ede49bae7fb84b6a173179392a47f470ac8f3873ce3807a986e",
+      "size_bytes": 288950,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/UMAUSDT/series.json",
+      "sha256": "40acfb4f0a3a54e171e6c69fbd634eb968d16fce4fa1e4d21e3e302624e3240c",
+      "size_bytes": 280991,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ORDIUSDT/series.json",
+      "sha256": "2b0d9629a414efeda3d4d5f35fbe3ec0d7345a03d446274b01d155e6e38d5b9e",
+      "size_bytes": 284483,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/KAITOUSDT/series.json",
+      "sha256": "525e3c36dc58b9441f8e80e50a7ad58d0e822bd5d04bc15946767f336e35ad24",
+      "size_bytes": 658186,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/QTUMUSDT/series.json",
+      "sha256": "d3c8f79a7a33b0a6e115935b178628d53d29bde8a04f1612e08ae2cb130d7464",
+      "size_bytes": 141235,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ALPINEUSDT/series.json",
+      "sha256": "f7c7304623f9e095d13b35f485e510b28185e92fae2632e1d613806249bd4d4e",
+      "size_bytes": 287369,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ORCAUSDT/series.json",
+      "sha256": "55af8f866d4cd6ed2d49c152a24adb8ccee8f07b77c671f2fc8834ec70ac5449",
+      "size_bytes": 546059,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/KSMUSDT/series.json",
+      "sha256": "467a6d0fe0bc50414231d48eedcabab114e9673f967d4ff5083883ac1780b083",
+      "size_bytes": 140414,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/EGLDUSDT/series.json",
+      "sha256": "8e567485e118b24b13cee89241e6e99331a2e4c8d02d2d82c73ff9c38b6b0438",
+      "size_bytes": 141879,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/EULUSDT/series.json",
+      "sha256": "c97af0c51a2914ce8bcd84333ec9e3f95d5100bacd897ce56e4a27bdd1c264bb",
+      "size_bytes": 252535,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/BARDUSDT/series.json",
+      "sha256": "b38bf66e69c73af00a499e8df50e52a8a402088c0c77e5bf26dcfaa286e50f0f",
+      "size_bytes": 706242,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/XMRUSDT/series.json",
+      "sha256": "90e74fe8483ce0ff6b8d8c7fc4c0ca0dd82eec73fb446684caa7dc663ac35826",
+      "size_bytes": 139385,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/DASHUSDT/series.json",
+      "sha256": "ba972c6ae12ed48d2e8c7800f9775b1e86a65150747219ba5a9cecc7623ad2eb",
+      "size_bytes": 141301,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/METISUSDT/series.json",
+      "sha256": "d1504ec289614d54da7c045e5fbd3a9df879ae197fe0144ec111ffa5b7fa9a48",
+      "size_bytes": 286190,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/LPTUSDT/series.json",
+      "sha256": "666be2ff072efe831a2f27b34b7c508fe32dc2c610132f4a143804e7da332152",
+      "size_bytes": 645782,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/DEXEUSDT/series.json",
+      "sha256": "0fe0322faad661026db40e5523906ef1998fa5e76e6605ce11bb6e458acbc13b",
+      "size_bytes": 300244,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/TAOUSDT/series.json",
+      "sha256": "a07ba76af0ef2d407cb5d7c5f6c6a4994c20633d0913126e28e5c9a30ead37d6",
+      "size_bytes": 281637,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ETHUSDT/series.json",
+      "sha256": "b2c3149fea17cb752492d7f7ab718b77233af54dc81d3523a041cbf5444e3e3d",
+      "size_bytes": 143179,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/QNTUSDT/series.json",
+      "sha256": "d09271699a1998cd4b7d1f47c94c6128974589d483799769cb38909f0cfa6a32",
+      "size_bytes": 140816,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ENSUSDT/series.json",
+      "sha256": "c6cf2b8a03bf3da10d25ba144bca25355f94bd38c6dfe8ab56476a52e565a1eb",
+      "size_bytes": 140965,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ILVUSDT/series.json",
+      "sha256": "d9db7a044ee498458e9fefef1f711c6d4c7154c658afb6dd60ae62e60005e7f1",
+      "size_bytes": 280912,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ZECUSDT/series.json",
+      "sha256": "dddc793051311c36a15fb2563f1578df800d2a4e1c16391b7579615a63fd2763",
+      "size_bytes": 141145,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/SSVUSDT/series.json",
+      "sha256": "f8f8902112c04429b7cf5c0c285670e782900bc3839a0b7128cf4fb96dce5b37",
+      "size_bytes": 140356,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/BNBUSDT/series.json",
+      "sha256": "769a41349ba9126604177c9bc975373659f082bfd2f383ced8efa77ea825b943",
+      "size_bytes": 141940,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/BANANAUSDT/series.json",
+      "sha256": "a30e1b16ff5cbbadb3ab11f742123f1d64ab0e9eddc991ac5d62eef673c2164c",
+      "size_bytes": 418775,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/GMXUSDT/series.json",
+      "sha256": "015e7209bac66d927c1bf96686ecc32d9d7e3e9a9ed6c1988df018672b1c6df2",
+      "size_bytes": 140128,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/AUCTIONUSDT/series.json",
+      "sha256": "5c0016311395ff2473c9ec282b895d13f5d6bc95876845f298c3e58bb987a605",
+      "size_bytes": 357910,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/AAVEUSDT/series.json",
+      "sha256": "c39e9a7ae5a76de003cd95fac2ababe6204dfbc4436a7e5080988f8091369e24",
+      "size_bytes": 144065,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/VANAUSDT/series.json",
+      "sha256": "3bf5ee4ac369cd5349ee08552df0b880d47f9411cc5e3851addb14b8d7db88ae",
+      "size_bytes": 430687,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/TRBUSDT/series.json",
+      "sha256": "569a2b7b04de719552cb0e0f5a158b378876f4fba230733d70e9888bb59e3846",
+      "size_bytes": 279589,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/POWRUSDT/series.json",
+      "sha256": "42c0b46ce72fe74b3d8aa08c53efc2bf830a2ab7b6ead76b7bb4e983003987cc",
+      "size_bytes": 283629,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/RPLUSDT/series.json",
+      "sha256": "a767d23112abc677064f71576897f4b5a0ae52cc07597f8514cf57994b4f0b63",
+      "size_bytes": 301160,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/NMRUSDT/series.json",
+      "sha256": "fe67d62b0b56eb71cdfa6e5077a5b26ffeb80b969f4f7d516d8e65284ea15b24",
+      "size_bytes": 288479,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/COMPUSDT/series.json",
+      "sha256": "66da0a37f7e3ab303940be21f0704582c24697b790dc399291a09090bac6aabe",
+      "size_bytes": 143188,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/BCHUSDT/series.json",
+      "sha256": "81776bef8c876d4634ef7c67743598eaab5f87ae7f1d499ecedfc235d5b39a8f",
+      "size_bytes": 142926,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/BTCUSDT/series.json",
+      "sha256": "87c50b0281302dc713dfe10c131a82261965c3178938d1a0744f2842478b6512",
+      "size_bytes": 143255,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/GIGGLEUSDT/series.json",
+      "sha256": "0db5d2f6edd57573c5da4451d6f5c3058a0d01aa553ead2d191726b4224429c3",
+      "size_bytes": 262481,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/PAXGUSDT/series.json",
+      "sha256": "0ced8fdd4ae03d851e70a80deb165d4062be1e900416ea87fb33bc3a8865e025",
+      "size_bytes": 284867,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/XAUTUSDT/series.json",
+      "sha256": "1b50cc16cd627c8af6c7b8772975e96774f5dd9dd560d0936c2fccfd39b6278d",
+      "size_bytes": 286293,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/BNTUSDT/series.json",
+      "sha256": "e596c15c0c6a04903307535fe3183d99f0e588c5aa562c8a9c8e64281ef27358",
+      "size_bytes": 139814,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/YFIUSDT/series.json",
+      "sha256": "cdc57e13adc664785a17859c323e780b7cb259ffc0e6b26034bbe14f4415a9bc",
+      "size_bytes": 140434,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/XVSUSDT/series.json",
+      "sha256": "db9508335eb72c9f2f7af3126bc94632ffa182ded6fb0c0f3c531d40710475de",
+      "size_bytes": 140542,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/signal_strengthening_20261107/raw/bybit_funding/ALTUSDT/series.json",
+      "sha256": "2b96d8d25f696a1d66ce32f9d32a14d68d96ef420c2c49cb76755c01bc0ba791",
+      "size_bytes": 282273,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-empirical-calibration-20261109/data/ds/dataset.npz",
+      "sha256": "8ea6ddcd7af077f2334a8f05cc517acbaff4b0efe02ced71331b9f155e383b72",
+      "size_bytes": 402109424,
+      "kind": "historical_public_market_cache"
+    },
+    {
+      "path": "outputs/neg-funding-strategy-phase2-20261107/model_v1/extra_features.npz",
+      "sha256": "b197378d6a82a1cc41f7186f5d0eadcd04737ce8743d67d7b352e23ec4ad4508",
+      "size_bytes": 59736337,
+      "kind": "historical_public_market_cache"
+    }
+  ],
+  "total_bytes": 1348689224,
+  "redistribution": "Not included; bootstrap from explicitly provided local asset root. Real inventory stays local."
+}

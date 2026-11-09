@@ -1,0 +1,113 @@
+{
+  "at_utc": "2026-11-09T12:18:12.042000+00:00",
+  "representative_symbols": [
+    "BTCUSDT",
+    "1000PEPEUSDT",
+    "1000FLOKIUSDT",
+    "GRTUSDT"
+  ],
+  "compared_values": 639,
+  "overlap_rows": 391,
+  "mismatch_count": 0,
+  "mismatches": [],
+  "details": [
+    {
+      "symbol": "BTCUSDT",
+      "kind": "spot",
+      "overlap_rows": 32,
+      "compared_values": 64
+    },
+    {
+      "symbol": "BTCUSDT",
+      "kind": "perp",
+      "overlap_rows": 24,
+      "compared_values": 48
+    },
+    {
+      "symbol": "BTCUSDT",
+      "kind": "premium",
+      "overlap_rows": 24,
+      "compared_values": 24
+    },
+    {
+      "symbol": "BTCUSDT",
+      "kind": "funding",
+      "overlap_rows": 5,
+      "compared_values": 5
+    },
+    {
+      "symbol": "1000PEPEUSDT",
+      "kind": "spot",
+      "overlap_rows": 32,
+      "compared_values": 64
+    },
+    {
+      "symbol": "1000PEPEUSDT",
+      "kind": "perp",
+      "overlap_rows": 32,
+      "compared_values": 64
+    },
+    {
+      "symbol": "1000PEPEUSDT",
+      "kind": "premium",
+      "overlap_rows": 32,
+      "compared_values": 32
+    },
+    {
+      "symbol": "1000PEPEUSDT",
+      "kind": "funding",
+      "overlap_rows": 6,
+      "compared_values": 6
+    },
+    {
+      "symbol": "1000FLOKIUSDT",
+      "kind": "spot",
+      "overlap_rows": 32,
+      "compared_values": 64
+    },
+    {
+      "symbol": "1000FLOKIUSDT",
+      "kind": "perp",
+      "overlap_rows": 32,
+      "compared_values": 64
+    },
+    {
+      "symbol": "1000FLOKIUSDT",
+      "kind": "premium",
+      "overlap_rows": 32,
+      "compared_values": 32
+    },
+    {
+      "symbol": "1000FLOKIUSDT",
+      "kind": "funding",
+      "overlap_rows": 6,
+      "compared_values": 6
+    },
+    {
+      "symbol": "GRTUSDT",
+      "kind": "spot",
+      "overlap_rows": 32,
+      "compared_values": 64
+    },
+    {
+      "symbol": "GRTUSDT",
+      "kind": "perp",
+      "overlap_rows": 32,
+      "compared_values": 64
+    },
+    {
+      "symbol": "GRTUSDT",
+      "kind": "premium",
+      "overlap_rows": 32,
+      "compared_values": 32
+    },
+    {
+      "symbol": "GRTUSDT",
+      "kind": "funding",
+      "overlap_rows": 6,
+      "compared_values": 6
+    }
+  ],
+  "passed": true,
+  "all339pairs_not_claimed_exhaustively_crossverified": true
+}

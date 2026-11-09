@@ -1,0 +1,121 @@
+{
+  "version": "nfb.inventory-value.v3.20261109",
+  "registered_at": "2026-11-09T10:51:54.719584+08:00",
+  "research_only": true,
+  "submission_allowed": false,
+  "change": "Add a long-horizon conditional inventory value ranking. Do not replace the existing seven-day persistence event with a profit probability.",
+  "labels": {
+    "decision_cohort": "Weekly 00UTC landmarks since2025-10-28; observed prior funding/paired prices, provided cap_qty>0. Include nonnegative coins. No future-event selection.",
+    "delay_h": 72,
+    "entry_window_h": 720,
+    "unwind_h": 216,
+    "label_end_offset_h": 1007,
+    "quantity_fractions": [
+      0.5,
+      1.0
+    ],
+    "quantity_is_conditional_scenario_not_supply_forecast": true,
+    "target": "Completed independent-coin net_USDT after full fees, frozen k4 and cost assumptions, constrained entry/exit. Funding and paired-price components saved separately. No shared-capital competition in label; assess actual combined portfolio independently. Zero activity remains zero, missing data or unrepurchased coin censors.",
+    "missing": "Any missing paired quote or stale funding while contract alive within entry window invalidates untraded-zero label too; held-quote gaps and remaining positions censor. Lifecycle delivery known in historical registry, no invented liquidation. All outcome windows purged, including early failures."
+  },
+  "features": {
+    "base": 90,
+    "additional": [
+      "conditional notional capacity, OI and volume ratios, frozen fee/spread cost proxies",
+      "completed past negative-cycle lengths/recurrence and raw-cash-flow EMA",
+      "separately ablated cross-venue actual-settlement cash sums, missing and inferred cadence flags"
+    ],
+    "cutoff": "decision-1 completed hour only; no symbol ID as feature; static provided quantity is a conditional user input, not historical borrow availability."
+  },
+  "models": {
+    "primary": "Hurdle HGB: P(abs(net)>1U) times expected signed net conditional on abs(net)>1U; raw probability not calibrated live probability",
+    "HGB_fixed": {
+      "max_iter": 100,
+      "max_leaf_nodes": 7,
+      "min_samples_leaf": 60,
+      "learning_rate": 0.05,
+      "l2_regularization": 10.0,
+      "early_stopping": false,
+      "random_state": 20261109
+    },
+    "ablations": [
+      "hurdle_base90",
+      "hurdle_no_cross"
+    ],
+    "comparators": [
+      "direct_HGB",
+      "ridge_alpha10",
+      "MLP64_32",
+      "old_short_net",
+      "EMA72",
+      "EMA720",
+      "capacity_EMA72",
+      "raw_cash_EMA720"
+    ],
+    "MLP": "Train-only median/missing/scaling; target standardization; hidden64,32; alpha10;max_iter150; no random early stopping;warnings retained. No architecture sweep.",
+    "no_test_model_selection": true
+  },
+  "splits": {
+    "monthly_expanding_train": "March through November2026 month-start fits. Only finite labels with full label_end <fit_time. No calibration family selector. November model unverified prospectively.",
+    "coin_holdout": "Primary additional fits exclude sha256(symbol)%5==0, report predictions only on excluded-symbol future cohorts. No tuning from holdout.",
+    "history_seen": "All historical periods inspected previously, so retrospective walk-forward evidence; not a new blind holdout."
+  },
+  "portfolio": {
+    "periods": {
+      "earlier": [
+        "2026-03-01",
+        "2026-06-22",
+        "2026-07-01"
+      ],
+      "later": [
+        "2026-07-01",
+        "2026-10-30",
+        "2026-11-08"
+      ]
+    },
+    "cash": 10000000.0,
+    "B_leverage": 1,
+    "borrow_interest": 0,
+    "delay_h": 72,
+    "retain_inventory": true,
+    "requests": [
+      [
+        15,
+        20
+      ],
+      [
+        30,
+        20
+      ],
+      [
+        30,
+        40
+      ]
+    ],
+    "random_seeds": [
+      20261109,
+      20261110,
+      20261111,
+      20261112,
+      20261113,
+      20261114,
+      20261115,
+      20261116,
+      20261117,
+      20261118
+    ],
+    "half_quantity_comparison": true,
+    "exogenous_funding_control": true,
+    "rules_fees_cost_capacity": "Frozen RC2+exact integer raw24 exit input, same as prior aligned replay. No trading rule retuning. k4 remains unidentified stress parameter, comparek0, never infer causal self-impact.",
+    "supply_control": "Allready and requestall72h. No invented total borrow quota. Review batches are research comparisons. Scores independently marginal, not additive portfolio forecasts."
+  },
+  "acceptance": "Primary model must improve earlier and later joint PnL against EMA72, capacity_EMA72, and EMA720 at15d20, without one coin explaining incremental gain; audit matched30d40, half-quantity and k0; otherwise WATCH_ONLY. Report every model, all negative and censored results. No retuning after results.",
+  "input_hashes": {
+    "/Users/leslie/Documents/同花顺/outputs/neg-funding-aligned-research-20261109/data/daily_samples.npz": "fa11c9c040bdf06c9b7780647e13f8dcb0cc9d22d40e613db79458fe910fc393",
+    "/Users/leslie/Documents/同花顺/outputs/neg-funding-aligned-research-20261109/data/economic_models.joblib": "72427acfc12e43764b2c9634f65c9f335cf03be472a878db26adeb9cb41de9ce",
+    "/Users/leslie/Documents/同花顺/outputs/neg-funding-strategy-online-20261108/runtime/MODEL_PROFILE.json": "b2a087688dc3201d506945d3be25083c9acc77a2934d0bad2e73d4401eb725ae",
+    "/Users/leslie/Documents/同花顺/outputs/neg-funding-empirical-calibration-20261109/data/MANIFEST.json": "7cbbe1d8fb0a62096f6bd84e805c0e3510ca444192c69ed9ec05f83c88dd054c",
+    "/Users/leslie/Documents/同花顺/neg-funding-strategy-v1/private/inventory_caps.csv": "1b0de3cbc003cae6bb66527667246eb030c57fe4dc5d999fbec7951cf219334e"
+  },
+  "write_scope": "/Users/leslie/Documents/同花顺/outputs/neg-funding-inventory-value-v3-20261109"
+}

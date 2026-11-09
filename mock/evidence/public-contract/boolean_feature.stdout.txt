@@ -1,0 +1,1 @@
+{"schema_version": "nfb.signal-output.v3", "status": "INVALID_INPUT", "submission_allowed": false, "error": "True is not of type 'number', 'null'"}

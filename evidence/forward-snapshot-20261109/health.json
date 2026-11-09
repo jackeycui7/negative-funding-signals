@@ -1,0 +1,368 @@
+{
+  "created_at_utc": "2026-11-09T12:40:12.054000+00:00",
+  "state": "COLLECTING",
+  "last_successful_response_utc": "2026-11-09T12:39:42.121000+00:00",
+  "source_coverage": [
+    {
+      "kind": "bybit_funding",
+      "symbols": 305,
+      "records": 11340,
+      "latest_source_utc": "2026-11-09T08:00:00+00:00",
+      "latest_received_utc": "2026-11-09T08:25:14.979000+00:00"
+    },
+    {
+      "kind": "datahub_coverage",
+      "symbols": 338,
+      "records": 1865,
+      "latest_source_utc": "2026-11-09T12:39:42.121000+00:00",
+      "latest_received_utc": "2026-11-09T12:39:42.121000+00:00"
+    },
+    {
+      "kind": "datahub_source_unavailable",
+      "symbols": 1,
+      "records": 9,
+      "latest_source_utc": "2026-11-09T12:36:35.463000+00:00",
+      "latest_received_utc": "2026-11-09T12:36:35.463000+00:00"
+    },
+    {
+      "kind": "funding",
+      "symbols": 330,
+      "records": 5551,
+      "latest_source_utc": "2026-11-09T12:00:00.002000+00:00",
+      "latest_received_utc": "2026-11-09T12:37:29.213000+00:00"
+    },
+    {
+      "kind": "funding_metadata",
+      "symbols": 1,
+      "records": 1,
+      "latest_source_utc": "2026-11-09T08:12:52.406000+00:00",
+      "latest_received_utc": "2026-11-09T08:12:52.406000+00:00"
+    },
+    {
+      "kind": "futures_metadata",
+      "symbols": 1,
+      "records": 1,
+      "latest_source_utc": "2026-11-09T08:12:51.891000+00:00",
+      "latest_received_utc": "2026-11-09T08:12:51.891000+00:00"
+    },
+    {
+      "kind": "global_accounts",
+      "symbols": 332,
+      "records": 285136,
+      "latest_source_utc": "2026-11-08T23:55:00+00:00",
+      "latest_received_utc": "2026-11-09T12:26:01.355000+00:00"
+    },
+    {
+      "kind": "oi",
+      "symbols": 332,
+      "records": 373761,
+      "latest_source_utc": "2026-11-09T11:55:00+00:00",
+      "latest_received_utc": "2026-11-09T12:30:05.124000+00:00"
+    },
+    {
+      "kind": "perp",
+      "symbols": 330,
+      "records": 10171,
+      "latest_source_utc": "2026-11-09T11:00:00+00:00",
+      "latest_received_utc": "2026-11-09T12:26:55.743000+00:00"
+    },
+    {
+      "kind": "premium",
+      "symbols": 330,
+      "records": 23031,
+      "latest_source_utc": "2026-11-09T11:00:00+00:00",
+      "latest_received_utc": "2026-11-09T12:27:08.861000+00:00"
+    },
+    {
+      "kind": "probe",
+      "symbols": 4,
+      "records": 4,
+      "latest_source_utc": "2026-11-09T08:08:55.666000+00:00",
+      "latest_received_utc": "2026-11-09T08:08:55.666000+00:00"
+    },
+    {
+      "kind": "spot",
+      "symbols": 328,
+      "records": 19219,
+      "latest_source_utc": "2026-11-09T11:00:00+00:00",
+      "latest_received_utc": "2026-11-09T12:39:42.121000+00:00"
+    },
+    {
+      "kind": "taker_flow",
+      "symbols": 332,
+      "records": 285378,
+      "latest_source_utc": "2026-11-08T23:55:00+00:00",
+      "latest_received_utc": "2026-11-09T12:26:01.357000+00:00"
+    },
+    {
+      "kind": "top_accounts",
+      "symbols": 332,
+      "records": 285148,
+      "latest_source_utc": "2026-11-08T23:55:00+00:00",
+      "latest_received_utc": "2026-11-09T12:26:01.356000+00:00"
+    },
+    {
+      "kind": "top_positions",
+      "symbols": 332,
+      "records": 285145,
+      "latest_source_utc": "2026-11-08T23:55:00+00:00",
+      "latest_received_utc": "2026-11-09T12:26:01.356000+00:00"
+    }
+  ],
+  "persistent_cooldowns": [
+    {
+      "venue": "bybit",
+      "until_utc": "2026-11-09T12:02:21.092000+00:00",
+      "reason": "HTTP_403",
+      "active": false
+    },
+    {
+      "venue": "binance_futures",
+      "until_utc": "2026-11-09T12:19:56.347000+00:00",
+      "reason": "HTTP_451",
+      "active": false
+    },
+    {
+      "venue": "binance_spot",
+      "until_utc": "2026-11-09T12:19:56.718000+00:00",
+      "reason": "HTTP_451",
+      "active": false
+    }
+  ],
+  "historical_http_failures": [
+    {
+      "venue": "aurabit_datahub",
+      "path": "/v1/funding",
+      "http_status": 404,
+      "count": 1
+    },
+    {
+      "venue": "aurabit_datahub",
+      "path": "/v1/latest/funding",
+      "http_status": 404,
+      "count": 5
+    },
+    {
+      "venue": "aurabit_datahub",
+      "path": "/v1/latest/klines",
+      "http_status": 404,
+      "count": 10
+    },
+    {
+      "venue": "binance_futures",
+      "path": "/fapi/v1/fundingRate",
+      "http_status": 403,
+      "count": 2
+    },
+    {
+      "venue": "binance_futures",
+      "path": "/fapi/v1/fundingRate",
+      "http_status": 451,
+      "count": 9
+    },
+    {
+      "venue": "binance_futures",
+      "path": "/fapi/v1/klines",
+      "http_status": 451,
+      "count": 2
+    },
+    {
+      "venue": "binance_futures",
+      "path": "/fapi/v1/premiumIndexKlines",
+      "http_status": 451,
+      "count": 5
+    },
+    {
+      "venue": "binance_public_archive",
+      "path": "/data/futures/um/daily/metrics/ACXUSDT/ACXUSDT-metrics-2026-11-06.zip",
+      "http_status": 404,
+      "count": 1
+    },
+    {
+      "venue": "binance_public_archive",
+      "path": "/data/futures/um/daily/metrics/ACXUSDT/ACXUSDT-metrics-2026-11-07.zip",
+      "http_status": 404,
+      "count": 2
+    },
+    {
+      "venue": "binance_public_archive",
+      "path": "/data/futures/um/daily/metrics/ACXUSDT/ACXUSDT-metrics-2026-11-08.zip",
+      "http_status": 404,
+      "count": 2
+    },
+    {
+      "venue": "binance_public_archive",
+      "path": "/data/futures/um/daily/metrics/AERGOUSDT/AERGOUSDT-metrics-2026-11-06.zip",
+      "http_status": 404,
+      "count": 1
+    },
+    {
+      "venue": "binance_public_archive",
+      "path": "/data/futures/um/daily/metrics/AERGOUSDT/AERGOUSDT-metrics-2026-11-07.zip",
+      "http_status": 404,
+      "count": 2
+    },
+    {
+      "venue": "binance_public_archive",
+      "path": "/data/futures/um/daily/metrics/AERGOUSDT/AERGOUSDT-metrics-2026-11-08.zip",
+      "http_status": 404,
+      "count": 2
+    },
+    {
+      "venue": "binance_public_archive",
+      "path": "/data/futures/um/daily/metrics/HFTUSDT/HFTUSDT-metrics-2026-11-06.zip",
+      "http_status": 404,
+      "count": 1
+    },
+    {
+      "venue": "binance_public_archive",
+      "path": "/data/futures/um/daily/metrics/HFTUSDT/HFTUSDT-metrics-2026-11-07.zip",
+      "http_status": 404,
+      "count": 2
+    },
+    {
+      "venue": "binance_public_archive",
+      "path": "/data/futures/um/daily/metrics/HFTUSDT/HFTUSDT-metrics-2026-11-08.zip",
+      "http_status": 404,
+      "count": 2
+    },
+    {
+      "venue": "binance_public_archive",
+      "path": "/data/futures/um/daily/metrics/ICXUSDT/ICXUSDT-metrics-2026-11-06.zip",
+      "http_status": 404,
+      "count": 1
+    },
+    {
+      "venue": "binance_public_archive",
+      "path": "/data/futures/um/daily/metrics/ICXUSDT/ICXUSDT-metrics-2026-11-07.zip",
+      "http_status": 404,
+      "count": 2
+    },
+    {
+      "venue": "binance_public_archive",
+      "path": "/data/futures/um/daily/metrics/ICXUSDT/ICXUSDT-metrics-2026-11-08.zip",
+      "http_status": 404,
+      "count": 2
+    },
+    {
+      "venue": "binance_public_archive",
+      "path": "/data/futures/um/daily/metrics/SCRTUSDT/SCRTUSDT-metrics-2026-11-06.zip",
+      "http_status": 404,
+      "count": 1
+    },
+    {
+      "venue": "binance_public_archive",
+      "path": "/data/futures/um/daily/metrics/SCRTUSDT/SCRTUSDT-metrics-2026-11-07.zip",
+      "http_status": 404,
+      "count": 2
+    },
+    {
+      "venue": "binance_public_archive",
+      "path": "/data/futures/um/daily/metrics/SCRTUSDT/SCRTUSDT-metrics-2026-11-08.zip",
+      "http_status": 404,
+      "count": 2
+    },
+    {
+      "venue": "binance_public_archive",
+      "path": "/data/futures/um/daily/metrics/STORJUSDT/STORJUSDT-metrics-2026-11-06.zip",
+      "http_status": 404,
+      "count": 1
+    },
+    {
+      "venue": "binance_public_archive",
+      "path": "/data/futures/um/daily/metrics/STORJUSDT/STORJUSDT-metrics-2026-11-07.zip",
+      "http_status": 404,
+      "count": 2
+    },
+    {
+      "venue": "binance_public_archive",
+      "path": "/data/futures/um/daily/metrics/STORJUSDT/STORJUSDT-metrics-2026-11-08.zip",
+      "http_status": 404,
+      "count": 2
+    },
+    {
+      "venue": "binance_public_archive",
+      "path": "/data/futures/um/daily/metrics/VANRYUSDT/VANRYUSDT-metrics-2026-11-06.zip",
+      "http_status": 404,
+      "count": 1
+    },
+    {
+      "venue": "binance_public_archive",
+      "path": "/data/futures/um/daily/metrics/VANRYUSDT/VANRYUSDT-metrics-2026-11-07.zip",
+      "http_status": 404,
+      "count": 2
+    },
+    {
+      "venue": "binance_public_archive",
+      "path": "/data/futures/um/daily/metrics/VANRYUSDT/VANRYUSDT-metrics-2026-11-08.zip",
+      "http_status": 404,
+      "count": 2
+    },
+    {
+      "venue": "binance_spot",
+      "path": "/api/v3/klines",
+      "http_status": 451,
+      "count": 14
+    },
+    {
+      "venue": "bybit",
+      "path": "/v5/market/funding/history",
+      "http_status": 0,
+      "count": 42
+    },
+    {
+      "venue": "bybit",
+      "path": "/v5/market/funding/history",
+      "http_status": 403,
+      "count": 14
+    }
+  ],
+  "next_daily_grid_utc": "2026-11-10T00:00:00+00:00",
+  "models_and_thresholds_changed": false,
+  "old_ledgers_changed": false,
+  "predictions": 0,
+  "matured_verified": 0,
+  "last_cycle": {
+    "started_at_utc": "2026-11-09T12:39:49.626000+00:00",
+    "predictions_created": 0,
+    "collection": {
+      "started_utc": "2026-11-09T12:39:51.060000+00:00",
+      "finished_utc": "2026-11-09T12:40:03.796000+00:00",
+      "source_cutoff_exclusive_utc": "2026-11-09T12:39:51.060000+00:00",
+      "queued": 1957,
+      "attempted": 0,
+      "suspended_by_source_cooldown": 0,
+      "deferred_by_page_budget": 1957,
+      "cooldowns": [
+        [
+          "bybit",
+          1794225741092,
+          "HTTP_403"
+        ],
+        [
+          "binance_futures",
+          1794226796347,
+          "HTTP_451"
+        ],
+        [
+          "binance_spot",
+          1794226796718,
+          "HTTP_451"
+        ]
+      ],
+      "statuses": {
+        "OK": 0,
+        "EMPTY_RETRY_LATER": 0,
+        "FAILED": 0,
+        "DEFERRED": 0,
+        "BUDGET_DEFERRED": 0
+      }
+    },
+    "maturation": {
+      "mature_predictions": 0,
+      "new_outcome_revisions": 0
+    },
+    "status": "COMPLETED",
+    "finished_at_utc": "2026-11-09T12:40:05.450000+00:00"
+  }
+}
