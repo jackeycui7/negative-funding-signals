@@ -1,0 +1,256 @@
+{
+ "as_of": "2026-01-05",
+ "model": "gpt-6-astra",
+ "mode": "onset",
+ "turns": [
+  {
+   "content": "",
+   "calls": [
+    "base_rates {}",
+    "past_onsets {\"lookback_days\":90,\"limit\":20}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "quiet_board {\"page\":1,\"per_page\":100}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "quiet_board {\"page\":2,\"per_page\":100}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "quiet_board {\"page\":3,\"per_page\":100}"
+   ]
+  },
+  {
+   "content": "I’ve reviewed all 239 quiet contracts. The historical baseline is 9.4% for the exact target-window hit, rising to roughly 27–32% for frequent repeat offenders; brief predicted-funding dips alone are much weaker evidence.\n\nThe broad watchlist includes:\n- **Page 1:** ACT, AIXBT, ALICE, ALLO, ALPINE, API3, ARKM, AWE, BANANA, BB, BERA, BIO, BOME, BREV, DOLO, ERA, FLUX, plus ACH, AEVO, AGLD, ASTR, BAT, BNT, COMP, DASH, FET and 2Z.\n- **Page 2:** HMSTR, HYPER, INIT, IO, METIS, ME, MINA, MIRA, MMT, NEWT, NIL, NMR, OPEN, PLUME, PROVE, SAHARA, SHELL, SIGN, SOMI, SPELL, SPK, plus ILV, MAV, NXPC, RENDER and STRK.\n- **Page 3:** TREE, TURTLE, XAI, YB, ZEC, ZRO, plus SYN, SYRUP, UMA, VIRTUAL, WIF, WLFI and XTZ.\n\nNext I’ll check announcement scope and hourly paths, then use past episode depth to distinguish potentially substantial onsets from shallow touches.",
+   "calls": [
+    "announcements {\"days\":30}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "coin_hourly {\"syms\":[\"ACTUSDT\",\"AIXBTUSDT\",\"ALICEUSDT\",\"ALLOUSDT\",\"ALPINEUSDT\",\"API3USDT\",\"ARKMUSDT\",\"AWEUSDT\"],\"hours\":96,\"step\":4}",
+    "coin_hourly {\"syms\":[\"BANANAUSDT\",\"BBUSDT\",\"BERAUSDT\",\"BIOUSDT\",\"BOMEUSDT\",\"BREVUSDT\",\"DOLOUSDT\",\"ERAUSDT\"],\"hours\":96,\"step\":4}",
+    "coin_hourly {\"syms\":[\"FLUXUSDT\",\"ACHUSDT\",\"AEVOUSDT\",\"AGLDUSDT\",\"ASTRUSDT\",\"BATUSDT\",\"BNTUSDT\",\"COMPUSDT\"],\"hours\":96,\"step\":4}",
+    "coin_hourly {\"syms\":[\"DASHUSDT\",\"FETUSDT\",\"2ZUSDT\",\"HMSTRUSDT\",\"HYPERUSDT\",\"INITUSDT\",\"IOUSDT\",\"METISUSDT\"],\"hours\":96,\"step\":4}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "coin_hourly {\"syms\":[\"MEUSDT\",\"MINAUSDT\",\"MIRAUSDT\",\"MMTUSDT\",\"NEWTUSDT\",\"NILUSDT\",\"NMRUSDT\",\"OPENUSDT\"],\"hours\":96,\"step\":4}",
+    "coin_hourly {\"syms\":[\"PLUMEUSDT\",\"PROVEUSDT\",\"SAHARAUSDT\",\"SHELLUSDT\",\"SIGNUSDT\",\"SOMIUSDT\",\"SPELLUSDT\",\"SPKUSDT\"],\"hours\":96,\"step\":4}",
+    "coin_hourly {\"syms\":[\"ILVUSDT\",\"MAVUSDT\",\"NXPCUSDT\",\"RENDERUSDT\",\"STRKUSDT\",\"TREEUSDT\",\"TURTLEUSDT\",\"XAIUSDT\"],\"hours\":96,\"step\":4}",
+    "coin_hourly {\"syms\":[\"YBUSDT\",\"ZECUSDT\",\"ZROUSDT\",\"SYNUSDT\",\"SYRUPUSDT\",\"UMAUSDT\",\"VIRTUALUSDT\",\"WIFUSDT\"],\"hours\":96,\"step\":4}",
+    "coin_hourly {\"syms\":[\"WLFIUSDT\",\"XTZUSDT\"],\"hours\":96,\"step\":4}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "coin_detail {\"syms\":[\"NMRUSDT\",\"API3USDT\",\"MEUSDT\",\"OPENUSDT\",\"BIOUSDT\",\"BBUSDT\"],\"days\":30}",
+    "coin_detail {\"syms\":[\"SHELLUSDT\",\"PLUMEUSDT\",\"MMTUSDT\",\"ERAUSDT\",\"SIGNUSDT\",\"BANANAUSDT\"],\"days\":30}",
+    "coin_detail {\"syms\":[\"BERAUSDT\",\"AWEUSDT\",\"FLUXUSDT\",\"TREEUSDT\",\"BOMEUSDT\",\"ACTUSDT\"],\"days\":30}",
+    "coin_detail {\"syms\":[\"BREVUSDT\",\"SPKUSDT\",\"METISUSDT\",\"ALLOUSDT\",\"HMSTRUSDT\",\"DASHUSDT\"],\"days\":30}",
+    "market_screen {\"filters\":{\"quiet__eq\":true,\"age_d__lt\":45},\"limit\":120}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "market_screen {\"filters\":{\"quiet__eq\":true},\"sort_by\":\"deep_days90\",\"ascending\":false,\"limit\":120,\"columns\":[\"sym\",\"quiet\",\"min7\",\"r_pred8\",\"deep_days90\",\"prem24\",\"bybit_m7\",\"hl_m7\"]}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "market_screen {\"filters\":{\"quiet__eq\":true,\"oi_mc__gt\":40},\"limit\":120,\"columns\":[\"sym\",\"quiet\",\"min7\",\"r_pred8\",\"oi_mc\",\"bybit_m7\"]}"
+   ]
+  },
+  {
+   "content": "The strongest depth-weighted setups are repeat offenders, especially NMR, API3, BANANA, ME and OPEN. I reviewed 96-hour paths for 66 candidates and detailed histories for 24; the final probabilities remain below 40%, since even strong quiet setups usually do not hit the exact future window.\n\nTwo qualifications affect selection: pair-removal notices do **not** establish that all spot trading or borrowing is unavailable, so I have not assumed that. BREV is the only quiet listing under 45 days, but it is pre-market with zero reported spot volume and no confirmed transition date in the supplied announcements; I’m excluding it from this borrow list. Supply increases are treated as hedging-pressure proxies, not confirmed upcoming unlocks.",
+   "calls": [
+    "submit_list {\"picks\":[{\"rank\":1,\"sym\":\"NMRUSDT\",\"p_hit\":0.38,\"archetype\":\"D\",\"reason\":\"63 deep days in 90 and only 13 days since the last, with renewed OI growth of 20.24% over 3 days, volume at 2.03x and predicted funding dipping to -0.2318%. OI/mcap is 9.48%; past episodes paid 32.48% over 50.8 days and reach"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "quiet_board {\"page\":4,\"per_page\":70}"
+   ]
+  },
+  {
+   "content": "### Ranked list — January 8–15, 2026 UTC\n\nAll 15 satisfy `quiet__eq: true` at the decision time. Ranking reflects **hit probability × expected funding depth**, not probability alone.\n\n| Rank | Binance perp | p_hit | Archetype | Main evidence |\n|---:|---|---:|:---:|---|\n| 1 | **NMRUSDT** | **38%** | D | 63 deep days in 90; OI +20.24% over 3 days; predicted minimum −0.2318%. History includes a 50.8-day episode paying 32.48%. |\n| 2 | **API3USDT** | **35%** | D | 56 deep days; 10.41% OI/mcap; $0.76M daily spot volume. December’s relapse reached −0.865%, paying 1.94% over 3.7 days. |\n| 3 | **BANANAUSDT** | **34%** | D | OI +25.57% over 3 days, volume 2.01×, predicted minimum −0.1175%. Recent two-day episode paid 4.02% and reached −4.0%. |\n| 4 | **MEUSDT** | **36%** | D | 64 deep days; last deep 8 days ago; OI +22.79% in 24h and premium −0.1143%. Large reported supply increase supports possible residual hedging pressure. |\n| 5 | **OPENUSDT** | **33%** | D | 51 deep days; premium −0.1560%; monthly price decline 20.65%. Exceptional historical depth, but current volume is only 0.41×. |\n| 6 | **PLUMEUSDT** | **34%** | D | 33 deep days; 13.29% OI/mcap; predicted minimum −0.0969%. December’s six-day episode paid 3.39% and reached −1.035%. |\n| 7 | **SIGNUSDT** | **32%** | D | Premium −0.2050% against $0.135M daily spot volume; reported supply +21.48%. Recent episodes demonstrate substantial multi-day depth. |\n| 8 | **MMTUSDT** | **31%** | D | 24 deep days despite being only 61.5 days old; 17.69% OI/mcap; premium −0.1233%. November episodes paid 10.78% and 6.74%. |\n| 9 | **SHELLUSDT** | **37%** | D | Predicted mean falling to −0.0335%, minimum −0.1718%, premium −0.1641%. Small $16.88M capitalization and recent relapse history. |\n| 10 | **HMSTRUSDT** | **32%** | D | Volume 3.19×; price +11.08% in 24h; 13.92% OI/mcap. December episode reached −1.856% and paid 3.17% over 4.3 days. |\n| 11 | **FLUXUSDT** | **31%** | D | Premium widened to −0.1587%; predicted minimum −0.0754%; spot vol",
+   "calls": []
+  },
+  {
+   "content": "",
+   "calls": [
+    "submit_list {\"picks\":[{\"rank\":1,\"sym\":\"NMRUSDT\",\"p_hit\":0.38,\"archetype\":\"D\",\"reason\":\"63 deep days in 90 and only 13 days since the last combine with OI +20.24% over 3 days, volume 2.03x and a predicted minimum of -0.2318%. OI/mcap is 9.48%; a past 50.8-day episode paid 32.48% and reached -1.925%, supporting s"
+   ]
+  }
+ ],
+ "usage": {
+  "prompt": 2445890,
+  "completion": 6612
+ },
+ "rejected_submits": 1,
+ "seconds": 211.5,
+ "picks": [
+  {
+   "rank": 1,
+   "sym": "NMRUSDT",
+   "p_hit": 0.38,
+   "archetype": "D",
+   "reason": "63 deep days in 90 and only 13 days since the last combine with OI +20.24% over 3 days, volume 2.03x and a predicted minimum of -0.2318%. OI/mcap is 9.48%; a past 50.8-day episode paid 32.48% and reached -1.925%, supporting substantial conditional relapse depth."
+  },
+  {
+   "rank": 2,
+   "sym": "API3USDT",
+   "p_hit": 0.35,
+   "archetype": "D",
+   "reason": "56 deep days and a 12-day cooling period meet 10.41% OI/mcap and only $0.76M daily spot volume; predicted funding dipped to -0.0906% and OI rose 6.43% over 3 days. December 21-24 reached -0.865% and paid 1.94%, although improving predictions temper timing confidence."
+  },
+  {
+   "rank": 3,
+   "sym": "BANANAUSDT",
+   "p_hit": 0.34,
+   "archetype": "D",
+   "reason": "Renewed pump-short pressure is plausible with price +10.37% and OI +25.57% over 3 days, volume 2.01x, OI/mcap 10.09% and predicted funding dipping to -0.1175%. Only 8 days since the last deep print; December 24-26 reached -4.0% and paid 4.02% over 2 days."
+  },
+  {
+   "rank": 4,
+   "sym": "MEUSDT",
+   "p_hit": 0.36,
+   "archetype": "D",
+   "reason": "64 deep days, last deep 8 days ago, and a 30-day price decline of 30.49% support relapse susceptibility; reported supply +145.30% is a hedging-pressure proxy, not a confirmed upcoming unlock. OI rose 22.79% in 24h on 2.35x volume with premium -0.1143%; prior episodes paid 10.63% over 13.2 days and 9.68% over 33.6 days."
+  },
+  {
+   "rank": 5,
+   "sym": "OPENUSDT",
+   "p_hit": 0.33,
+   "archetype": "D",
+   "reason": "51 deep days, a 13-day cooling period and a 20.65% monthly decline accompany premium -0.1560% and predicted minimum -0.0579%; $0.76M spot volume and 6.41% OI/mcap suggest limited absorption. A prior 31.8-day episode paid 45.18% and reached -3.116%, but current volume at 0.41x warrants a large discount to that historical tail."
+  },
+  {
+   "rank": 6,
+   "sym": "PLUMEUSDT",
+   "p_hit": 0.34,
+   "archetype": "D",
+   "reason": "33 deep days, last deep 10 days ago, OI/mcap 13.29% and a 66.65% 60-day decline support renewed holder hedging; predicted funding still dipped to -0.0969%. December 20-26 paid 3.39% over 6 days and reached -1.035%, although premium has narrowed to -0.0485%."
+  },
+  {
+   "rank": 7,
+   "sym": "SIGNUSDT",
+   "p_hit": 0.32,
+   "archetype": "D",
+   "reason": "Premium averages -0.2050% against just $0.135M daily spot volume, with 26 deep days and reported circulating supply +21.48% over 30 days, consistent with residual hedging pressure. Recent episodes paid 3.60% over 2.5 days and 1.22% over 1.2 days; positive current settlements and 0.48x volume limit timing conviction."
+  },
+  {
+   "rank": 8,
+   "sym": "MMTUSDT",
+   "p_hit": 0.31,
+   "archetype": "D",
+   "reason": "Only 61.5 days old with 24 deep days, a 67.88% 60-day decline and 17.69% OI/mcap; premium averages -0.1233% and predicted funding dipped to -0.0562%. November episodes paid 10.78% over 10.3 days and 6.74% over 7.5 days, but 0.52x volume and positive current settlements temper the forecast."
+  },
+  {
+   "rank": 9,
+   "sym": "SHELLUSDT",
+   "p_hit": 0.37,
+   "archetype": "D",
+   "reason": "Pressure is rebuilding only 8 days after the last deep print: predicted mean -0.0335%, down 0.0151 percentage points versus 72h, minimum -0.1718%, and premium -0.1641%. Market cap $16.88M, spot volume $0.587M and 8.68% OI/mcap suggest constrained absorption; an earlier 8-day episode paid 5.42% and reached -0.946%."
+  },
+  {
+   "rank": 10,
+   "sym": "HMSTRUSDT",
+   "p_hit": 0.32,
+   "archetype": "D",
+   "reason": "Price rose 11.08% in 24h on 3.19x perp volume, with 13.92% OI/mcap, predicted minimum -0.0880% and only 9 days since a deep episode. December 18-22 paid 3.17% over 4.3 days and reached -1.856%; unchanged reported OI and positive funding elsewhere temper the renewed pump-short thesis."
+  },
+  {
+   "rank": 11,
+   "sym": "FLUXUSDT",
+   "p_hit": 0.31,
+   "archetype": "D",
+   "reason": "Hourly premium widened on January 4 to a -0.1587% daily average while predicted mean fell to -0.0042%, with minimum -0.0754%; daily spot volume is $0.513M. With 15 deep days and a 21-day cooling period, past episodes paying 5.17% over 4.8 days and 2.65% over 5.2 days support meaningful depth, though OI is not building."
+  },
+  {
+   "rank": 12,
+   "sym": "ERAUSDT",
+   "p_hit": 0.29,
+   "archetype": "D",
+   "reason": "23 deep days, last deep 12 days ago, premium -0.1826% average and -0.2392% current meet $0.454M spot volume and 6.78% OI/mcap. November's 2-day episode paid 4.30% and reached -3.941%, but improving predictions and latest +0.01% settlements require discounting that tail."
+  },
+  {
+   "rank": 13,
+   "sym": "ACTUSDT",
+   "p_hit": 0.29,
+   "archetype": "C",
+   "reason": "A 32.94% weekly collapse after December's pump leaves OI at 51.16% of market cap; Bybit's 7-day mean is -0.0580% and Binance predicted funding dipped to -0.1157%. Cross-venue pressure and extreme crowding support a potentially substantial onset, but nearly flat average premium (-0.0022%), declining OI and zero deep days in 90 are important counterevidence."
+  },
+  {
+   "rank": 14,
+   "sym": "SPKUSDT",
+   "p_hit": 0.25,
+   "archetype": "D",
+   "reason": "Fresh deterioration accompanies premium -0.2247% average and -0.3013% current, predicted minimum -0.0975%, reported supply +8.77% and a 12.83% monthly decline. Older episodes paid 10.92% over 11.3 days and 10.33% over 20 days, but only 5 deep days in the recent 90 and positive settlements warrant a restrained probability."
+  },
+  {
+   "rank": 15,
+   "sym": "TREEUSDT",
+   "p_hit": 0.28,
+   "archetype": "D",
+   "reason": "26 deep days and only 10 days since the last combine with market cap $17.59M, 9.57% OI/mcap and $0.647M spot volume; the recent spot-pair-removal notice does not establish complete spot or borrow unavailability. An earlier 11.8-day episode paid 6.26% and reached -1.104%, but current predictions remain +0.01%, placing it below actively warming repeat offenders."
+  }
+ ],
+ "chronic_rule": [
+  "ZRXUSDT",
+  "POLYXUSDT",
+  "0GUSDT",
+  "CYBERUSDT",
+  "ONTUSDT",
+  "GASUSDT",
+  "FLOWUSDT",
+  "LAUSDT",
+  "CVXUSDT",
+  "CVCUSDT",
+  "AVNTUSDT",
+  "TLMUSDT",
+  "NIGHTUSDT",
+  "RESOLVUSDT",
+  "HOLOUSDT",
+  "ZBTUSDT",
+  "REZUSDT",
+  "KAITOUSDT",
+  "HIVEUSDT",
+  "SAPIENUSDT",
+  "LSKUSDT",
+  "WCTUSDT",
+  "WALUSDT",
+  "ANIMEUSDT",
+  "GMTUSDT",
+  "TUSDT",
+  "MAGICUSDT",
+  "AUCTIONUSDT",
+  "QTUMUSDT",
+  "ZKPUSDT",
+  "TNSRUSDT",
+  "IOSTUSDT",
+  "KMNOUSDT",
+  "1000LUNCUSDT",
+  "TURBOUSDT",
+  "GLMUSDT",
+  "SUPERUSDT",
+  "VANAUSDT",
+  "ZKCUSDT",
+  "POWRUSDT"
+ ]
+}

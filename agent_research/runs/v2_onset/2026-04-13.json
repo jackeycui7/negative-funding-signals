@@ -1,0 +1,226 @@
+{
+ "as_of": "2026-04-13",
+ "model": "gpt-6-astra",
+ "mode": "onset",
+ "turns": [
+  {
+   "content": "",
+   "calls": [
+    "base_rates {}",
+    "past_onsets {\"lookback_days\":90,\"limit\":20}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "market_screen {\"filters\":{\"quiet__eq\":true},\"sort_by\":\"deep_days90\",\"limit\":35}",
+    "market_screen {\"filters\":{\"quiet__eq\":true},\"sort_by\":\"prem24\",\"ascending\":true,\"limit\":25}",
+    "market_screen {\"filters\":{\"quiet__eq\":true,\"age_d__lt\":45},\"sort_by\":\"age_d\",\"ascending\":true,\"limit\":30}",
+    "announcements {\"days\":30}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "market_screen {\"filters\":{\"quiet__eq\":true,\"deep_days90__ge\":5},\"sort_by\":\"deep_days90\",\"ascending\":false,\"limit\":60,\"columns\":[\"sym\",\"deep_days90\",\"days_since_deep\",\"ret7\",\"ret30\",\"oi_mc\",\"prem24\",\"pred_24min\",\"pred_trend\",\"svol24_m\",\"paid30\",\"bybit_m7\",\"hl_m7\"]}",
+    "market_screen {\"filters\":{\"quiet__eq\":true},\"sort_by\":\"oi_mc\",\"ascending\":false,\"limit\":20,\"columns\":[\"sym\",\"oi_mc\",\"oi7\",\"oi3\",\"ret7\",\"ret30\",\"circ_chg30\",\"prem24\",\"deep_days90\",\"pvol_surge\"]}",
+    "market_screen {\"filters\":{\"quiet__eq\":true},\"sort_by\":\"ret30\",\"ascending\":false,\"limit\":15,\"columns\":[\"sym\",\"ret3\",\"ret7\",\"ret30\",\"dd30\",\"deep_days90\",\"prem24\",\"pv_sv3\",\"pvol_surge\"]}",
+    "market_screen {\"filters\":{\"quiet__eq\":true},\"sort_by\":\"pred_trend\",\"ascending\":true,\"limit\":15,\"columns\":[\"sym\",\"pred_trend\",\"pred_24min\",\"prem24\",\"deep_days90\",\"bybit_now8\",\"hl_now8\",\"circ_chg30\",\"oi3\"]}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "coin_hourly {\"syms\":[\"AXSUSDT\",\"DUSKUSDT\",\"SENTUSDT\",\"ROBOUSDT\",\"LSKUSDT\",\"CYBERUSDT\",\"ZILUSDT\"],\"hours\":72,\"step\":12}",
+    "coin_hourly {\"syms\":[\"MOVEUSDT\",\"GASUSDT\",\"SXTUSDT\",\"INITUSDT\",\"CVXUSDT\",\"RONINUSDT\",\"ZKPUSDT\"],\"hours\":72,\"step\":12}",
+    "coin_hourly {\"syms\":[\"KITEUSDT\",\"VANAUSDT\",\"SYNUSDT\",\"BIOUSDT\",\"WCTUSDT\",\"PLUMEUSDT\",\"GLMUSDT\"],\"hours\":72,\"step\":12}",
+    "coin_hourly {\"syms\":[\"ARPAUSDT\",\"HOLOUSDT\",\"DEXEUSDT\",\"YBUSDT\",\"SIGNUSDT\",\"XAIUSDT\",\"RVNUSDT\"],\"hours\":72,\"step\":12}",
+    "market_screen {\"filters\":{\"quiet__eq\":true},\"sort_by\":\"circ_chg30\",\"ascending\":false,\"limit\":12,\"columns\":[\"sym\",\"circ_chg30\",\"ret30\",\"deep_days90\",\"prem24\"]}",
+    "market_screen {\"filters\":{\"quiet__eq\":true},\"sort_by\":\"oi7\",\"ascending\":false,\"limit\":12,\"columns\":[\"sym\",\"oi7\",\"ret7\",\"deep_days90\",\"prem24\",\"pvol_surge\"]}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "coin_detail {\"syms\":[\"AXSUSDT\",\"DUSKUSDT\",\"SENTUSDT\",\"ROBOUSDT\",\"LSKUSDT\",\"CYBERUSDT\"],\"days\":14}",
+    "coin_detail {\"syms\":[\"ZILUSDT\",\"MOVEUSDT\",\"GASUSDT\",\"SXTUSDT\",\"INITUSDT\",\"HOLOUSDT\"],\"days\":14}",
+    "coin_detail {\"syms\":[\"CVXUSDT\",\"VANAUSDT\",\"KITEUSDT\",\"BIOUSDT\",\"WCTUSDT\",\"ZKPUSDT\"],\"days\":14}",
+    "coin_detail {\"syms\":[\"PLUMEUSDT\",\"SYNUSDT\",\"RONINUSDT\",\"GLMUSDT\",\"XAIUSDT\",\"ARPAUSDT\"],\"days\":10}",
+    "market_screen {\"filters\":{\"quiet__eq\":true,\"bybit_m7__lt\":-0.05},\"limit\":20}",
+    "market_screen {\"filters\":{\"quiet__eq\":true,\"hl_m7__lt\":-0.05},\"limit\":20}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "announcements {\"sym\":\"AXSUSDT\",\"days\":60}",
+    "announcements {\"sym\":\"DUSKUSDT\",\"days\":60}",
+    "announcements {\"sym\":\"ROBOUSDT\",\"days\":60}",
+    "announcements {\"sym\":\"WCTUSDT\",\"days\":60}",
+    "announcements {\"sym\":\"ZKPUSDT\",\"days\":60}",
+    "announcements {\"sym\":\"HOLOUSDT\",\"days\":60}",
+    "announcements {\"sym\":\"PLUMEUSDT\",\"days\":60}"
+   ]
+  },
+  {
+   "content": "The strongest setups are repeat offenders rather than new listings. I’m ranking for probability × potential funding depth, so some currently cooler names with sustained, severe episode histories rank above warmer coins whose history is mostly shallow touches. Probabilities are anchored to the 10.7% overall quiet-coin base rate and the roughly 29–38% rates for frequent repeat offenders; borrow constraints are inferred unless an announcement supports them.\n\n",
+   "calls": [
+    "submit_list {\"picks\":[{\"rank\":1,\"sym\":\"AXSUSDT\",\"p_hit\":0.55,\"archetype\":\"D\",\"reason\":\"71 deep days in 90, only 10 days since the last, and HL funding at -0.2226% with a -0.0636% seven-day mean support relapse; Binance predicted mean fell 0.0313pp to -0.0666% and premium is -0.206%. Prior episodes lasted 18–50 "
+   ]
+  }
+ ],
+ "usage": {
+  "prompt": 433382,
+  "completion": 3572
+ },
+ "seconds": 98.0,
+ "picks": [
+  {
+   "rank": 1,
+   "sym": "AXSUSDT",
+   "p_hit": 0.55,
+   "archetype": "D",
+   "reason": "71 deep days in 90, only 10 days since the last, and HL funding at -0.2226% with a -0.0636% seven-day mean support relapse; Binance predicted mean fell 0.0313pp to -0.0666% and premium is -0.206%. Prior episodes lasted 18–50 days with troughs below -2.35%; the March margin-pair removal is an additional potential arbitrage friction, not proof all borrowing is unavailable."
+  },
+  {
+   "rank": 2,
+   "sym": "DUSKUSDT",
+   "p_hit": 0.44,
+   "archetype": "B",
+   "reason": "Price rose 49.35% and OI 60.63% in seven days, perp volume is 2.59x normal and 5.46x spot over 72h, while intraday predicted funding reached -0.1668%. With 47 deep days and prior 18–20-day episodes reaching approximately -2.8%, renewed pump-fading shorts offer substantial depth, although growing spot turnover and latest +0.01% funding temper conviction."
+  },
+  {
+   "rank": 3,
+   "sym": "SENTUSDT",
+   "p_hit": 0.39,
+   "archetype": "D",
+   "reason": "47 deep days, a nine-day cooldown, price down 25.23% over 30 days and current perp/spot turnover of 7.06x favor renewed hedging pressure against relatively thin $0.786M daily spot turnover. A prior 27.7-day episode reached -10.069%, but the latest predicted mean is +0.0012% and OI is contracting, so severe conditional depth—not imminent certainty—drives this rank."
+  },
+  {
+   "rank": 4,
+   "sym": "KITEUSDT",
+   "p_hit": 0.27,
+   "archetype": "D",
+   "reason": "Price is down 44.39% over 30 days while OI rose 23.94% over seven days to 11.19% of market cap; the last deep episode ended ten days ago and recent 7.5–12.3-day episodes reached -2.76% to -3.202%. Current premium is positive at +0.0985% and predicted funding is recovering, materially lowering hit probability despite unusually large relapse-depth potential."
+  },
+  {
+   "rank": 5,
+   "sym": "ZILUSDT",
+   "p_hit": 0.43,
+   "archetype": "D",
+   "reason": "25 deep days and a 22-day cooldown combine with -0.3138% average premium, a -0.1441% predicted intraday low and a 0.0314pp deterioration in predicted mean. Perp turnover is 6.89x spot over 72h with only $0.594M daily spot volume; a previous 13-day episode reached -8.548%, supporting a meaningful depth tail rather than just a threshold touch."
+  },
+  {
+   "rank": 6,
+   "sym": "MOVEUSDT",
+   "p_hit": 0.39,
+   "archetype": "D",
+   "reason": "29 deep days, 30-day price decline of 20.28% and circulating supply growth of 4.69% provide a relapse/hedging driver; predicted mean is -0.0616%, down 0.0251pp, with a -0.2993% intraday low. Prior 7.3–13.2-day episodes reached -4.286% and -2.374%; monitoring status and $0.629M daily spot turnover suggest friction, although declining OI and a positive latest premium weaken timing."
+  },
+  {
+   "rank": 7,
+   "sym": "ROBOUSDT",
+   "p_hit": 0.31,
+   "archetype": "D",
+   "reason": "This 44.5-day-old HODLer-airdrop coin has already accumulated 27 deep days, is down 53.53% over 30 days and carries OI equal to 13.39% of market cap after an 11-day cooldown. Several multi-day episodes reached -0.586% to -1.27%, but current predicted funding is positive and March 4 margin addition rules out assuming an unborrowable new listing."
+  },
+  {
+   "rank": 8,
+   "sym": "HOLOUSDT",
+   "p_hit": 0.38,
+   "archetype": "D",
+   "reason": "February's margin-token/pair removal supplies a concrete potential arbitrage constraint, alongside $0.250M daily spot turnover, 18 deep days and a 19-day cooldown. Price fell 8.63% in 72h, premium averages -0.2076% and predicted funding dipped to -0.1505%; the prior 8.5-day episode reached -1.719%, while 33.84% monthly supply growth is a hedging proxy rather than a confirmed upcoming unlock."
+  },
+  {
+   "rank": 9,
+   "sym": "WCTUSDT",
+   "p_hit": 0.32,
+   "archetype": "D",
+   "reason": "A fresh deterioration took 12-hour premium from roughly -0.085% to -0.257%, latest predicted funding to -0.0852%, and price down 7.60% over 72h as volume rose to 1.44x normal. Supply grew 4.59% over 30 days and market cap is only $19.16M; past multi-day episodes reached -1.675% to -7.375%, though just 11 recent deep days and missing OI warrant restraint."
+  },
+  {
+   "rank": 10,
+   "sym": "ZKPUSDT",
+   "p_hit": 0.28,
+   "archetype": "D",
+   "reason": "37 deep days, OI/market cap of 14.08%, $0.270M daily spot turnover and 29.75% monthly supply growth create structural relapse susceptibility after a 46-day cooldown. Its historical 35.6-day episode reached -8.273%, but current premium of -0.0392% and positive predicted mean of +0.0053% make this a lower-probability, high-depth selection."
+  },
+  {
+   "rank": 11,
+   "sym": "SYNUSDT",
+   "p_hit": 0.34,
+   "archetype": "D",
+   "reason": "Only ten days after a -1.830% settled print, price is down 9.90% in seven days and 28.30% from its monthly high, with OI at 11.70% of a $9.49M market cap and just $0.261M daily spot turnover. A prior 8.8-day episode reached -2.558%; repeated predicted dips below -0.20% during the last 72h support susceptibility, but latest funding and premium have recovered."
+  },
+  {
+   "rank": 12,
+   "sym": "GASUSDT",
+   "p_hit": 0.37,
+   "archetype": "D",
+   "reason": "26 deep days and an eight-day cooldown accompany -0.2093% premium, a -0.1794% predicted low and a seven-day settled minimum of -0.0918%, still inside the quiet definition. April 3–4 settled troughs were -1.4266% and -1.5470%, demonstrating recent depth, but OI down 22.93% in seven days and volume at 0.39x normal argue against a higher probability."
+  },
+  {
+   "rank": 13,
+   "sym": "CVXUSDT",
+   "p_hit": 0.32,
+   "archetype": "D",
+   "reason": "Premium widened from approximately -0.22% to -0.34% over 72h while predicted lows deteriorated to -0.106%, against only $0.243M daily spot turnover and a 14.50% monthly price decline. Eighteen deep days and prior 5–7-day episodes support persistence potential, but the 47-day cooldown, positive cross-venue funding and missing OI limit confidence."
+  },
+  {
+   "rank": 14,
+   "sym": "SXTUSDT",
+   "p_hit": 0.36,
+   "archetype": "D",
+   "reason": "Premium averages -0.2853% and is -0.8537% at the latest hour, predicted mean fell 0.0319pp, and Bybit funding is approaching the threshold at -0.0973%. Sixteen deep days, $0.143M daily spot turnover and a prior two-day episode reaching -1.192% support relapse depth, although OI fell 20.31% over seven days and volume is subdued."
+  },
+  {
+   "rank": 15,
+   "sym": "ARPAUSDT",
+   "p_hit": 0.31,
+   "archetype": "D",
+   "reason": "22 deep days, OI equal to 9.32% of a $13.89M market cap and $0.366M daily spot turnover leave a small-cap relapse setup after 45 quiet days. Twelve-hour premium worsened from -0.018% to -0.171% and predicted funding dipped to -0.1407%; a prior 17-day episode reached -1.425%, but settled funding remains +0.01% and there is no confirmed new catalyst."
+  }
+ ],
+ "chronic_rule": [
+  "REDUSDT",
+  "NOMUSDT",
+  "ENJUSDT",
+  "KERNELUSDT",
+  "ONGUSDT",
+  "ONTUSDT",
+  "SUPERUSDT",
+  "BARDUSDT",
+  "FFUSDT",
+  "BLURUSDT",
+  "PIXELUSDT",
+  "REZUSDT",
+  "ESPUSDT",
+  "SAHARAUSDT",
+  "SOLVUSDT",
+  "STOUSDT",
+  "NIGHTUSDT",
+  "ILVUSDT",
+  "TREEUSDT",
+  "TNSRUSDT",
+  "IDUSDT",
+  "TRUMPUSDT",
+  "LPTUSDT",
+  "ALTUSDT",
+  "MMTUSDT",
+  "BERAUSDT",
+  "KATUSDT",
+  "0GUSDT",
+  "MINAUSDT",
+  "PARTIUSDT",
+  "POLUSDT",
+  "MAGICUSDT",
+  "FETUSDT",
+  "FIDAUSDT",
+  "CFGUSDT",
+  "DYMUSDT",
+  "SOPHUSDT",
+  "GUNUSDT",
+  "COMPUSDT",
+  "NILUSDT"
+ ]
+}

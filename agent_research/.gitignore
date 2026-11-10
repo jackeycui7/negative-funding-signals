@@ -1,0 +1,4 @@
+data/
+runs/manual/
+runs/smoke*/
+__pycache__/

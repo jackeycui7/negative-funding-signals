@@ -1,0 +1,289 @@
+{
+ "as_of": "2026-03-02",
+ "model": "gpt-6-astra",
+ "mode": "onset",
+ "turns": [
+  {
+   "content": "",
+   "calls": [
+    "base_rates {}",
+    "past_onsets {\"lookback_days\":60,\"limit\":25}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "quiet_board {\"page\":1,\"per_page\":70}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "quiet_board {\"page\":2,\"per_page\":70}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "quiet_board {\"page\":3,\"per_page\":70}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "quiet_board {\"page\":4,\"per_page\":70}"
+   ]
+  },
+  {
+   "content": "I’ve reviewed all 227 quiet coins. The historical base rates favor repeat offenders with renewed pressure, but I’m also checking new listings, post-pump setups, and spot/margin changes for less obvious candidates.\n\nMy broad watchlist includes:\n- **Page 1:** AERO, AEVO, ALLO, ALT, APE, ARKM, ASTR, AUCTION, BABY, BANANA, BICO, BIGTIME, BREV, COOKIE, CVC, DOLO, DYDX, DYM.\n- **Page 2:** ENJ, ERA, FLUX, FORM, F, GLM, GUN, G, HEI, HMSTR, KAITO, KAVA, KITE, LUMIA, MAGIC, MANTA, MEGA, ME, MMT, NMR.\n- **Page 3:** OPEN, OPN, PLUME, POLYX, RESOLV, REZ, ROSE, SAPIEN, SCR, SKL, SNX, SPK, STO, SUPER, SYN, TREE, TURTLE, T.\n- **Page 4:** USUAL, WAL, XVS, ZBT, ZRO.\n\nAnnouncement labels need verification: removal of a single trading pair is not necessarily a coin delisting or loss of borrow access.",
+   "calls": [
+    "announcements {\"days\":30}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "coin_hourly {\"syms\":[\"AEROUSDT\",\"AEVOUSDT\",\"ALLOUSDT\",\"ALTUSDT\",\"APEUSDT\",\"ARKMUSDT\",\"ASTRUSDT\",\"AUCTIONUSDT\"],\"hours\":96,\"step\":4}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "coin_hourly {\"syms\":[\"BABYUSDT\",\"BANANAUSDT\",\"BICOUSDT\",\"BIGTIMEUSDT\",\"BREVUSDT\",\"COOKIEUSDT\",\"CVCUSDT\",\"DOLOUSDT\"],\"hours\":96,\"step\":12}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "coin_hourly {\"syms\":[\"DYDXUSDT\",\"DYMUSDT\",\"ENJUSDT\",\"ERAUSDT\",\"FLUXUSDT\",\"FORMUSDT\",\"FUSDT\",\"GLMUSDT\"],\"hours\":96,\"step\":12}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "coin_hourly {\"syms\":[\"GUNUSDT\",\"GUSDT\",\"HEIUSDT\",\"HMSTRUSDT\",\"KAITOUSDT\",\"KAVAUSDT\",\"KITEUSDT\",\"LUMIAUSDT\"],\"hours\":96,\"step\":12}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "coin_hourly {\"syms\":[\"MAGICUSDT\",\"MANTAUSDT\",\"MEGAUSDT\",\"MEUSDT\",\"MMTUSDT\",\"NMRUSDT\",\"OPENUSDT\",\"OPNUSDT\"],\"hours\":96,\"step\":12}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "coin_hourly {\"syms\":[\"PLUMEUSDT\",\"POLYXUSDT\",\"RESOLVUSDT\",\"REZUSDT\",\"ROSEUSDT\",\"SAPIENUSDT\",\"SCRUSDT\",\"SKLUSDT\"],\"hours\":96,\"step\":12}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "coin_hourly {\"syms\":[\"SNXUSDT\",\"SPKUSDT\",\"STOUSDT\",\"SUPERUSDT\",\"SYNUSDT\",\"TREEUSDT\",\"TURTLEUSDT\",\"TUSDT\"],\"hours\":96,\"step\":12}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "coin_hourly {\"syms\":[\"USUALUSDT\",\"WALUSDT\",\"XVSUSDT\",\"ZBTUSDT\",\"ZROUSDT\"],\"hours\":96,\"step\":12}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "coin_detail {\"syms\":[\"CVCUSDT\",\"SAPIENUSDT\",\"RESOLVUSDT\",\"BREVUSDT\",\"GLMUSDT\",\"MEUSDT\"],\"days\":45}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "coin_detail {\"syms\":[\"DYMUSDT\",\"MAGICUSDT\",\"AUCTIONUSDT\",\"ZBTUSDT\",\"POLYXUSDT\",\"SUPERUSDT\"],\"days\":7}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "coin_detail {\"syms\":[\"FUSDT\",\"GUSDT\",\"MMTUSDT\",\"PLUMEUSDT\",\"SYNUSDT\",\"REZUSDT\"],\"days\":7}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "coin_detail {\"syms\":[\"ROSEUSDT\",\"ARKMUSDT\",\"BICOUSDT\",\"KITEUSDT\",\"ALLOUSDT\",\"WALUSDT\"],\"days\":7}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "coin_detail {\"syms\":[\"KAITOUSDT\",\"LUMIAUSDT\",\"NMRUSDT\",\"USUALUSDT\",\"DOLOUSDT\",\"OPNUSDT\"],\"days\":7}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "market_screen {\"filters\":{\"quiet__eq\":true,\"deep_days90__ge\":12},\"sort_by\":\"deep_days90\",\"ascending\":false,\"limit\":120,\"columns\":[\"sym\",\"quiet\",\"min7\",\"r_pred8\",\"deep_days90\",\"paid30\",\"oi_mc\"]}",
+    "market_screen {\"filters\":{\"quiet__eq\":true,\"age_d__lt\":45},\"sort_by\":\"age_d\",\"ascending\":true,\"limit\":120,\"columns\":[\"sym\",\"quiet\",\"age_d\",\"min7\",\"r_pred8\",\"svol24_m\",\"pvol24_m\"]}"
+   ]
+  },
+  {
+   "content": "The depth-weighted ranking favors relapse setups. I reviewed 96-hour paths for all 61 watchlist coins and daily/episode histories for 30 finalists, then confirmed quiet eligibility with `market_screen`.\n\nI’m assigning roughly 31–44% hit probabilities to the final selections, anchored to the 29.7–38.3% historical rates for quiet repeat offenders and adjusted for current pressure. I’m not treating intraday predicted dips as settled hits, supply increases as confirmed future unlocks, or pair-removal notices as proof that all borrowing is unavailable. GLM and ARKM have strong warning signals, but their documented episodes offer less depth than the selected names; OPN and MEGA lack a confirmed in-window catalyst and observable spot markets.",
+   "calls": [
+    "submit_list {\"picks\":[{\"rank\":1,\"sym\":\"CVCUSDT\",\"p_hit\":0.44,\"archetype\":\"D\",\"reason\":\"48 deep days in 90 and only 17 days since the last episode; the perp discount widened to -0.4865% over 24h and -0.6577% now against just $0.1434M daily spot volume. Recurrent thin-spot pressure has produced a 46.5-day episode"
+   ]
+  }
+ ],
+ "usage": {
+  "prompt": 2051646,
+  "completion": 3719
+ },
+ "seconds": 235.7,
+ "picks": [
+  {
+   "rank": 1,
+   "sym": "CVCUSDT",
+   "p_hit": 0.44,
+   "archetype": "D",
+   "reason": "48 deep days in 90 and only 17 days since the last episode; the perp discount widened to -0.4865% over 24h and -0.6577% now against just $0.1434M daily spot volume. Recurrent thin-spot pressure has produced a 46.5-day episode paying 38.53% and a February 3.2-day episode reaching -1.445% funding, supporting substantial relapse depth."
+  },
+  {
+   "rank": 2,
+   "sym": "RESOLVUSDT",
+   "p_hit": 0.42,
+   "archetype": "D",
+   "reason": "48 deep days, a 14-day cooling period, OI/market cap of 21.17%, and only $0.357M daily spot volume create substantial arbitrage-capacity susceptibility as price falls 10.34% weekly and supply rises 3.06% monthly. The latest prolonged episode lasted 8.7 days and paid 6.79%, while January reached -4.0%; the current -0.1928% premium supports pressure despite weak predicted-funding momentum."
+  },
+  {
+   "rank": 3,
+   "sym": "MEUSDT",
+   "p_hit": 0.41,
+   "archetype": "D",
+   "reason": "39 deep days and an 11-day cooling period accompany 8.91% monthly supply growth, a 35.82% monthly price decline, and perp/spot volume of 8.45x today. Predicted funding averaged -0.0315% over 24h versus -0.0115% over 72h, with Bybit at -0.0517%; February settled funding reached -4.9779%, although falling OI tempers the probability."
+  },
+  {
+   "rank": 4,
+   "sym": "AUCTIONUSDT",
+   "p_hit": 0.39,
+   "archetype": "D",
+   "reason": "28 deep days, 15 days since the last deep print, and OI/market cap of 14.79% leave concentrated derivatives exposure against $0.660M daily spot turnover. The January-February episode lasted 22 days, paid 21.3%, and reached -4.0%; renewed predicted dips to -0.1175% and a -0.1143% daily premium support a depth-heavy relapse rather than an imminent certainty."
+  },
+  {
+   "rank": 5,
+   "sym": "GUSDT",
+   "p_hit": 0.41,
+   "archetype": "D",
+   "reason": "32 deep days with only eight days since the last deep print, weekly settled minimum -0.092%, and current prediction -0.0496% indicate incomplete cooling. Daily spot volume is only $0.172M versus 4.58x as much perp turnover, and the February 4-16 episode paid 14.89% over 12.8 days at a -2.049% extreme; improving predicted averages and declining OI are offsets."
+  },
+  {
+   "rank": 6,
+   "sym": "SAPIENUSDT",
+   "p_hit": 0.43,
+   "archetype": "D",
+   "reason": "37 deep days, an eight-day cooling period, 10.72% OI/market cap, and a 10.43% three-day price decline combine with a widening -0.275% daily perp discount and predicted dips to -0.0748%. The February 26 margin-removal notice adds potential borrow friction, though token-level scope is unverified; a prior 28-day episode paid 18.74% and reached -2.675%."
+  },
+  {
+   "rank": 7,
+   "sym": "BREVUSDT",
+   "p_hit": 0.38,
+   "archetype": "D",
+   "reason": "This 61.5-day-old contract already has 33 deep days and cooled only nine days ago; price is down 9.91% in three days, the premium is -0.1444%, and predicted funding dipped to -0.1003%. January's 22.3-day episode paid 29.11% and February relapses reached -2.446% and -1.125%, but OI down 17.21% in three days argues against a higher hit probability."
+  },
+  {
+   "rank": 8,
+   "sym": "DYMUSDT",
+   "p_hit": 0.42,
+   "archetype": "D",
+   "reason": "27 deep days, 14 days since deep funding, a -0.0902% current prediction, and -0.2639% daily premium show renewed pressure in a $17M coin with 8.74% OI/market cap and $0.319M daily spot volume. Monthly supply growth is 4.13%, both Bybit and HL are negative, and a February episode reached -3.411%; older multiweek episodes establish persistence potential."
+  },
+  {
+   "rank": 9,
+   "sym": "POLYXUSDT",
+   "p_hit": 0.38,
+   "archetype": "D",
+   "reason": "33 deep days and a 12-day cooling period combine with predicted dips to -0.1984% and a final 12-hour perp discount of -0.254%, against only $0.221M daily spot turnover. A prior 23.7-day episode paid 35.66% and reached -4.0%, although more recent episodes were much shallower and predicted averages are not deteriorating."
+  },
+  {
+   "rank": 10,
+   "sym": "SUPERUSDT",
+   "p_hit": 0.37,
+   "archetype": "D",
+   "reason": "42 deep days, 12 days since the last episode, and a weekly settled minimum of -0.0814% leave substantial relapse susceptibility; perp turnover is 7.33x spot and price is down 32.61% monthly. A recent two-day episode paid 1.73% at a -0.713% extreme, with much larger historical tails, but the improving predicted trend and zero latest premium reduce urgency."
+  },
+  {
+   "rank": 11,
+   "sym": "FUSDT",
+   "p_hit": 0.37,
+   "archetype": "D",
+   "reason": "27 deep days, 18 days since deep funding, 10.66% OI/market cap, and 5.96% monthly supply growth support renewed hedging pressure against $0.448M daily spot volume. The latest premium is -0.2873% and trailing 30-day funding received totals 18.45%; documented episodes lasting three to seven days support persistence, but current prediction remains +0.01%."
+  },
+  {
+   "rank": 12,
+   "sym": "SYNUSDT",
+   "p_hit": 0.36,
+   "archetype": "D",
+   "reason": "An $8.86M market cap, 17.78% OI/market cap, and $0.222M daily spot volume constrain capacity after a 53.55% monthly price decline. Following 16 quiet days since the last deep print, predicted funding dipped to -0.1455% and the latest premium reached -0.2301%; January-February's 8.8-day episode paid 11.09% and reached -2.558%."
+  },
+  {
+   "rank": 13,
+   "sym": "ZBTUSDT",
+   "p_hit": 0.38,
+   "archetype": "D",
+   "reason": "28 deep days, an 18-day cooling period, and 11.92% OI/market cap accompany a worsening -0.2575% daily premium, current prediction -0.0645%, and intraday minimum -0.1014%. Post-launch episodes have reached -1.308% and lasted up to 13 days, but OI down 24.3% in three days limits confidence and launch-era extremes are discounted."
+  },
+  {
+   "rank": 14,
+   "sym": "PLUMEUSDT",
+   "p_hit": 0.34,
+   "archetype": "D",
+   "reason": "23 deep days and 6.56% monthly supply growth accompany a 34.62% monthly price decline, 8.80% OI/market cap, and perp/spot turnover of 5.94x today. Predicted funding deteriorated from a -0.0152% 72h mean to -0.0361% over 24h; past 24.2-day and six-day episodes paid 11.44% and 3.39%, although recent deep prints were shallow."
+  },
+  {
+   "rank": 15,
+   "sym": "ROSEUSDT",
+   "p_hit": 0.35,
+   "archetype": "D",
+   "reason": "17 deep days and a 16-day cooling period combine with price down 13.83% over three days while dollar OI is essentially flat, consistent with added contract exposure during the decline. Current prediction is -0.0777%, the daily premium is -0.1942%, and a margin-pair removal notice adds possible friction; recent episodes lasted 1.3-5 days and reached -0.686%, supporting moderate persistent depth."
+  }
+ ],
+ "chronic_rule": [
+  "ENSOUSDT",
+  "ESPUSDT",
+  "SAHARAUSDT",
+  "BARDUSDT",
+  "AWEUSDT",
+  "HOLOUSDT",
+  "LAUSDT",
+  "SOPHUSDT",
+  "GPSUSDT",
+  "DUSKUSDT",
+  "LAYERUSDT",
+  "ALICEUSDT",
+  "AXSUSDT",
+  "REDUSDT",
+  "UMAUSDT",
+  "NEWTUSDT",
+  "AGLDUSDT",
+  "MIRAUSDT",
+  "HOTUSDT",
+  "CYBERUSDT",
+  "ROBOUSDT",
+  "SXTUSDT",
+  "LPTUSDT",
+  "FLOWUSDT",
+  "KERNELUSDT",
+  "ORCAUSDT",
+  "JTOUSDT",
+  "ATOMUSDT",
+  "SUNUSDT",
+  "ACEUSDT",
+  "IOTXUSDT",
+  "TLMUSDT",
+  "YGGUSDT",
+  "BIOUSDT",
+  "SENTUSDT",
+  "FOGOUSDT",
+  "MOVEUSDT",
+  "GASUSDT",
+  "ARPAUSDT",
+  "ZKPUSDT"
+ ]
+}

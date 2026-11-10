@@ -1,0 +1,389 @@
+{
+ "as_of": "2026-02-16",
+ "model": "gpt-6-astra",
+ "mode": "scratch",
+ "code_hash": "57118bbae05d",
+ "turns": [
+  {
+   "content": "",
+   "calls": [
+    "base_rates {}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "market_screen {\"filters\":{\"quiet__eq\":false},\"sort_by\":\"paid7\",\"limit\":100}",
+    "quiet_board {\"page\":1,\"per_page\":100}",
+    "announcements {\"days\":30}",
+    "past_onsets {\"limit\":15,\"lookback_days\":60}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "quiet_board {\"page\":2,\"per_page\":100}",
+    "quiet_board {\"page\":3,\"per_page\":100}",
+    "market_screen {\"filters\":{\"quiet__eq\":true,\"deep_days90__ge\":20},\"sort_by\":\"deep_days90\",\"ascending\":false,\"columns\":[\"sym\",\"deep_days90\",\"m30\",\"pred_24mean\",\"prem24\",\"oi_mc\",\"ret30\"]}",
+    "market_screen {\"filters\":{\"ret30__gt\":60},\"sort_by\":\"ret30\",\"ascending\":false,\"columns\":[\"sym\",\"ret30\",\"ret7\",\"oi_mc\",\"quiet\",\"m7\"]}",
+    "market_screen {\"filters\":{\"quiet__eq\":true},\"sort_by\":\"oi_mc\",\"ascending\":false,\"limit\":15,\"columns\":[\"sym\",\"oi_mc\",\"oi7\",\"ret7\",\"pred_24mean\",\"prem24\",\"deep_days90\"]}",
+    "market_screen {\"filters\":{\"age_d__lt\":45},\"columns\":[\"sym\",\"age_d\",\"m7\",\"min7\",\"quiet\",\"oi_mc\"]}",
+    "market_screen {\"filters\":{\"quiet__eq\":true,\"bybit_m7__lt\":-0.05},\"columns\":[\"sym\",\"bybit_m7\",\"hl_m7\",\"m7\",\"prem24\"]}",
+    "market_screen {\"filters\":{\"oi7__gt\":75},\"columns\":[\"sym\",\"oi7\",\"quiet\",\"ret7\",\"m7\"]}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "coin_detail {\"syms\":[\"SENTUSDT\",\"AXSUSDT\",\"BERAUSDT\",\"INITUSDT\",\"DUSKUSDT\",\"ESPUSDT\"],\"days\":10}",
+    "coin_detail {\"syms\":[\"MOVEUSDT\",\"ZKPUSDT\",\"0GUSDT\",\"ENSOUSDT\",\"MEUSDT\",\"VANAUSDT\"],\"days\":10}",
+    "coin_detail {\"syms\":[\"AWEUSDT\",\"GUNUSDT\",\"POLYXUSDT\",\"REZUSDT\",\"MMTUSDT\",\"SOLVUSDT\"],\"days\":7}",
+    "market_screen {\"filters\":{\"quiet__eq\":true,\"hl_m7__lt\":-0.05},\"columns\":[\"sym\",\"hl_m7\",\"bybit_m7\",\"prem24\"]}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "coin_detail {\"syms\":[\"LAUSDT\",\"NOMUSDT\",\"RESOLVUSDT\",\"ZILUSDT\",\"GPSUSDT\",\"FUSDT\"],\"days\":5}",
+    "coin_detail {\"syms\":[\"COWUSDT\",\"COMPUSDT\",\"TLMUSDT\",\"KERNELUSDT\",\"LSKUSDT\",\"SOPHUSDT\"],\"days\":5}",
+    "coin_detail {\"syms\":[\"AUCTIONUSDT\",\"ZKCUSDT\",\"DYMUSDT\",\"ACEUSDT\",\"AVNTUSDT\",\"FLOWUSDT\"],\"days\":5}",
+    "coin_hourly {\"syms\":[\"NXPCUSDT\",\"POLYXUSDT\",\"AWEUSDT\",\"GUNUSDT\"],\"hours\":48,\"step\":12}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "submit_list {\"picks\":[{\"rank\":1,\"sym\":\"SENTUSDT\",\"p_hit\":0.88,\"archetype\":\"A\",\"reason\":\"Since the January 22 spot listing, a deep episode has persisted from January 29; 7d mean funding is -1.2024% and the latest 24h predicted mean remains -0.8903%. Bybit's 7d mean is -1.1011%, supporting persistence beyond the "
+   ]
+  }
+ ],
+ "usage": {
+  "prompt": 474100,
+  "completion": 5198
+ },
+ "seconds": 136.9,
+ "picks": [
+  {
+   "rank": 1,
+   "sym": "SENTUSDT",
+   "p_hit": 0.88,
+   "archetype": "A",
+   "reason": "Since the January 22 spot listing, a deep episode has persisted from January 29; 7d mean funding is -1.2024% and the latest 24h predicted mean remains -0.8903%. Bybit's 7d mean is -1.1011%, supporting persistence beyond the three-day delay despite OI falling 17.9% in a week and the announced margin addition."
+  },
+  {
+   "rank": 2,
+   "sym": "INITUSDT",
+   "p_hit": 0.77,
+   "archetype": "B",
+   "reason": "Price rose 54.9% and OI 452.8% in 24h, taking OI/market cap to 55.9%; the perp premium averages -2.2676% and predicted funding is -1.7517%. This fresh squeeze offers exceptional depth, but abrupt unwinding before February 19 warrants a lower hit probability than the persistent leaders."
+  },
+  {
+   "rank": 3,
+   "sym": "AXSUSDT",
+   "p_hit": 0.86,
+   "archetype": "C",
+   "reason": "Funding averages -0.8136% over 7d, current prediction is -0.9592%, and Bybit/Hyperliquid 7d means are -1.0196%/-0.8007%. Price is 52.4% below its 30d high while OI remains up 31.1% weekly; a previous deep episode lasted 18 days."
+  },
+  {
+   "rank": 4,
+   "sym": "BERAUSDT",
+   "p_hit": 0.85,
+   "archetype": "C",
+   "reason": "After the February 11 pump, price fell from 0.929 to 0.661, but 24h predicted funding still averages -0.6499% and perp/spot volume is 14.9x. Circulating supply increased 50.5% over 30d and OI/market cap is 20.4%, supporting continuing hedge pressure despite post-peak OI contraction."
+  },
+  {
+   "rank": 5,
+   "sym": "ZKPUSDT",
+   "p_hit": 0.83,
+   "archetype": "B",
+   "reason": "A 35.6-day episode previously paid 58.31%, and deep funding restarted February 15 after two quieter days; the weekly minimum is -8.2732%. OI/market cap is 32.8%, OI rose 15.8% in 24h, and predicted funding's 24h mean deteriorated to -0.3629%, preserving substantial tail depth."
+  },
+  {
+   "rank": 6,
+   "sym": "MOVEUSDT",
+   "p_hit": 0.84,
+   "archetype": "B",
+   "reason": "A renewed squeeze has OI up 104.2% weekly and 29.6% daily, with latest settled funding -2.3308% and a -1.0294% average perp discount. Forty-eight deep days in 90, supply growth of 5.18%, and prior 13- and 32-day episodes support recurrence rather than a one-off print."
+  },
+  {
+   "rank": 7,
+   "sym": "DUSKUSDT",
+   "p_hit": 0.82,
+   "archetype": "C",
+   "reason": "Price is up 176.2% over 60d but down 17.6% weekly and 64.8% from its 30d high; funding averages -0.6373% over 7d. Predicted funding has worsened to a -0.3810% daily mean, and a previous episode lasted 20.2 days, although weekly OI has contracted 32.9%."
+  },
+  {
+   "rank": 8,
+   "sym": "0GUSDT",
+   "p_hit": 0.88,
+   "archetype": "D",
+   "reason": "Seventy-four deep days in 90 and prior 70- and 25.7-day episodes make this the strongest recurrence profile. Current predicted funding is -0.3138%, the perp discount averages -0.4814%, and Bybit/Hyperliquid weekly means remain -0.4549%/-0.3873%."
+  },
+  {
+   "rank": 9,
+   "sym": "ESPUSDT",
+   "p_hit": 0.66,
+   "archetype": "A",
+   "reason": "Listed on spot February 12, ESP has printed deeply negative funding on all four observed spot-trading days, with a -0.5767% daily predicted mean. OI rose 119.7% in 72h as price fell 26.2%; the February 12 margin addition and short history temper persistence confidence."
+  },
+  {
+   "rank": 10,
+   "sym": "ENSOUSDT",
+   "p_hit": 0.79,
+   "archetype": "C",
+   "reason": "The rolling-over setup combines +59.6% monthly price performance with -19.9% weekly performance and 42.9% OI/market cap. Funding averaged -0.5007% over 30d, while its predicted daily mean has worsened to -0.2213% and the ongoing episode dates to January 23."
+  },
+  {
+   "rank": 11,
+   "sym": "NOMUSDT",
+   "p_hit": 0.81,
+   "archetype": "D",
+   "reason": "Funding averages -0.3651% over 7d and -0.3573% over 30d, with an ongoing episode since January 24. Spot volume is just $0.359M versus 26.1x as much perp volume, while price fell 12.4% weekly and OI rose 4.6% over 72h."
+  },
+  {
+   "rank": 12,
+   "sym": "LAUSDT",
+   "p_hit": 0.78,
+   "archetype": "D",
+   "reason": "Latest settled/predicted funding is -0.4695%/-0.3796%, with 43 deep days in 90 and a -0.4635% average perp discount. Spot volume is only $0.402M and perp/spot volume is 19.7x daily; a 47.2% weekly OI decline is the main normalization risk."
+  },
+  {
+   "rank": 13,
+   "sym": "RESOLVUSDT",
+   "p_hit": 0.8,
+   "archetype": "D",
+   "reason": "Fifty-eight deep days in 90, 24.3% OI/market cap, and prior 10.7-17.5-day episodes support persistent crowding. Funding averages -0.2542% weekly, and the daily predicted mean has deteriorated to -0.1797% despite recent OI reductions."
+  },
+  {
+   "rank": 14,
+   "sym": "MEUSDT",
+   "p_hit": 0.72,
+   "archetype": "D",
+   "reason": "The weekly minimum is -4.9779%, OI remains 154.2% above a week ago, and circulating supply grew 8.63% monthly. However, the daily funding mean improved from -3.0446% on February 12 to -0.1008% on February 15 and OI fell 38.3% in 72h, so recent extreme depth is heavily discounted."
+  },
+  {
+   "rank": 15,
+   "sym": "GPSUSDT",
+   "p_hit": 0.69,
+   "archetype": "B",
+   "reason": "Price is up 96.8% monthly, OI up 37.0% weekly, and perp/spot volume is 8.0x, with 44 deep days in 90 and a monitoring tag. The latest prediction has normalized to +0.01% and no deep settlement occurred for six days, reducing near-window persistence but retaining squeeze-tail value."
+  },
+  {
+   "rank": 16,
+   "sym": "ZILUSDT",
+   "p_hit": 0.65,
+   "archetype": "D",
+   "reason": "The recent 13-day episode paid 32.83% and reached -8.548%, while current predicted funding is still -0.1718%. OI has fallen 33.9% weekly and the daily settled mean is now only -0.1122%, so expected depth is reduced substantially from the recent peak."
+  },
+  {
+   "rank": 17,
+   "sym": "FLOWUSDT",
+   "p_hit": 0.74,
+   "archetype": "D",
+   "reason": "Price fell 52.0% monthly and 76.1% over 60d, with 45 deep days in 90 and a monitoring tag added January 2. A previous episode lasted 36.7 days; current prediction is -0.0898% and spot volume just $0.384M, although the predicted daily mean has improved from its 72h mean."
+  },
+  {
+   "rank": 18,
+   "sym": "AUCTIONUSDT",
+   "p_hit": 0.69,
+   "archetype": "D",
+   "reason": "A recently completed 22-day episode paid 21.30%, and 30d mean funding remains -0.2217% with OI/market cap at 17.7%. The daily settled mean has eased to -0.0647% and current prediction to -0.0014%, making recurrence more likely than uninterrupted deep persistence."
+  },
+  {
+   "rank": 19,
+   "sym": "FUSDT",
+   "p_hit": 0.66,
+   "archetype": "D",
+   "reason": "Thirty-day mean funding is -0.2270%, weekly minimum -1.7630%, and spot volume only $0.266M against 13.5x daily perp volume. Supply rose 5.96% monthly, but OI fell 44.6% weekly and the last three days' settlements have stayed above the deep threshold."
+  },
+  {
+   "rank": 20,
+   "sym": "ACEUSDT",
+   "p_hit": 0.77,
+   "archetype": "D",
+   "reason": "Thirty-three deep days in 90 and prior episodes reaching -4.0% support material repeat depth. The daily predicted mean worsened to -0.2766% as OI rose 17.7% in 72h, although the latest prediction has reset to +0.01%."
+  },
+  {
+   "rank": 21,
+   "sym": "ZKCUSDT",
+   "p_hit": 0.68,
+   "archetype": "D",
+   "reason": "A 21.2-day episode paid 16.06% and reached -2.906%, with 25 deep days in 90 and 14.4% OI/market cap. The daily predicted mean has recovered from the 72h mean of -0.2807% to -0.0532%, so the recent spike is not extrapolated unchanged."
+  },
+  {
+   "rank": 22,
+   "sym": "KERNELUSDT",
+   "p_hit": 0.69,
+   "archetype": "B",
+   "reason": "Price rose 32.3% and OI 48.9% weekly, while current predicted funding has fallen to -0.7575% and the average perp discount is -0.4728%. Twenty-four deep days in 90 support recurrence, but recent settled funding normalized and the large predicted excursion is not yet fully confirmed."
+  },
+  {
+   "rank": 23,
+   "sym": "AVNTUSDT",
+   "p_hit": 0.74,
+   "archetype": "D",
+   "reason": "Fifty-seven deep days in 90 and a previous 43.5-day episode paying 36.60% support repeat persistent funding. Monthly mean funding is -0.1542%, with Bybit/Hyperliquid weekly means near -0.10%, but the latest daily settled mean has eased to -0.0470%."
+  },
+  {
+   "rank": 24,
+   "sym": "GUSDT",
+   "p_hit": 0.72,
+   "archetype": "D",
+   "reason": "Funding averages -0.3336% weekly and -0.2331% monthly, with 28 deep days in 90 and a weekly minimum of -1.7490%. The daily predicted mean remains -0.1564% and OI is up 34.9% weekly, although the latest prediction has moderated to -0.0186%."
+  },
+  {
+   "rank": 25,
+   "sym": "LSKUSDT",
+   "p_hit": 0.79,
+   "archetype": "D",
+   "reason": "Fifty-eight deep days in 90, latest settled funding -0.1894%, and a worsening -0.1984% daily predicted mean favor another hit. OI rose 11.0% over 72h against only $0.230M daily spot volume; historical episodes were often shallow, limiting its depth rank."
+  },
+  {
+   "rank": 26,
+   "sym": "TLMUSDT",
+   "p_hit": 0.67,
+   "archetype": "D",
+   "reason": "Current predicted funding is -0.7368%, its daily mean is -0.3520%, and OI rose 26.0% in 24h as price fell 4.8%. Previous January episodes reached roughly -1% and lasted 1.7-3 days, supporting depth but also meaningful risk that this burst ends before tradability."
+  },
+  {
+   "rank": 27,
+   "sym": "LPTUSDT",
+   "p_hit": 0.63,
+   "archetype": "D",
+   "reason": "Weekly mean funding is -0.1774% with a -2.3672% minimum, and OI rose 33.1% in 72h. The daily predicted mean has recovered sharply from a -0.4506% 72h mean to -0.0816%, so persistence is discounted despite 15 deep days in 90."
+  },
+  {
+   "rank": 28,
+   "sym": "VANAUSDT",
+   "p_hit": 0.56,
+   "archetype": "B",
+   "reason": "OI remains up 258.3% weekly after a squeeze that reached -3.4902% funding. However, the daily settled mean improved from approximately -1.1% to -0.0570%, volume is only 0.12x its weekly daily average, and OI fell 15.1% in 72h, indicating the main episode is ending."
+  },
+  {
+   "rank": 29,
+   "sym": "SOPHUSDT",
+   "p_hit": 0.66,
+   "archetype": "D",
+   "reason": "The daily settled mean deteriorated from -0.0095% on February 13 to -0.1960% on February 15, with a -0.5883% average perp discount. Twenty deep days in 90 and Bybit/Hyperliquid weekly means of -0.1245%/-0.1121% support recurrence, though recent episodes lasted only 1.5-3.3 days."
+  },
+  {
+   "rank": 30,
+   "sym": "DYMUSDT",
+   "p_hit": 0.63,
+   "archetype": "D",
+   "reason": "Thirty-seven deep days in 90 and earlier 6.8-19.5-day episodes preserve substantial recurrence depth. The latest burst reached -3.4108% but ended February 13; current prediction is +0.01% and OI fell 26.8% over 72h, arguing against extrapolating that burst."
+  },
+  {
+   "rank": 31,
+   "sym": "TNSRUSDT",
+   "p_hit": 0.66,
+   "archetype": "D",
+   "reason": "Forty-nine deep days in 90, a -1.3509% weekly minimum, and Bybit/Hyperliquid weekly means around -0.17% support repeat hits. OI fell 33.4% in 72h and the daily predicted mean recovered to -0.0099%, reducing expected duration and depth."
+  },
+  {
+   "rank": 32,
+   "sym": "COMPUSDT",
+   "p_hit": 0.54,
+   "archetype": "B",
+   "reason": "Price rose 26.9% and OI 100.9% in 72h, with a -0.4393% average perp discount and -0.2758% daily predicted mean. The fresh episode reached -1.4718%, but previous episodes lasted roughly 1-4.3 days, creating substantial three-day-delay risk."
+  },
+  {
+   "rank": 33,
+   "sym": "BREVUSDT",
+   "p_hit": 0.66,
+   "archetype": "D",
+   "reason": "Thirty deep days in 90 and a -0.1514% monthly funding mean accompany a 55.4% monthly price decline. Current prediction is +0.01%, the last deep day was seven days ago, and OI fell 33.1% weekly, so this is a discounted recurrence candidate rather than active persistence."
+  },
+  {
+   "rank": 34,
+   "sym": "ANIMEUSDT",
+   "p_hit": 0.73,
+   "archetype": "D",
+   "reason": "Fifty-two deep days in 90 and a -0.0875% monthly mean support a high repeat-hit probability. Spot volume is just $0.333M with 8.7x daily perp volume, but current prediction is +0.0059% and OI fell 6.4% in 72h, limiting expected depth."
+  },
+  {
+   "rank": 35,
+   "sym": "CYBERUSDT",
+   "p_hit": 0.7,
+   "archetype": "D",
+   "reason": "Circulating supply grew 9.06% monthly while price fell 25.1%; funding averaged -0.0861% over 30d with 33 deep days in 90. The daily predicted mean remains -0.0410%, but OI is down 16.2% weekly, moderating expected persistence."
+  },
+  {
+   "rank": 36,
+   "sym": "XAIUSDT",
+   "p_hit": 0.67,
+   "archetype": "D",
+   "reason": "Current predicted funding is -0.4078% and its daily mean deteriorated to -0.1036%, with OI up 13.6% in 72h. Twenty deep days in 90 and a 51.2% monthly price decline support renewed short crowding, though its weekly funding mean remains only -0.0018%."
+  },
+  {
+   "rank": 37,
+   "sym": "GASUSDT",
+   "p_hit": 0.59,
+   "archetype": "D",
+   "reason": "Thirty-day funding averaged -0.1329%, and daily spot volume is only $0.303M versus 7.9x perp volume. Eighteen deep days in 90 support recurrence, but current prediction is +0.01% and OI fell 19.1% weekly, keeping probability below the active persistent names."
+  },
+  {
+   "rank": 38,
+   "sym": "WLFIUSDT",
+   "p_hit": 0.76,
+   "archetype": "D",
+   "reason": "Latest settled/predicted funding is -0.1467%/-0.1137%, corroborated by Bybit/Hyperliquid current rates of -0.1172%/-0.1090%. Twenty-five deep days in 90 and a 40.0% monthly price decline favor persistence, but the weekly minimum of -0.3180% implies less depth than higher-ranked names."
+  },
+  {
+   "rank": 39,
+   "sym": "COWUSDT",
+   "p_hit": 0.46,
+   "archetype": "B",
+   "reason": "OI rose 118.4% weekly and the February 14 squeeze reached -2.4614%, with the daily predicted mean still -0.3269%. OI already fell 20.0% in 24h and past substantial episodes lasted only about 1.3 days, making survival into February 19 uncertain despite large tail depth."
+  },
+  {
+   "rank": 40,
+   "sym": "POLYXUSDT",
+   "p_hit": 0.4,
+   "archetype": "D",
+   "reason": "This quiet repeat offender has 32 deep days in 90 and a prior 23.7-day episode paying 35.66%; the latest daily predicted minimum fell to -0.4918%. However, settled funding remains above -0.10%, average daily premium is only -0.0828%, and OI fell 11.3% weekly, so probability stays near the quiet-repeat base rate."
+  }
+ ],
+ "chronic_rule": [
+  "SENTUSDT",
+  "AXSUSDT",
+  "DUSKUSDT",
+  "BERAUSDT",
+  "ZKPUSDT",
+  "MEUSDT",
+  "VANAUSDT",
+  "ESPUSDT",
+  "NOMUSDT",
+  "LAUSDT",
+  "GUSDT",
+  "MOVEUSDT",
+  "0GUSDT",
+  "ZILUSDT",
+  "RESOLVUSDT",
+  "INITUSDT",
+  "FLOWUSDT",
+  "ZKCUSDT",
+  "AUCTIONUSDT",
+  "LPTUSDT",
+  "COMPUSDT",
+  "COWUSDT",
+  "TNSRUSDT",
+  "KERNELUSDT",
+  "LSKUSDT",
+  "GPSUSDT",
+  "ENSOUSDT",
+  "FUSDT",
+  "DYMUSDT",
+  "WCTUSDT",
+  "ACEUSDT",
+  "ROSEUSDT",
+  "LINEAUSDT",
+  "WLFIUSDT",
+  "ACTUSDT",
+  "AVNTUSDT",
+  "SOPHUSDT",
+  "MINAUSDT",
+  "TREEUSDT",
+  "ZKUSDT"
+ ]
+}

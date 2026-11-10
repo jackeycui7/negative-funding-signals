@@ -1,0 +1,265 @@
+{
+ "as_of": "2026-04-27",
+ "model": "gpt-6-astra",
+ "mode": "onset",
+ "turns": [
+  {
+   "content": "",
+   "calls": [
+    "base_rates {}",
+    "past_onsets {\"lookback_days\":90,\"limit\":25}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "quiet_board {\"page\":1,\"per_page\":100}"
+   ]
+  },
+  {
+   "content": "The historical baseline is 10.8% for quiet coins, rising to roughly 29–36% for frequent repeat offenders. Recent large onsets favor relapse setups, but I’m also checking new listings and post-pump cases because their potential depth can outweigh a lower hit probability.\n\nPage 1 watchlist: 0G, 1000CHEEMS, 1000LUNC, 2Z, ACT, AERO, AIXBT, ALLO, ALT, ANIME, ANKR, AUCTION, AWE, BANANA, BICO, BNT, BREV, C98, CFG, CGPT, CKB, COMP, COW, CVC, CVX, DEXE, DOGS, DUSK, DYM, ERA, EUL, FF, FIDA, FLOW and F.\n",
+   "calls": [
+    "quiet_board {\"page\":2,\"per_page\":100}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "quiet_board {\"page\":3,\"per_page\":100}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "announcements {\"days\":30}",
+    "market_screen {\"filters\":{\"quiet__eq\":true,\"age_d__lt\":45},\"limit\":120}"
+   ]
+  },
+  {
+   "content": "Page 2 additions: GAS, GENIUS, GPS, G, HUMA, INIT, IO, KITE, LA, LAYER, LQTY, MAGIC, MANTRA, MMT, OGN, ONG, ORDI, PARTI, PIXEL, POLYX, POWR, PROM, PROVE, RESOLV, ROBO and RPL.\n\nPage 3 additions: SNX, SOLV, SOPH, SYN, TLM, TOWNS, VANA, WAL, WCT, XAI, YGG, ZBT, ZIL, ZKC, ZKP, ZK and ZRX. That gives 78 candidates for hourly review. Announcement titles describe removal of specific trading pairs—not necessarily full token delisting or loss of borrowing—so I won’t assume those constraints are confirmed.\n",
+   "calls": [
+    "coin_hourly {\"syms\":[\"0GUSDT\",\"1000CHEEMSUSDT\",\"1000LUNCUSDT\",\"2ZUSDT\",\"ACTUSDT\",\"AEROUSDT\",\"AIXBTUSDT\",\"ALLOUSDT\"],\"hours\":96,\"step\":4}",
+    "coin_hourly {\"syms\":[\"ALTUSDT\",\"ANIMEUSDT\",\"ANKRUSDT\",\"AUCTIONUSDT\",\"AWEUSDT\",\"BANANAUSDT\",\"BICOUSDT\",\"BNTUSDT\"],\"hours\":96,\"step\":4}",
+    "coin_hourly {\"syms\":[\"BREVUSDT\",\"C98USDT\",\"CFGUSDT\",\"CGPTUSDT\",\"CKBUSDT\",\"COMPUSDT\",\"COWUSDT\",\"CVCUSDT\"],\"hours\":96,\"step\":4}",
+    "coin_hourly {\"syms\":[\"CVXUSDT\",\"DEXEUSDT\",\"DOGSUSDT\",\"DUSKUSDT\",\"DYMUSDT\",\"ERAUSDT\",\"EULUSDT\",\"FFUSDT\"],\"hours\":96,\"step\":4}",
+    "coin_hourly {\"syms\":[\"FIDAUSDT\",\"FLOWUSDT\",\"FUSDT\",\"GASUSDT\",\"GENIUSUSDT\",\"GPSUSDT\",\"GUSDT\",\"HUMAUSDT\"],\"hours\":96,\"step\":4}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "coin_hourly {\"syms\":[\"INITUSDT\",\"IOUSDT\",\"KITEUSDT\",\"LAUSDT\",\"LAYERUSDT\",\"LQTYUSDT\",\"MAGICUSDT\",\"MANTRAUSDT\"],\"hours\":96,\"step\":4}",
+    "coin_hourly {\"syms\":[\"MMTUSDT\",\"OGNUSDT\",\"ONGUSDT\",\"ORDIUSDT\",\"PARTIUSDT\",\"PIXELUSDT\",\"POLYXUSDT\",\"POWRUSDT\"],\"hours\":96,\"step\":4}",
+    "coin_hourly {\"syms\":[\"PROMUSDT\",\"PROVEUSDT\",\"RESOLVUSDT\",\"ROBOUSDT\",\"RPLUSDT\",\"SNXUSDT\",\"SOLVUSDT\",\"SOPHUSDT\"],\"hours\":96,\"step\":4}",
+    "coin_hourly {\"syms\":[\"SYNUSDT\",\"TLMUSDT\",\"TOWNSUSDT\",\"VANAUSDT\",\"WALUSDT\",\"WCTUSDT\",\"XAIUSDT\",\"YGGUSDT\"],\"hours\":96,\"step\":4}",
+    "coin_hourly {\"syms\":[\"ZBTUSDT\",\"ZILUSDT\",\"ZKCUSDT\",\"ZKPUSDT\",\"ZKUSDT\",\"ZRXUSDT\"],\"hours\":96,\"step\":4}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "coin_detail {\"syms\":[\"0GUSDT\",\"GPSUSDT\",\"CFGUSDT\",\"BANANAUSDT\",\"DUSKUSDT\",\"ZBTUSDT\"],\"days\":90}",
+    "coin_detail {\"syms\":[\"ZKCUSDT\",\"RESOLVUSDT\",\"ONGUSDT\",\"LAUSDT\",\"ZILUSDT\",\"DYMUSDT\"],\"days\":90}",
+    "coin_detail {\"syms\":[\"ACTUSDT\",\"MMTUSDT\",\"GUSDT\",\"SOPHUSDT\",\"PIXELUSDT\",\"ROBOUSDT\"],\"days\":90}",
+    "coin_detail {\"syms\":[\"DEXEUSDT\",\"COMPUSDT\",\"AEROUSDT\",\"CVCUSDT\",\"RPLUSDT\",\"GASUSDT\"],\"days\":90}",
+    "coin_detail {\"syms\":[\"GENIUSUSDT\",\"ZKPUSDT\",\"AWEUSDT\",\"HUMAUSDT\",\"IOUSDT\",\"VANAUSDT\"],\"days\":90}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "market_screen {\"filters\":{\"quiet__eq\":true,\"deep_days90__ge\":12},\"sort_by\":\"deep_days90\",\"ascending\":false,\"limit\":120,\"columns\":[\"sym\",\"quiet\",\"min7\",\"r_pred8\",\"deep_days90\",\"paid30\",\"prem24\",\"pred_trend\"]}",
+    "market_screen {\"filters\":{\"quiet__eq\":true,\"ret30__gt\":100},\"limit\":120,\"columns\":[\"sym\",\"quiet\",\"min7\",\"r_pred8\",\"ret30\",\"pv_sv3\",\"pvol_surge\"]}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "coin_detail {\"syms\":[\"FFUSDT\",\"POLYXUSDT\",\"MANTRAUSDT\"],\"days\":7}"
+   ]
+  },
+  {
+   "content": "I’ve reviewed all 261 quiet coins, the 96-hour paths for all 78 watchlist names, and detailed history for 33 finalists. The ranking favors potential multi-day funding depth, rather than just proximity to the -0.10% threshold; probabilities remain below 50% for every pick.\n\nA data caveat: some episode summaries omit large episodes visible in the daily history. I used those daily observations as well, without treating historical extremes as the expected outcome. Spot borrow availability and cost are not provided, so arbitrage constraints are inferred from liquidity and past funding behavior, not confirmed.  \n",
+   "calls": [
+    "submit_list {\"picks\":[{\"rank\":1,\"sym\":\"ONGUSDT\",\"p_hit\":0.4,\"archetype\":\"D\",\"reason\":\"Relapse after only 9 days: 30 deep days in 90, price -8.28%/7d and supply +4.54%/30d, with $0.213M daily spot volume and 6.48x perp/spot turnover. Premium is -0.242% and predicted minimum -0.204%; April 3–5 daily mean funding "
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "quiet_board {\"page\":4,\"per_page\":100}"
+   ]
+  },
+  {
+   "content": "## Ranked borrow list\n\n**Target window:** April 30–May 7, 2026 UTC.  \nAll 15 coins were verified as `quiet__eq: true` at the decision time. Ranking reflects **hit probability × expected funding depth and duration**, not price direction.\n\n| Rank | Binance perp | p_hit | Setup | Main rationale |\n|---:|---|---:|---|---|\n| 1 | **ONGUSDT** | **40%** | D — Relapse | 30 deep days in 90; last episode 9 days ago. Premium −0.242%, prediction low −0.204%, thin spot; April history shows sustained daily mean funding below −0.9%. |\n| 2 | **0GUSDT** | **43%** | D — Relapse | 54 deep days; only 8 days cooled. Price −3.66% over three days with OI +1.94%; premium −0.214%. Prior episodes lasted 15–19 days. |\n| 3 | **CFGUSDT** | **37%** | C — Post-pump collapse | +53.89% over 30 days but −17.13% weekly. Premium −0.192%; initial 21.7-day episode reached −2.447%. Falling OI tempers conviction. |\n| 4 | **ZKCUSDT** | **39%** | B — Pump / squeeze | Price +10.36% over three days, OI +16.49% daily, volume 2.32× normal. Premium −0.281%; prior 21.2-day negative episode. |\n| 5 | **GUSDT** | **36%** | D — Relapse | 35 deep days, $0.250M daily spot volume, premium −0.197%. Recent multi-day episodes reached −6.670% and −2.646%. |\n| 6 | **ZBTUSDT** | **24%** | B — Pump / squeeze | +91.64% over three days, volume 5.31× normal, perp/spot turnover 9.23×. Intraday prediction hit −0.290%; lower probability but large depth potential. |\n| 7 | **DUSKUSDT** | **35%** | D — Relapse | 35 deep days; price −12.64% weekly and current premium −0.327%. Past heavy negative episodes lasted approximately 18–20 days. |\n| 8 | **LAUSDT** | **33%** | D — Relapse | 39 deep days, price −32.12% over 60 days, $0.549M spot turnover. February showed extreme multi-day funding, but current predictions have recovered. |\n| 9 | **PIXELUSDT** | **32%** | D — Relapse | Only 15 days since a prolonged episode; OI/mcap 15.90%. Prior 33-day episode reached −6.273%; current pressure is weak, making this a depth-led pick. |\n| 10 | **HUMAUSD",
+   "calls": []
+  },
+  {
+   "content": "",
+   "calls": [
+    "quiet_board {\"page\":4,\"per_page\":70}"
+   ]
+  },
+  {
+   "content": "The page tracker now confirms all four pages are read using its default page size. This page contained coins already reviewed, so the ranking and probabilities are unchanged; I’m resubmitting the final list.\n",
+   "calls": [
+    "submit_list {\"picks\":[{\"rank\":1,\"sym\":\"ONGUSDT\",\"p_hit\":0.4,\"archetype\":\"D\",\"reason\":\"30 deep days in 90, last 9 days ago; price -8.28%/7d, supply +4.54%/30d, spot volume $0.213M and perp/spot turnover 6.48x support a thin-spot relapse. Premium -0.242% and prediction low -0.204% signal pressure, while April 3–5"
+   ]
+  }
+ ],
+ "usage": {
+  "prompt": 4896412,
+  "completion": 7140
+ },
+ "rejected_submits": 1,
+ "seconds": 268.9,
+ "picks": [
+  {
+   "rank": 1,
+   "sym": "ONGUSDT",
+   "p_hit": 0.4,
+   "archetype": "D",
+   "reason": "30 deep days in 90, last 9 days ago; price -8.28%/7d, supply +4.54%/30d, spot volume $0.213M and perp/spot turnover 6.48x support a thin-spot relapse. Premium -0.242% and prediction low -0.204% signal pressure, while April 3–5 daily means were -1.650%, -1.725% and -0.920%, demonstrating sustained depth."
+  },
+  {
+   "rank": 2,
+   "sym": "0GUSDT",
+   "p_hit": 0.43,
+   "archetype": "D",
+   "reason": "54 deep days in 90 and only 8 days cooled; price -3.66%/3d with OI +1.94%, premium -0.214% and prediction trend -0.018 percentage points suggest shorts rebuilding. Prior episodes lasted 19.3 days at a -4.0% trough and 15.8 days at -0.718%, supporting persistence although borrow constraints are unconfirmed."
+  },
+  {
+   "rank": 3,
+   "sym": "CFGUSDT",
+   "p_hit": 0.37,
+   "archetype": "C",
+   "reason": "Age 41 days, +53.89%/30d but -17.13%/7d and 25.18% below the monthly high: a recent pump has broken, with premium -0.192% and prediction low -0.097%. It has 26 deep days and an initial 21.7-day episode paying 35.07% at a -2.447% trough; OI -43%/7d tempers probability."
+  },
+  {
+   "rank": 4,
+   "sym": "ZKCUSDT",
+   "p_hit": 0.39,
+   "archetype": "B",
+   "reason": "Small $23.21M coin with price +10.36%/3d, OI +16.49%/1d and volume 2.32x normal; premium -0.281% (-0.438% now), prediction low -0.202% and trend -0.0315 points imply rising short pressure. Its 22 deep days and prior 21.2-day episode reaching -2.906% establish multi-day depth potential."
+  },
+  {
+   "rank": 5,
+   "sym": "GUSDT",
+   "p_hit": 0.36,
+   "archetype": "D",
+   "reason": "35 deep days in 90, last 18 days ago, with only $0.250M daily spot volume, premium -0.197% and prediction low -0.061%. March episodes paid 10.07% over 2.9 days and 4.78% over 3.7 days, reaching -6.670% and -2.646%; current modest activity keeps probability near the repeat-offender baseline."
+  },
+  {
+   "rank": 6,
+   "sym": "ZBTUSDT",
+   "p_hit": 0.24,
+   "archetype": "B",
+   "reason": "Exceptional pump: +91.64%/3d, +221.39%/30d, $750.47M perp turnover, 5.31x volume surge and 9.23x current perp/spot volume on $62.50M market cap. Prediction dipped to -0.290% and price is 17.56% below the monthly high; past funding reached -1.308% and -13.169% at launch, but positive current prediction and just 4 recent deep days warrant a low hit probability."
+  },
+  {
+   "rank": 7,
+   "sym": "DUSKUSDT",
+   "p_hit": 0.35,
+   "archetype": "D",
+   "reason": "35 deep days, a 25-day cooldown, price -12.64%/7d and current premium -0.327% against only $0.508M daily spot turnover support potential relapse. Prior prolonged episodes lasted 18.2 and 20.2 days and paid 32.19% and 24.49%, but current positive settlements and improving prediction trend temper timing conviction."
+  },
+  {
+   "rank": 8,
+   "sym": "LAUSDT",
+   "p_hit": 0.33,
+   "archetype": "D",
+   "reason": "39 deep days, a 20-day reset, price -32.12%/60d and $0.549M daily spot turnover retain relapse susceptibility. February 7–9 daily means were -4.170%, -2.393% and -0.920%; current premium -0.146% supports dislocation, but predicted funding recovering to +0.01% lowers timing confidence."
+  },
+  {
+   "rank": 9,
+   "sym": "PIXELUSDT",
+   "p_hit": 0.32,
+   "archetype": "D",
+   "reason": "Only 15 days removed from a 33-day episode paying 30.29% and reaching -6.273%, with OI/mcap 15.90% and price still -8.16%/30d. A +15.45% weekly rebound could attract renewed shorts, although premium -0.053% and improving predictions make this a depth-led relapse selection rather than an imminent trigger."
+  },
+  {
+   "rank": 10,
+   "sym": "HUMAUSDT",
+   "p_hit": 0.26,
+   "archetype": "C",
+   "reason": "The +56.63% monthly and +97.75% 60-day rally has rolled over -16.65%/3d, with premium -0.111% and perp/spot turnover 4.39x. March post-pump episodes lasted 10.2 and 4.2 days, paid 14.03% and 7.55%, and reached -2.317% and -1.807%; predictions remain +0.01%, so hit probability stays below warming relapse setups."
+  },
+  {
+   "rank": 11,
+   "sym": "GPSUSDT",
+   "p_hit": 0.39,
+   "archetype": "D",
+   "reason": "Bleed accelerated to -18.55%/1d and -24.89%/3d, with premium -0.287%, prediction low -0.138% and Bybit funding -0.097%; last-bucket OI rose $3.255M to $3.351M while price fell. It has 23 deep days and OI/mcap 10.81%; February 25–27 daily mean funding of -0.558%, -0.450% and -0.262% demonstrates sustained depth."
+  },
+  {
+   "rank": 12,
+   "sym": "BANANAUSDT",
+   "p_hit": 0.38,
+   "archetype": "D",
+   "reason": "23 deep days, last 10 days ago; $0.211M spot volume, OI/mcap 12.39%, premium -0.197%, prediction low -0.329% and Hyperliquid funding -0.131% combine thin spot with cross-venue pressure. March history includes -2.886% and -1.683% troughs and a prolonged negative stretch; April pair removals are a warning, not confirmation borrowing disappeared."
+  },
+  {
+   "rank": 13,
+   "sym": "FFUSDT",
+   "p_hit": 0.32,
+   "archetype": "D",
+   "reason": "17 deep days and a 16-day cooldown, now 52.79% below the monthly high and -3.63%/3d, suggest renewed bleed. Premium -0.157%, prediction low -0.060% and Bybit -0.029% are turning negative together; the April 6–11 episode lasted 4.7 days, paid 5.10% and reached -3.185%."
+  },
+  {
+   "rank": 14,
+   "sym": "ZILUSDT",
+   "p_hit": 0.32,
+   "archetype": "D",
+   "reason": "24 deep days, last 36 days ago; premium is -0.477% now versus -0.260% averaged daily, with just $0.445M spot volume. February's episode lasted 13 days, paid 32.83% and reached -8.548%; prediction low is only -0.047% and price is rising, so timing conviction is moderate rather than high."
+  },
+  {
+   "rank": 15,
+   "sym": "ZKPUSDT",
+   "p_hit": 0.29,
+   "archetype": "B",
+   "reason": "Small $23.45M coin rising 23.59%/3d with OI +28%, OI/mcap 14.06% and supply +2.55%/30d could draw pump-shorting and hedging pressure against limited arbitrage capacity. A prior 35.6-day episode paid 58.31% and reached -8.273%, but a 60-day cooldown and predictions reset to +0.01% keep probability below the stronger warming relapses."
+  }
+ ],
+ "chronic_rule": [
+  "KATUSDT",
+  "ORCAUSDT",
+  "SPKUSDT",
+  "CHIPUSDT",
+  "KERNELUSDT",
+  "ENJUSDT",
+  "ENSOUSDT",
+  "HYPERUSDT",
+  "API3USDT",
+  "REDUSDT",
+  "MOVRUSDT",
+  "SIGNUSDT",
+  "SUPERUSDT",
+  "EDUUSDT",
+  "NOMUSDT",
+  "BARDUSDT",
+  "BIOUSDT",
+  "GUNUSDT",
+  "ONTUSDT",
+  "APEUSDT",
+  "MIRAUSDT",
+  "BLURUSDT",
+  "AXSUSDT",
+  "WLDUSDT",
+  "PORTALUSDT",
+  "NEWTUSDT",
+  "TRUMPUSDT",
+  "ESPUSDT",
+  "FETUSDT",
+  "UMAUSDT",
+  "SAHARAUSDT",
+  "PHAUSDT",
+  "STOUSDT",
+  "MINAUSDT",
+  "INJUSDT",
+  "TREEUSDT",
+  "MASKUSDT",
+  "HOLOUSDT",
+  "MOVEUSDT",
+  "AVNTUSDT"
+ ]
+}

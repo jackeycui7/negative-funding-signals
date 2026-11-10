@@ -1,0 +1,238 @@
+{
+ "as_of": "2026-02-16",
+ "model": "gpt-6-astra",
+ "mode": "onset",
+ "turns": [
+  {
+   "content": "",
+   "calls": [
+    "base_rates {}",
+    "past_onsets {\"lookback_days\":60,\"limit\":20}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "quiet_board {\"page\":1,\"per_page\":100}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "quiet_board {\"page\":2,\"per_page\":100}",
+    "quiet_board {\"page\":3,\"per_page\":100}",
+    "announcements {\"days\":30}"
+   ]
+  },
+  {
+   "content": "I’ve reviewed all 240 quiet contracts. I’m retaining 80 candidates for hourly checks, including repeat offenders, small-float names, cross-venue divergences, and the new pre-market listing. Pair-removal announcements are only potential liquidity warnings—not proof that all spot trading or borrowing has stopped.\n\nThe historical hit rate is 10% for all quiet coins and roughly 30–40% for stronger relapse setups, so probabilities will remain conservative.\n",
+   "calls": [
+    "coin_hourly {\"syms\":[\"1000LUNCUSDT\",\"1000CATUSDT\",\"1000SATSUSDT\",\"1INCHUSDT\",\"AEVOUSDT\",\"AIXBTUSDT\",\"ALLOUSDT\",\"ARKMUSDT\"],\"hours\":96,\"step\":4}",
+    "coin_hourly {\"syms\":[\"ARPAUSDT\",\"ASTRUSDT\",\"AWEUSDT\",\"BABYUSDT\",\"BANANAUSDT\",\"BBUSDT\",\"BIOUSDT\",\"CELOUSDT\"],\"hours\":96,\"step\":4}",
+    "coin_hourly {\"syms\":[\"CHRUSDT\",\"COTIUSDT\",\"DASHUSDT\",\"DOGSUSDT\",\"DOLOUSDT\",\"DYDXUSDT\",\"EIGENUSDT\",\"ENJUSDT\"],\"hours\":96,\"step\":4}",
+    "coin_hourly {\"syms\":[\"ERAUSDT\",\"FIDAUSDT\",\"FLUXUSDT\",\"GMTUSDT\",\"GUNUSDT\",\"HIVEUSDT\",\"HMSTRUSDT\",\"IDUSDT\"],\"hours\":96,\"step\":4}",
+    "coin_hourly {\"syms\":[\"ILVUSDT\",\"IOSTUSDT\",\"JSTUSDT\",\"JTOUSDT\",\"KAVAUSDT\",\"KITEUSDT\",\"KNCUSDT\",\"LUMIAUSDT\"],\"hours\":96,\"step\":4}",
+    "coin_hourly {\"syms\":[\"MEGAUSDT\",\"MEMEUSDT\",\"METISUSDT\",\"MIRAUSDT\",\"MMTUSDT\",\"NMRUSDT\",\"NXPCUSDT\",\"OGNUSDT\"],\"hours\":96,\"step\":4}",
+    "coin_hourly {\"syms\":[\"ONGUSDT\",\"ONTUSDT\",\"OPENUSDT\",\"ORCAUSDT\",\"PLUMEUSDT\",\"POLYXUSDT\",\"PROMUSDT\",\"REDUSDT\"],\"hours\":96,\"step\":4}",
+    "coin_hourly {\"syms\":[\"REZUSDT\",\"RIFUSDT\",\"RONINUSDT\",\"SAHARAUSDT\",\"SAPIENUSDT\",\"SCRUSDT\",\"SHELLUSDT\",\"SOLVUSDT\"],\"hours\":96,\"step\":4}",
+    "coin_hourly {\"syms\":[\"SPELLUSDT\",\"SPKUSDT\",\"STOUSDT\",\"SUPERUSDT\",\"SXTUSDT\",\"TURBOUSDT\",\"TUSDT\",\"USUALUSDT\"],\"hours\":96,\"step\":4}",
+    "coin_hourly {\"syms\":[\"XVSUSDT\",\"YGGUSDT\",\"ZRXUSDT\",\"BMTUSDT\",\"NEWTUSDT\",\"PROVEUSDT\",\"TOWNSUSDT\",\"SNXUSDT\"],\"hours\":96,\"step\":4}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "coin_detail {\"syms\":[\"POLYXUSDT\",\"ZRXUSDT\",\"SUPERUSDT\",\"PLUMEUSDT\",\"MMTUSDT\",\"SAPIENUSDT\"],\"days\":30}",
+    "coin_detail {\"syms\":[\"AWEUSDT\",\"ALLOUSDT\",\"PROMUSDT\",\"GUNUSDT\",\"MEMEUSDT\",\"REZUSDT\"],\"days\":30}",
+    "coin_detail {\"syms\":[\"SAHARAUSDT\",\"ORCAUSDT\",\"USUALUSDT\",\"ARPAUSDT\",\"METISUSDT\",\"RONINUSDT\"],\"days\":30}",
+    "coin_detail {\"syms\":[\"FIDAUSDT\",\"SXTUSDT\",\"SHELLUSDT\",\"ERAUSDT\",\"LUMIAUSDT\",\"TURBOUSDT\"],\"days\":30}",
+    "coin_detail {\"syms\":[\"DASHUSDT\",\"NMRUSDT\",\"MEGAUSDT\",\"SCRUSDT\",\"HIVEUSDT\",\"HMSTRUSDT\"],\"days\":30}",
+    "market_screen {\"filters\":{\"quiet__eq\":true},\"sort_by\":\"deep_days90\",\"ascending\":false,\"limit\":80,\"columns\":[\"sym\",\"quiet\",\"min7\",\"r_pred8\",\"deep_days90\",\"prem24\",\"pred_24min\",\"bybit_m7\",\"hl_m7\",\"svol24_m\",\"oi_mc\",\"circ_chg30\"]}",
+    "market_screen {\"filters\":{\"quiet__eq\":true,\"age_d__lt\":45},\"sort_by\":\"age_d\",\"ascending\":true,\"limit\":30}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "coin_detail {\"syms\":[\"FLUXUSDT\",\"ONTUSDT\",\"OPENUSDT\",\"ONGUSDT\",\"BANANAUSDT\",\"KAVAUSDT\"],\"days\":5}"
+   ]
+  },
+  {
+   "content": "The final ranking prioritizes capacity for sustained, deep funding over a shallow threshold touch. Repeat offenders dominate; PROM, AWE, and GUN add fresh pump/collapse pressure. I’m excluding MEGA because it has no observed spot market or funding pressure, and downgrading REZ because its past deep episodes were mostly shallow despite strong near-term warning signs.\n\nAll 15 selections were verified as `quiet__eq: true`. The probabilities refer specifically to at least one settled print below −0.10% in February 19–25 UTC, not to price declines or positive net strategy returns.\n",
+   "calls": [
+    "submit_list {\"picks\":[{\"rank\":1,\"sym\":\"POLYXUSDT\",\"p_hit\":0.4,\"archetype\":\"D\",\"reason\":\"32 deep days in 90 and only 12 days since the last episode; predicted funding dipped to -0.4918% and current premium is -0.3341%, with just $0.322M daily spot volume. The December–January episode lasted 23.7 days, paid 35.66"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "quiet_board {\"page\":4,\"per_page\":70}"
+   ]
+  },
+  {
+   "content": "### Ranked borrow list\n**Target: [2026-02-19, 2026-02-26) UTC.** All 15 were verified `quiet__eq: true` at the decision time. Ranking reflects **hit probability × expected depth**, not probability alone.\n\n| Rank | Binance perp | p_hit | Archetype | Main evidence |\n|---:|---|---:|:---:|---|\n| 1 | POLYXUSDT | 40% | D | 32 deep days; predicted minimum −0.4918%; $0.322M daily spot volume. Previous episode paid 35.66% over 23.7 days. |\n| 2 | SUPERUSDT | 38% | D | 48 deep days; price −41.8% monthly; premium −0.1099%. Previous sustained episode paid 51.73%; current pressure remains mild. |\n| 3 | ZRXUSDT | 40% | D | Last deep eight days ago; premium −0.1683%; perp/spot volume 9.28×. Previous 14-day episode paid 18.16%. |\n| 4 | PROMUSDT | 30% | D | Perp volume 3.60× normal, daily OI +7.76%, current premium −0.3101%. January episode paid 11.55% over 6.3 days. |\n| 5 | ARPAUSDT | 34% | D | Last deep eight days ago; OI/mcap 10.92%; thin spot and pair-removal notices. Recent 17-day episode paid 12.15%. |\n| 6 | ORCAUSDT | 35% | D | 24 deep days; predicted minimum −0.1483%; only $0.195M daily spot volume. Previous 11.3-day episode paid 21.44%. |\n| 7 | MMTUSDT | 37% | D | OI/mcap 11.94%; premium −0.1886%; 26 deep days. January episode reached −1.634%, although recent settlements are positive. |\n| 8 | PLUMEUSDT | 41% | D | Supply +43.97% monthly; 31 deep days; prediction −0.0457%; premium −0.1546%. Previous 24.2-day episode paid 11.44%. |\n| 9 | ONGUSDT | 35% | D | Predicted minimum −0.2215%; $0.115M daily spot volume. Recent 8.5-day episode paid 6.79%, reaching −3.059%. |\n| 10 | ONTUSDT | 35% | D | Premium −0.2032%; perp/spot volume 9.13×; 18 deep days. Previous 6.3-day episode paid 9.77%. |\n| 11 | MEMEUSDT | 39% | D | Bybit −0.2762%, Binance prediction −0.0728%, perp/spot volume 9.57×. January episode reached −1.767%; falling OI is a counter-signal. |\n| 12 | SAHARAUSDT | 34% | D | Premium −0.2155%; Bybit −0.0873%; supply +5.02% monthly. Previous 10.2-day episode paid 5.72%. |\n| 13 |",
+   "calls": []
+  },
+  {
+   "content": "",
+   "calls": [
+    "submit_list {\"picks\":[{\"rank\":1,\"sym\":\"POLYXUSDT\",\"p_hit\":0.4,\"archetype\":\"D\",\"reason\":\"32 deep days in 90 and only 12 days since the last episode; predicted funding dipped to -0.4918% and current premium is -0.3341%, with just $0.322M daily spot volume. The December–January episode lasted 23.7 days, paid 35.66"
+   ]
+  }
+ ],
+ "usage": {
+  "prompt": 2332954,
+  "completion": 6354
+ },
+ "rejected_submits": 1,
+ "seconds": 214.3,
+ "picks": [
+  {
+   "rank": 1,
+   "sym": "POLYXUSDT",
+   "p_hit": 0.4,
+   "archetype": "D",
+   "reason": "32 deep days in 90 and only 12 days since the last episode; predicted funding dipped to -0.4918% and current premium is -0.3341%, with just $0.322M daily spot volume. The December–January episode lasted 23.7 days, paid 35.66%, and reached -4.0%, supporting unusually large relapse depth despite positive current predicted funding."
+  },
+  {
+   "rank": 2,
+   "sym": "SUPERUSDT",
+   "p_hit": 0.38,
+   "archetype": "D",
+   "reason": "48 deep days in 90, last deep 15 days ago, with price down 41.8% over 30 days and premium -0.1099%; $0.544M spot volume and a margin-pair removal notice suggest potential arbitrage friction. Its largest episode lasted 40.8 days and paid 51.73%, but mild current predicted dips (-0.0527%) temper the hit probability."
+  },
+  {
+   "rank": 3,
+   "sym": "ZRXUSDT",
+   "p_hit": 0.4,
+   "archetype": "D",
+   "reason": "26 deep days, last deep eight days ago, premium -0.1683%, and predicted minimum -0.1732%; perp volume is 9.28x spot against only $0.252M daily spot turnover. A recent 14-day episode paid 18.16% and hit -4.378%, while the current seven-day settled minimum remains only -0.0864%."
+  },
+  {
+   "rank": 4,
+   "sym": "PROMUSDT",
+   "p_hit": 0.3,
+   "archetype": "D",
+   "reason": "After a 69.5% monthly collapse, a 13.7% three-day rebound brings 3.60x perp-volume surge and 7.76% daily OI growth; premium is -0.3101% now and predicted funding dipped to -0.1605%. January's 6.3-day episode paid 11.55% and reached -2.045%, giving this $23.5M-cap relapse/pump setup substantial depth potential."
+  },
+  {
+   "rank": 5,
+   "sym": "ARPAUSDT",
+   "p_hit": 0.34,
+   "archetype": "D",
+   "reason": "19 deep days and only eight days since the last deep print, with OI/mcap 10.92%, premium -0.1559%, and $0.446M daily spot turnover following margin- and spot-pair removal notices. January–February's 17-day episode paid 12.15% and reached -1.425%, although currently mild predicted funding and falling OI reduce conviction."
+  },
+  {
+   "rank": 6,
+   "sym": "ORCAUSDT",
+   "p_hit": 0.35,
+   "archetype": "D",
+   "reason": "24 deep days, last deep 21 days ago; predicted minimum -0.1483% and premium -0.1507% accompany just $0.195M spot volume and 6.30x perp/spot turnover. Prior episodes include 11.3 days paying 21.44% and a January episode reaching -1.572%, so thin spot could amplify renewed short demand."
+  },
+  {
+   "rank": 7,
+   "sym": "MMTUSDT",
+   "p_hit": 0.37,
+   "archetype": "D",
+   "reason": "26 deep days, OI/mcap 11.94%, a 41.5% monthly decline and -0.1886% premium identify a crowded $26.6M-cap coin, with predicted dips to -0.1032%. January's two-day episode paid 2.89% at a -1.634% trough, and an earlier 10.3-day episode paid 10.78%; positive recent settlements are the main counter-signal."
+  },
+  {
+   "rank": 8,
+   "sym": "PLUMEUSDT",
+   "p_hit": 0.41,
+   "archetype": "D",
+   "reason": "31 deep days and nine days since the last deep print combine with circulating supply up 43.97% over 30 days, an observed hedging-supply proxy rather than a dated future unlock. Current prediction is -0.0457%, premium -0.1546%, and OI/mcap 8.28%; a prior 24.2-day episode paid 11.44%, supporting persistent relapse potential."
+  },
+  {
+   "rank": 9,
+   "sym": "ONGUSDT",
+   "p_hit": 0.35,
+   "archetype": "D",
+   "reason": "17 deep days, last deep 12 days ago, predicted minimum -0.2215% and current premium -0.2068%, with only $0.115M daily spot volume and 6.96x perp/spot turnover. The January 27–February 4 episode lasted 8.5 days, paid 6.79%, and reached -3.059%, making thin-spot relapse attractive despite currently positive settlements."
+  },
+  {
+   "rank": 10,
+   "sym": "ONTUSDT",
+   "p_hit": 0.35,
+   "archetype": "D",
+   "reason": "18 deep days and 19 days since the last deep episode, with -0.2032% average premium, predicted minimum -0.1549%, and 9.13x perp/spot volume against $0.194M spot turnover. Its December–January episode paid 9.77% over 6.3 days, and late January again reached -1.136%; current positive settlements keep the estimate below 40%."
+  },
+  {
+   "rank": 11,
+   "sym": "MEMEUSDT",
+   "p_hit": 0.39,
+   "archetype": "D",
+   "reason": "Bybit is already -0.2762% and Hyperliquid -0.0624%, while Binance prediction is still quiet at -0.0728%; predicted intraday minimum is -0.1938% and perp/spot turnover 9.57x. January's 1.5-day episode paid 3.55% at a -1.767% trough, but daily OI contraction of 16.6% argues against extrapolating pressure without discount."
+  },
+  {
+   "rank": 12,
+   "sym": "SAHARAUSDT",
+   "p_hit": 0.34,
+   "archetype": "D",
+   "reason": "20 deep days, last deep 18 days ago, premium -0.2155%, Bybit funding -0.0873%, and circulating supply up 5.02% provide a relapse/hedging setup despite positive Binance settlements. A recent 10.2-day episode paid 5.72% and reached -0.720%; the current predicted minimum of -0.0939% is a warning, not a settled hit."
+  },
+  {
+   "rank": 13,
+   "sym": "AWEUSDT",
+   "p_hit": 0.32,
+   "archetype": "B",
+   "reason": "Price has risen 66.8% in 30 days and 24.4% in seven days while predicted funding deteriorated to a -0.0170% daily mean, intraday minimum -0.1095%, and Bybit last funding -0.0797%. With 24 historical deep days and a prior 2.5-day episode paying 4.92%, this pump has depth potential, although $2.09M spot turnover means arbitrage constraint is less evident than in the leaders."
+  },
+  {
+   "rank": 14,
+   "sym": "GUNUSDT",
+   "p_hit": 0.31,
+   "archetype": "C",
+   "reason": "After a 62.4% sixty-day gain, price has fallen 23.6% in three days; premium widened to -0.2587% and predicted daily mean fell to -0.0266%, with OI/mcap still 16.80% and supply up 5.97% monthly. Prior episodes lasted 7.7–9 days and paid 2.62–3.45%, but OI down 23.0% in three days indicates substantial deleveraging rather than confirmed fresh short accumulation."
+  },
+  {
+   "rank": 15,
+   "sym": "SXTUSDT",
+   "p_hit": 0.3,
+   "archetype": "D",
+   "reason": "11 deep days and last deep ten days ago, price down 6.17% in three days while OI is up 4.51%, predicted minimum -0.1973%, and current premium -0.7512% flag renewed pressure in a $29.7M-cap coin. January episodes paid 1.92% over 1.3 days and 1.67% over 7.2 days; improving predicted mean versus 72 hours tempers this otherwise actionable relapse."
+  }
+ ],
+ "chronic_rule": [
+  "SENTUSDT",
+  "AXSUSDT",
+  "DUSKUSDT",
+  "BERAUSDT",
+  "ZKPUSDT",
+  "MEUSDT",
+  "VANAUSDT",
+  "ESPUSDT",
+  "NOMUSDT",
+  "LAUSDT",
+  "GUSDT",
+  "MOVEUSDT",
+  "0GUSDT",
+  "ZILUSDT",
+  "RESOLVUSDT",
+  "INITUSDT",
+  "FLOWUSDT",
+  "ZKCUSDT",
+  "AUCTIONUSDT",
+  "LPTUSDT",
+  "COMPUSDT",
+  "COWUSDT",
+  "TNSRUSDT",
+  "KERNELUSDT",
+  "LSKUSDT",
+  "GPSUSDT",
+  "ENSOUSDT",
+  "FUSDT",
+  "DYMUSDT",
+  "WCTUSDT",
+  "ACEUSDT",
+  "ROSEUSDT",
+  "LINEAUSDT",
+  "WLFIUSDT",
+  "ACTUSDT",
+  "AVNTUSDT",
+  "SOPHUSDT",
+  "MINAUSDT",
+  "TREEUSDT",
+  "ZKUSDT"
+ ]
+}

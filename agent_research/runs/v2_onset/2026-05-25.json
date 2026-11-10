@@ -1,0 +1,221 @@
+{
+ "as_of": "2026-05-25",
+ "model": "gpt-6-astra",
+ "mode": "onset",
+ "turns": [
+  {
+   "content": "",
+   "calls": [
+    "base_rates {}",
+    "past_onsets {\"lookback_days\":90,\"limit\":20}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "market_screen {\"filters\":{\"quiet__eq\":true},\"sort_by\":\"deep_days90\",\"ascending\":false,\"limit\":35}",
+    "market_screen {\"filters\":{\"quiet__eq\":true},\"sort_by\":\"prem24\",\"ascending\":true,\"limit\":20}",
+    "market_screen {\"filters\":{\"quiet__eq\":true,\"age_d__lt\":45},\"sort_by\":\"age_d\",\"limit\":25}",
+    "announcements {\"days\":30}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "market_screen {\"filters\":{\"quiet__eq\":true},\"sort_by\":\"oi_mc\",\"ascending\":false,\"limit\":12,\"columns\":[\"sym\",\"oi_mc\",\"ret7\",\"ret30\",\"oi3\",\"deep_days90\",\"prem24\",\"pred_24min\",\"circ_chg30\"]}",
+    "market_screen {\"filters\":{\"quiet__eq\":true},\"sort_by\":\"pvol_surge\",\"ascending\":false,\"limit\":12,\"columns\":[\"sym\",\"pvol_surge\",\"ret3\",\"ret7\",\"ret30\",\"oi7\",\"deep_days90\",\"prem24\",\"pred_24min\"]}",
+    "market_screen {\"filters\":{\"quiet__eq\":true},\"sort_by\":\"pred_trend\",\"limit\":12,\"columns\":[\"sym\",\"pred_trend\",\"pred_24min\",\"prem24\",\"deep_days90\",\"ret30\"]}",
+    "market_screen {\"filters\":{\"quiet__eq\":true},\"sort_by\":\"bybit_m7\",\"limit\":10,\"columns\":[\"sym\",\"bybit_m7\",\"hl_m7\",\"deep_days90\",\"prem24\",\"ret30\"]}",
+    "market_screen {\"filters\":{\"quiet__eq\":true},\"sort_by\":\"circ_chg30\",\"ascending\":false,\"limit\":10,\"columns\":[\"sym\",\"circ_chg30\",\"deep_days90\",\"prem24\",\"ret30\"]}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "coin_hourly {\"syms\":[\"PHAUSDT\",\"REDUSDT\",\"GTCUSDT\",\"API3USDT\",\"ENSOUSDT\",\"KATUSDT\",\"LAUSDT\",\"MOVRUSDT\"],\"hours\":72,\"step\":12}",
+    "coin_hourly {\"syms\":[\"ILVUSDT\",\"ESPUSDT\",\"AXSUSDT\",\"SAHARAUSDT\",\"GUNUSDT\",\"COMPUSDT\",\"SOLVUSDT\",\"MIRAUSDT\"],\"hours\":72,\"step\":12}",
+    "coin_hourly {\"syms\":[\"FLUXUSDT\",\"RESOLVUSDT\",\"GPSUSDT\",\"ROBOUSDT\",\"REZUSDT\",\"ZAMAUSDT\",\"OGNUSDT\",\"GENIUSUSDT\"],\"hours\":72,\"step\":12}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "coin_detail {\"syms\":[\"PHAUSDT\",\"REDUSDT\",\"GTCUSDT\",\"API3USDT\",\"ENSOUSDT\",\"KATUSDT\"],\"days\":45}",
+    "coin_detail {\"syms\":[\"LAUSDT\",\"MOVRUSDT\",\"ILVUSDT\",\"ESPUSDT\",\"AXSUSDT\",\"SAHARAUSDT\"],\"days\":45}",
+    "coin_detail {\"syms\":[\"GUNUSDT\",\"COMPUSDT\",\"SOLVUSDT\",\"MIRAUSDT\",\"FLUXUSDT\",\"RESOLVUSDT\"],\"days\":45}",
+    "coin_detail {\"syms\":[\"GPSUSDT\",\"ROBOUSDT\",\"REZUSDT\",\"ZAMAUSDT\",\"OGNUSDT\",\"GENIUSUSDT\"],\"days\":45}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "announcements {\"sym\":\"GTCUSDT\",\"days\":90}",
+    "announcements {\"sym\":\"ENSOUSDT\",\"days\":90}",
+    "announcements {\"sym\":\"KATUSDT\",\"days\":90}",
+    "announcements {\"sym\":\"SOLVUSDT\",\"days\":30}",
+    "announcements {\"sym\":\"LAUSDT\",\"days\":30}",
+    "announcements {\"sym\":\"REDUSDT\",\"days\":30}"
+   ]
+  },
+  {
+   "content": "The strongest setups are repeat offenders with renewed perp discounts, rather than fresh listings. I’m ranking by expected funding depth as well as hit probability: ENSO and KAT retain substantial tail potential despite modest current pressure, while PHA and GUN show clearer near-term pressure.\n\nProbabilities are anchored to the historical quiet-coin rates, with adjustments for current evidence—not treated as independent signal multipliers. Spot-pair removal notices are only supporting evidence; they do not establish that all spot trading or borrowing is unavailable.",
+   "calls": [
+    "submit_list {\"picks\":[{\"rank\":1,\"sym\":\"ENSOUSDT\",\"p_hit\":0.38,\"archetype\":\"D\",\"reason\":\"39 deep days in 90, a 20-day cooldown and a prior 8.8-day episode paying 7.62% support unusually large relapse depth; price is down 5.85% in three days. Spot volume is only $0.363M versus 6.68x perp turnover, with premium -0"
+   ]
+  }
+ ],
+ "usage": {
+  "prompt": 592432,
+  "completion": 3291
+ },
+ "seconds": 98.9,
+ "picks": [
+  {
+   "rank": 1,
+   "sym": "ENSOUSDT",
+   "p_hit": 0.38,
+   "archetype": "D",
+   "reason": "39 deep days in 90, a 20-day cooldown and a prior 8.8-day episode paying 7.62% support unusually large relapse depth; price is down 5.85% in three days. Spot volume is only $0.363M versus 6.68x perp turnover, with premium -0.1153% and predicted intraday funding -0.0866%; the slightly improving predicted mean limits conviction."
+  },
+  {
+   "rank": 2,
+   "sym": "REDUSDT",
+   "p_hit": 0.4,
+   "archetype": "D",
+   "reason": "Circulating supply grew 8.56% in 30 days, providing a continuing hedging-pressure proxy, alongside 25 deep days and a 21-day cooldown. Premium has widened to -0.2948% over 24h, predicted trend is -0.0088 percentage points and volume is 1.83x normal; April daily settled prints below -1% demonstrate depth potential, although current spot turnover is relatively healthy."
+  },
+  {
+   "rank": 3,
+   "sym": "KATUSDT",
+   "p_hit": 0.31,
+   "archetype": "C",
+   "reason": "The April pump has unwound: price is down 67.11% over 30 days, OI remains 24.01% of market cap and spot turnover is only $0.485M. Previous episodes paid 11.64% over 3.8 days and 12.67% over 13.5 days, but premium -0.0252%, declining OI and confirmed margin availability warrant a restrained hit probability despite substantial conditional depth."
+  },
+  {
+   "rank": 4,
+   "sym": "API3USDT",
+   "p_hit": 0.37,
+   "archetype": "D",
+   "reason": "21 deep days, a 14-day cooldown and 8.45% funding received over 30 days identify a recent severe repeat offender; OI is 12.09% of market cap against $0.356M daily spot volume. Price fell 6.56% over three days while predicted funding fell to -0.0690% and the intraday low reached -0.1008%, though OI contracted 16.33% over seven days."
+  },
+  {
+   "rank": 5,
+   "sym": "PHAUSDT",
+   "p_hit": 0.43,
+   "archetype": "B",
+   "reason": "Price gained 21.05% in seven days while OI rose 50.14% in three days and perp volume surged 3.76x, consistent with shorts opposing a pump in a 22-deep-day repeat offender. Premium is -0.2292%, predicted funding dipped to -0.5580% and the settled weekly minimum is still just above threshold at -0.0986%; partial intraday cooling and the three-day execution lag temper the forecast."
+  },
+  {
+   "rank": 6,
+   "sym": "MOVRUSDT",
+   "p_hit": 0.37,
+   "archetype": "C",
+   "reason": "After a 77.81% sixty-day advance, price fell 14.34% in three days, with predicted funding averaging -0.0396% over 24h and repeated hourly-bucket lows around -0.21% to -0.25%. Premium is -0.1974%, spot turnover $0.722M and the last deep episode ended 17 days ago; a prior 8.2-day episode paid 4.37%, supporting more than a shallow touch."
+  },
+  {
+   "rank": 7,
+   "sym": "ESPUSDT",
+   "p_hit": 0.36,
+   "archetype": "D",
+   "reason": "26 deep days and a 31-day cooldown accompany a 28.71% sixty-day decline, while the latest 12h premium deteriorated to -0.158% and predicted funding reached -0.0764% with a -0.1287% intraday low. Spot volume is $0.581M, and prior episodes include a -3.953% print in April and multi-day deep runs; absent OI confirmation and modest current activity limit probability."
+  },
+  {
+   "rank": 8,
+   "sym": "GUNUSDT",
+   "p_hit": 0.4,
+   "archetype": "D",
+   "reason": "Supply increased 18.11% in 30 days as price fell 25.16%, with OI still 17.53% of market cap and only $0.545M daily spot volume. Settled funding approached threshold at -0.0937%, premium averages -0.2215% and Bybit's seven-day mean is -0.0204%; the prior 6.7-day episode paid 4.20%, although declining OI and a recovered latest prediction are counterweights."
+  },
+  {
+   "rank": 9,
+   "sym": "AXSUSDT",
+   "p_hit": 0.38,
+   "archetype": "D",
+   "reason": "39 deep days, a 29-day cooldown and historical multi-week episodes support sustained relapse potential; current perp turnover is 8.99x spot, with spot volume only $0.625M. Premium is -0.1427%, Binance prediction -0.0387% and Hyperliquid funding -0.0345%; recent spot-pair removals add a liquidity caution, but falling OI prevents a stronger forecast."
+  },
+  {
+   "rank": 10,
+   "sym": "MIRAUSDT",
+   "p_hit": 0.35,
+   "archetype": "D",
+   "reason": "Hourly predicted lows worsened from roughly -0.04% to -0.19%, with current prediction -0.0865%, premium -0.2021% and predicted trend -0.0188 percentage points. A $22.43M market cap, $0.404M spot turnover and 12 deep days support relapse susceptibility; April's one-day episode paid 1.88% with a -2.50% trough, demonstrating meaningful conditional depth."
+  },
+  {
+   "rank": 11,
+   "sym": "GTCUSDT",
+   "p_hit": 0.34,
+   "archetype": "C",
+   "reason": "The May pump has retraced to 47.15% below the monthly high, while OI remains 19.64% of an $8.87M market cap and perp/spot turnover is 7.28x. Premium flipped from positive hourly buckets to negative, current premium is -0.5784% and predicted trend -0.0771 percentage points; monitoring status and the recent -1.293% episode support depth, but recurring false predicted dips and OI contraction constrain probability."
+  },
+  {
+   "rank": 12,
+   "sym": "SAHARAUSDT",
+   "p_hit": 0.3,
+   "archetype": "C",
+   "reason": "46 deep days and a prior 40.8-day episode paying 72.35% give substantial tail potential after a 29-day cooldown; price is still up 57.34% monthly but down 6.39% weekly, with supply up 4.22%. Premium -0.1329% and an intraday prediction of -0.0717% show mild pressure, but $12.99M spot turnover and a 72h perp/spot ratio below 1 materially weaken the arbitrage-constraint case."
+  },
+  {
+   "rank": 13,
+   "sym": "ILVUSDT",
+   "p_hit": 0.36,
+   "archetype": "D",
+   "reason": "24 deep days and a 29-day cooldown combine with thin $0.169M spot turnover and a 6.78% three-day price decline. Premium widened from -0.096% in the first hourly bucket to about -0.255% over the latest day, predicted funding dipped to -0.1146% and its trend is -0.0106 percentage points; a prior 3.2-day episode paid 2.71%, though other venues are not confirming."
+  },
+  {
+   "rank": 14,
+   "sym": "SOLVUSDT",
+   "p_hit": 0.32,
+   "archetype": "D",
+   "reason": "OI is 24.98% of a $6.12M market cap, with 13 deep days and only a 13-day cooldown; prior episodes include 7.8 days paying 5.12%. The latest 12h premium widened to -0.203% and predicted funding dipped to -0.1332%; spot-pair removals provide supporting liquidity context, but declining OI and a near-flat predicted trend limit conviction."
+  },
+  {
+   "rank": 15,
+   "sym": "LAUSDT",
+   "p_hit": 0.34,
+   "archetype": "D",
+   "reason": "Price is down 30.76% monthly and 42.33% over sixty days, with 22 deep days and only $0.165M daily spot turnover versus 7.45x perp volume. Current premium is -0.3512%, predicted funding -0.0693% and Bybit funding -0.0655%; May spot-pair removals reinforce the thin-liquidity concern, but historical episodes generally delivered less depth than higher-ranked names."
+  }
+ ],
+ "chronic_rule": [
+  "FIDAUSDT",
+  "RONINUSDT",
+  "PROVEUSDT",
+  "CHIPUSDT",
+  "MTLUSDT",
+  "ALTUSDT",
+  "RIFUSDT",
+  "ONTUSDT",
+  "ENJUSDT",
+  "GMTUSDT",
+  "SIGNUSDT",
+  "SUPERUSDT",
+  "MEUSDT",
+  "EDENUSDT",
+  "HOMEUSDT",
+  "BARDUSDT",
+  "KERNELUSDT",
+  "ALICEUSDT",
+  "HIVEUSDT",
+  "LPTUSDT",
+  "HYPERUSDT",
+  "FOGOUSDT",
+  "BIOUSDT",
+  "PROMUSDT",
+  "ORCAUSDT",
+  "LAYERUSDT",
+  "BANANAUSDT",
+  "CFGUSDT",
+  "ACEUSDT",
+  "JTOUSDT",
+  "MOVEUSDT",
+  "COOKIEUSDT",
+  "SOPHUSDT",
+  "POLYXUSDT",
+  "TOWNSUSDT",
+  "PLUMEUSDT",
+  "NILUSDT",
+  "BBUSDT",
+  "NOMUSDT",
+  "WUSDT"
+ ]
+}

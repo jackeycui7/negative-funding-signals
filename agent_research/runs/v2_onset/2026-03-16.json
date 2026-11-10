@@ -1,0 +1,230 @@
+{
+ "as_of": "2026-03-16",
+ "model": "gpt-6-astra",
+ "mode": "onset",
+ "turns": [
+  {
+   "content": "",
+   "calls": [
+    "base_rates {}",
+    "past_onsets {\"lookback_days\":90,\"limit\":20}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "market_screen {\"filters\":{\"quiet__eq\":true},\"sort_by\":\"deep_days90\",\"ascending\":false,\"limit\":35}",
+    "market_screen {\"filters\":{\"quiet__eq\":true},\"sort_by\":\"prem24\",\"ascending\":true,\"limit\":25}",
+    "market_screen {\"filters\":{\"quiet__eq\":true,\"age_d__lt\":45},\"sort_by\":\"age_d\",\"limit\":30}",
+    "announcements {\"days\":30}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "market_screen {\"filters\":{\"quiet__eq\":true},\"sort_by\":\"oi_mc\",\"ascending\":false,\"limit\":15,\"columns\":[\"sym\",\"oi_mc\",\"ret7\",\"ret30\",\"oi7\",\"pred_24min\",\"prem24\",\"deep_days90\"]}",
+    "market_screen {\"filters\":{\"quiet__eq\":true},\"sort_by\":\"pvol_surge\",\"ascending\":false,\"limit\":15,\"columns\":[\"sym\",\"pvol_surge\",\"ret3\",\"ret30\",\"oi3\",\"prem24\",\"pred_trend\",\"deep_days90\"]}",
+    "market_screen {\"filters\":{\"quiet__eq\":true},\"sort_by\":\"bybit_m7\",\"limit\":10,\"columns\":[\"sym\",\"bybit_m7\",\"hl_m7\",\"pred_24min\",\"prem24\",\"deep_days90\"]}",
+    "market_screen {\"filters\":{\"quiet__eq\":true},\"sort_by\":\"ret30\",\"ascending\":false,\"limit\":10,\"columns\":[\"sym\",\"ret3\",\"ret7\",\"ret30\",\"dd30\",\"pv_sv3\",\"deep_days90\"]}",
+    "market_screen {\"filters\":{\"quiet__eq\":true},\"sort_by\":\"pred_trend\",\"limit\":10,\"columns\":[\"sym\",\"pred_trend\",\"pred_24min\",\"prem24\",\"deep_days90\"]}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "coin_hourly {\"syms\":[\"MOVEUSDT\",\"DUSKUSDT\",\"ZKCUSDT\",\"NOMUSDT\",\"BERAUSDT\",\"IOUSDT\",\"INITUSDT\",\"ORCAUSDT\"],\"hours\":72,\"step\":12}",
+    "coin_hourly {\"syms\":[\"GPSUSDT\",\"ZKPUSDT\",\"ZRXUSDT\",\"MEUSDT\",\"LAYERUSDT\",\"PLUMEUSDT\",\"SAPIENUSDT\",\"KATUSDT\"],\"hours\":72,\"step\":12}",
+    "coin_hourly {\"syms\":[\"DEXEUSDT\",\"SIGNUSDT\",\"ACTUSDT\",\"MIRAUSDT\",\"ENJUSDT\",\"AUCTIONUSDT\",\"ZILUSDT\",\"ZBTUSDT\"],\"hours\":72,\"step\":12}",
+    "coin_detail {\"syms\":[\"MOVEUSDT\",\"DUSKUSDT\",\"ZKCUSDT\",\"NOMUSDT\",\"BERAUSDT\",\"IOUSDT\"],\"days\":45}",
+    "coin_detail {\"syms\":[\"INITUSDT\",\"ORCAUSDT\",\"GPSUSDT\",\"ZKPUSDT\",\"ZRXUSDT\",\"MEUSDT\"],\"days\":45}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "coin_detail {\"syms\":[\"LAYERUSDT\",\"PLUMEUSDT\",\"SAPIENUSDT\",\"KATUSDT\",\"DEXEUSDT\",\"SIGNUSDT\"],\"days\":5}",
+    "coin_detail {\"syms\":[\"ACTUSDT\",\"MIRAUSDT\",\"ENJUSDT\",\"AUCTIONUSDT\",\"ZILUSDT\",\"ZBTUSDT\"],\"days\":5}",
+    "announcements {\"sym\":\"KATUSDT\",\"days\":60}",
+    "announcements {\"sym\":\"DUSKUSDT\",\"days\":60}",
+    "announcements {\"sym\":\"ZKCUSDT\",\"days\":60}",
+    "announcements {\"sym\":\"NOMUSDT\",\"days\":60}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "announcements {\"sym\":\"ORCAUSDT\",\"days\":90}",
+    "announcements {\"sym\":\"MOVEUSDT\",\"days\":60}",
+    "announcements {\"sym\":\"INITUSDT\",\"days\":60}",
+    "announcements {\"sym\":\"BERAUSDT\",\"days\":60}",
+    "announcements {\"sym\":\"ZKPUSDT\",\"days\":60}",
+    "announcements {\"sym\":\"AUCTIONUSDT\",\"days\":60}",
+    "announcements {\"sym\":\"MEUSDT\",\"days\":60}",
+    "announcements {\"sym\":\"DEXEUSDT\",\"days\":60}",
+    "announcements {\"sym\":\"ZRXUSDT\",\"days\":60}",
+    "announcements {\"sym\":\"PLUMEUSDT\",\"days\":60}",
+    "announcements {\"sym\":\"MIRAUSDT\",\"days\":60}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "submit_list {\"picks\":[{\"rank\":1,\"sym\":\"DUSKUSDT\",\"p_hit\":0.46,\"archetype\":\"D\",\"reason\":\"45 deep days in 90 and a prior 18.2-day episode paying 32.19% support unusually persistent relapse depth; OI rose 13.67% in 72h and current predicted funding is -0.0579% despite quiet eligibility. The February margin-pair re"
+   ]
+  }
+ ],
+ "usage": {
+  "prompt": 574271,
+  "completion": 3387
+ },
+ "seconds": 97.6,
+ "picks": [
+  {
+   "rank": 1,
+   "sym": "DUSKUSDT",
+   "p_hit": 0.46,
+   "archetype": "D",
+   "reason": "45 deep days in 90 and a prior 18.2-day episode paying 32.19% support unusually persistent relapse depth; OI rose 13.67% in 72h and current predicted funding is -0.0579% despite quiet eligibility. The February margin-pair removal, 11.36% OI/mcap and 5.18x perp/spot volume suggest arbitrage friction, although the 24h predicted mean has improved."
+  },
+  {
+   "rank": 2,
+   "sym": "ORCAUSDT",
+   "p_hit": 0.36,
+   "archetype": "D",
+   "reason": "Only eight days since the last deep print, with 26 deep days in 90, 45.95% funding received over 30d and a February settled trough of -10.17%, give this relapse exceptional conditional depth. Spot turnover is just $0.544M versus 5.88x perp/spot volume over 72h; falling OI (-15.26% weekly) and improving premium temper the hit probability."
+  },
+  {
+   "rank": 3,
+   "sym": "NOMUSDT",
+   "p_hit": 0.46,
+   "archetype": "D",
+   "reason": "Price is down 41.45% over 30d and 7.74% over 72h, with a persistent -0.232% daily premium, 17.36% OI/mcap and 37 deep days in 90. A prior 29.7-day episode paid 35.90%, while $0.588M spot turnover and February spot-pair removals suggest limited arbitrage capacity; current funding remains quiet."
+  },
+  {
+   "rank": 4,
+   "sym": "ZKCUSDT",
+   "p_hit": 0.48,
+   "archetype": "D",
+   "reason": "Circulating supply grew 22.93% in 30d, including a March 13 step-up, while price fell 5.20% and OI rose 3.44% over 72h; volume is 2.49x normal and premium averages -0.274%. With 27 deep days, a prior 21.2-day episode paying 16.06% and earlier spot-pair removals, renewed hedging pressure has credible duration, though the latest selloff also reduced intraday OI."
+  },
+  {
+   "rank": 5,
+   "sym": "MOVEUSDT",
+   "p_hit": 0.48,
+   "archetype": "D",
+   "reason": "46 deep days in 90, supply growth of 4.92%, a -0.203% daily premium and predicted intraday low of -0.153% support renewed hedge-driven funding pressure. Spot turnover is only $0.386M against 7.10x perp/spot volume, with a monitoring tag and prior spot-pair removal; the February 7.3-day episode paid 10.25%, but shrinking OI limits conviction."
+  },
+  {
+   "rank": 6,
+   "sym": "INITUSDT",
+   "p_hit": 0.42,
+   "archetype": "B",
+   "reason": "A renewed rally (+13.32% weekly) meets 17.30% OI/mcap, 1.82x volume and a fresh -0.308% predicted dip, while the 24h predicted mean deteriorated to -0.029%. The $16.91M capitalization, -0.173% premium and February -4.00% settled print support squeeze-related depth; missing OI changes and substantially improved spot participation prevent a higher probability."
+  },
+  {
+   "rank": 7,
+   "sym": "BERAUSDT",
+   "p_hit": 0.44,
+   "archetype": "B",
+   "reason": "Price rose 25.52% weekly while OI rose 12.06%, supply expanded 7.16% and perp volume reached 6.49x spot; hourly premium shifted from +0.014% to roughly -0.11%. With 41 deep days, 16.31% OI/mcap and a February settled trough of -2.41%, another speculative-short/holder-hedge wave could persist, although current predicted funding has recovered to +0.01%."
+  },
+  {
+   "rank": 8,
+   "sym": "ZKPUSDT",
+   "p_hit": 0.32,
+   "archetype": "D",
+   "reason": "49 deep days in 90, 21.67% OI/mcap and only $0.373M daily spot turnover preserve substantial relapse susceptibility; its January-February 35.6-day episode paid 58.31% and reached -8.27%. This is a depth-tail selection rather than an imminent signal: premium is only -0.017% and predicted funding is +0.01%, warranting a material probability discount."
+  },
+  {
+   "rank": 9,
+   "sym": "KATUSDT",
+   "p_hit": 0.25,
+   "archetype": "A",
+   "reason": "The March 13 spot-listing announcement follows a March 2 pre-market perp launch, providing a concrete new-token transition where recipient hedging may exceed nascent arbitrage capacity. The contract is 13.7 days old with $3.60M daily perp volume but zero observed Binance spot turnover and missing supply/OI data; +0.01% funding is genuinely quiet, and unverified borrow availability and launch timing keep the estimate conservative."
+  },
+  {
+   "rank": 10,
+   "sym": "AUCTIONUSDT",
+   "p_hit": 0.38,
+   "archetype": "D",
+   "reason": "28 deep days in 90 and a prior 22-day episode paying 21.30% provide strong persistence precedent, with OI/mcap 11.77%, volume 1.38x normal and current premium -0.185%. Earlier spot-pair removal and $1.27M spot turnover suggest friction, but improving predicted funding and no measurable OI growth argue against treating this as an imminent onset."
+  },
+  {
+   "rank": 11,
+   "sym": "MEUSDT",
+   "p_hit": 0.39,
+   "archetype": "D",
+   "reason": "Only eight days since deep funding, with 26 deep days in 90, price down 28.78% monthly, supply up 2.22% and $0.357M daily spot turnover against 6.35x perp/spot volume. Current prediction is -0.0544% and intraday prediction reached -0.110%, while multiple prior episodes paid roughly 8%; declining OI and recovering cross-venue funding moderate the relapse probability."
+  },
+  {
+   "rank": 12,
+   "sym": "DEXEUSDT",
+   "p_hit": 0.24,
+   "archetype": "B",
+   "reason": "A 121.83% monthly and 25.34% three-day rally, 7.64x daily perp/spot volume and -0.189% premium fit the historically low-hit but high-depth quiet post-pump setup. Predicted funding reached -0.225% on March 14 and Bybit's weekly mean is -0.0214%, but only one deep day in 90 and missing OI data require a restrained hit estimate."
+  },
+  {
+   "rank": 13,
+   "sym": "PLUMEUSDT",
+   "p_hit": 0.39,
+   "archetype": "B",
+   "reason": "OI jumped 15.91% in 24h alongside an 8.06% price bounce, while premium averaged -0.212% and predicted funding dipped to -0.156%, suggesting shorts or hedgers absorbing the rally. Supply growth of 6.56%, 10.90% OI/mcap, prior spot-pair removals and a historical 24.2-day episode paying 11.44% support sustained depth, though current spot turnover is relatively healthy at $3.69M."
+  },
+  {
+   "rank": 14,
+   "sym": "MIRAUSDT",
+   "p_hit": 0.34,
+   "archetype": "D",
+   "reason": "Predicted funding averages -0.0526% over 24h, with a -0.152% intraday low, -0.201% premium, 4.61% supply growth and only $0.300M daily spot turnover. A recent 6.3-day episode paid 4.36% and reached -4.00%, but OI is down 5.41% in 72h and the latest premium has recovered, limiting confidence in another sustained onset."
+  },
+  {
+   "rank": 15,
+   "sym": "ZRXUSDT",
+   "p_hit": 0.43,
+   "archetype": "D",
+   "reason": "Persistent 12-hour premiums around -0.26% to -0.33%, settled funding weakening to -0.0461% and 28 deep days in 90 favor a relapse despite remaining above the quiet threshold. Spot turnover is just $0.163M against 5.42x perp volume, and a prior 14-day episode paid 18.16%; low OI/mcap of 2.85% and subdued volume argue for less expected depth than the higher-ranked names."
+  }
+ ],
+ "chronic_rule": [
+  "KITEUSDT",
+  "SAHARAUSDT",
+  "PIXELUSDT",
+  "HUMAUSDT",
+  "BARDUSDT",
+  "MANTRAUSDT",
+  "OGNUSDT",
+  "XAIUSDT",
+  "ENSOUSDT",
+  "TURBOUSDT",
+  "RESOLVUSDT",
+  "AXSUSDT",
+  "KERNELUSDT",
+  "FLOWUSDT",
+  "ICPUSDT",
+  "LAUSDT",
+  "PHAUSDT",
+  "CUSDT",
+  "TRUMPUSDT",
+  "SXTUSDT",
+  "WIFUSDT",
+  "ROBOUSDT",
+  "DYMUSDT",
+  "TOWNSUSDT",
+  "ILVUSDT",
+  "AVNTUSDT",
+  "RONINUSDT",
+  "BABYUSDT",
+  "UMAUSDT",
+  "DOGSUSDT",
+  "REZUSDT",
+  "TLMUSDT",
+  "COMPUSDT",
+  "JSTUSDT",
+  "DOTUSDT",
+  "MAGICUSDT",
+  "MMTUSDT",
+  "0GUSDT",
+  "SENTUSDT",
+  "SOPHUSDT"
+ ]
+}

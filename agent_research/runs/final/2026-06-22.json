@@ -1,0 +1,387 @@
+{
+ "as_of": "2026-06-22",
+ "model": "gpt-6-astra",
+ "mode": "scratch",
+ "code_hash": "57118bbae05d",
+ "turns": [
+  {
+   "content": "",
+   "calls": [
+    "base_rates {}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "market_screen {\"filters\":{\"quiet__eq\":false},\"sort_by\":\"m7\",\"ascending\":true,\"limit\":100}",
+    "quiet_board {\"page\":1,\"per_page\":100}",
+    "announcements {\"days\":30}",
+    "past_onsets {\"limit\":15}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "quiet_board {\"page\":2,\"per_page\":100}",
+    "quiet_board {\"page\":3,\"per_page\":100}",
+    "market_screen {\"filters\":{\"quiet__eq\":true,\"deep_days90__ge\":20},\"sort_by\":\"deep_days90\",\"limit\":30}",
+    "market_screen {\"filters\":{\"ret30__gt\":60},\"sort_by\":\"ret30\",\"limit\":20,\"columns\":[\"sym\",\"ret30\",\"ret7\",\"oi_mc\",\"oi7\",\"min7\",\"m7\",\"quiet\"]}",
+    "market_screen {\"filters\":{\"age_d__lt\":45},\"sort_by\":\"age_d\",\"limit\":20}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "market_screen {\"filters\":{\"quiet__eq\":true,\"oi_mc__gt\":15},\"sort_by\":\"oi_mc\",\"ascending\":false,\"limit\":25,\"columns\":[\"sym\",\"oi_mc\",\"oi7\",\"ret30\",\"pred_24mean\",\"prem24\",\"deep_days90\"]}",
+    "market_screen {\"filters\":{\"quiet__eq\":true,\"bybit_m7__lt\":-0.05},\"limit\":20}",
+    "market_screen {\"filters\":{\"quiet__eq\":true,\"hl_m7__lt\":-0.05},\"limit\":20}",
+    "market_screen {\"filters\":{\"oi3__gt\":50},\"sort_by\":\"oi3\",\"ascending\":false,\"limit\":25,\"columns\":[\"sym\",\"oi3\",\"oi7\",\"ret3\",\"ret7\",\"quiet\"]}",
+    "coin_detail {\"syms\":[\"HOMEUSDT\",\"SYNUSDT\",\"TNSRUSDT\",\"REUSDT\",\"FIDAUSDT\",\"PORTALUSDT\"],\"days\":14}",
+    "coin_detail {\"syms\":[\"ALLOUSDT\",\"NOMUSDT\",\"BARDUSDT\",\"METUSDT\",\"XAIUSDT\",\"LAUSDT\"],\"days\":14}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "coin_detail {\"syms\":[\"RIFUSDT\",\"BICOUSDT\",\"SAHARAUSDT\",\"IDUSDT\",\"ALICEUSDT\",\"RESOLVUSDT\"],\"days\":5}",
+    "coin_detail {\"syms\":[\"ENJUSDT\",\"ONTUSDT\",\"KERNELUSDT\",\"ORCAUSDT\",\"GUNUSDT\",\"KATUSDT\"],\"days\":5}",
+    "coin_hourly {\"syms\":[\"XAIUSDT\",\"NOMUSDT\",\"METUSDT\",\"BARDUSDT\",\"ENSOUSDT\",\"STOUSDT\"],\"hours\":24,\"step\":6}"
+   ]
+  },
+  {
+   "content": "",
+   "calls": [
+    "submit_list {\"picks\":[{\"rank\":1,\"sym\":\"TNSRUSDT\",\"p_hit\":0.66,\"archetype\":\"B\",\"reason\":\"Predicted funding is -3.7501%, the 24h premium is -1.55%, and OI rose 460.8% in 24h to 42.6% of market cap. Cross-venue negatives and a prior 41.8-day episode reaching -8.667% support exceptional depth, although the three-da"
+   ]
+  }
+ ],
+ "usage": {
+  "prompt": 391426,
+  "completion": 5185
+ },
+ "seconds": 142.7,
+ "picks": [
+  {
+   "rank": 1,
+   "sym": "TNSRUSDT",
+   "p_hit": 0.66,
+   "archetype": "B",
+   "reason": "Predicted funding is -3.7501%, the 24h premium is -1.55%, and OI rose 460.8% in 24h to 42.6% of market cap. Cross-venue negatives and a prior 41.8-day episode reaching -8.667% support exceptional depth, although the three-day delay creates squeeze-exhaustion risk."
+  },
+  {
+   "rank": 2,
+   "sym": "HOMEUSDT",
+   "p_hit": 0.79,
+   "archetype": "C",
+   "reason": "The ongoing episode has a -0.9472% seven-day mean and -3.9964% minimum, with price 68.8% below its 30-day high and supply up 7.34%. Funding is normalizing, but the latest -0.3389% settlement and -0.828% current premium still support persistence into the delayed window."
+  },
+  {
+   "rank": 3,
+   "sym": "SYNUSDT",
+   "p_hit": 0.74,
+   "archetype": "B",
+   "reason": "Price rose 361.8% and OI 830.3% over seven days, with OI/market cap 31.1% and perp/spot volume 11.7x. Funding remains -0.3734% settled and -0.3689% predicted; the monitoring tag and a prior -2.558% episode strengthen the depth case."
+  },
+  {
+   "rank": 4,
+   "sym": "FIDAUSDT",
+   "p_hit": 0.8,
+   "archetype": "D",
+   "reason": "Funding is deteriorating rather than ending: the 24h predicted mean is -0.4873% versus -0.3841% over 72h, while OI rose 9.23% over three days as price fell 4.96%. There are 33 deep days in 90, a -0.6841% premium, and only $0.855m daily spot volume."
+  },
+  {
+   "rank": 5,
+   "sym": "IDUSDT",
+   "p_hit": 0.71,
+   "archetype": "B",
+   "reason": "The latest day renewed the squeeze with price +11.1%, OI +17.5%, and a -1.9716% settled minimum; Bybit currently prints -1.2276%. The seven-day mean is -0.2934%, and a prior 4.8-day episode paid 18.5%, supporting substantial recurrent depth."
+  },
+  {
+   "rank": 6,
+   "sym": "REUSDT",
+   "p_hit": 0.63,
+   "archetype": "A",
+   "reason": "Listed only 3.33 days ago, RE has a -0.7451% funding mean, -3.8223% minimum, and Bybit funding of -0.7584%, with OI up 303.6% over three days. The June 18 margin addition and 15.1% daily OI decline temper persistence: lack of borrowability cannot be assumed."
+  },
+  {
+   "rank": 7,
+   "sym": "SAHARAUSDT",
+   "p_hit": 0.69,
+   "archetype": "D",
+   "reason": "Price is down 60.5% over 30 days, supply is up 4.05%, and 34 of the last 90 days had deep funding. The seven-day mean is -0.3499% and current premium -0.541%, but the improving predicted mean and 30.3% weekly OI decline warrant a persistence discount."
+  },
+  {
+   "rank": 8,
+   "sym": "ALICEUSDT",
+   "p_hit": 0.61,
+   "archetype": "C",
+   "reason": "Following a sharp short-term pump, price fell 17.2% in 24h while OI remains 241.3% above three days ago and 26.8% of market cap. Predicted funding is -0.4749%, the seven-day minimum -1.2932%, and perp/spot volume 10.1x, supporting a deep post-pump phase."
+  },
+  {
+   "rank": 9,
+   "sym": "PORTALUSDT",
+   "p_hit": 0.57,
+   "archetype": "C",
+   "reason": "The 21-day episode through June 20 paid 16.95% and reached -2.328%, with price still +79.5% over 30 days and OI/market cap 23.6%. Predicted funding has recovered to +0.01% and daily volume is only 0.23x its weekly average, so this is a recurrence rather than uninterrupted-persistence call."
+  },
+  {
+   "rank": 10,
+   "sym": "BICOUSDT",
+   "p_hit": 0.47,
+   "archetype": "C",
+   "reason": "Price rose 129.3% over seven days before falling 30.1% in 24h; OI is still up 1063.3% over three days and perp/spot volume is 18.8x. A -0.3469% settled print establishes susceptibility, but positive current premium and 36.8% daily OI liquidation materially reduce the raw post-pump base rate."
+  },
+  {
+   "rank": 11,
+   "sym": "KATUSDT",
+   "p_hit": 0.59,
+   "archetype": "D",
+   "reason": "KAT has 26 deep days in 90, OI/market cap of 20.0%, and a fresh -0.427% print despite a 33.0% monthly decline. Prior episodes reached -3.952% and -3.152%; current predicted funding of +0.01% makes recurrence more likely than immediate persistence."
+  },
+  {
+   "rank": 12,
+   "sym": "ORCAUSDT",
+   "p_hit": 0.57,
+   "archetype": "B",
+   "reason": "There are 26 deep days in 90 and two June episodes, including a -1.075% print on June 12–13; historical onset evidence also includes a 21.329 depth case. Current funding has normalized to +0.01% predicted and three-day OI is down 16.2%, limiting the hit estimate while retaining substantial tail-depth value."
+  },
+  {
+   "rank": 13,
+   "sym": "GUNUSDT",
+   "p_hit": 0.62,
+   "archetype": "D",
+   "reason": "Price fell 51.6% over 30 days while circulating supply increased 18.97%, providing a continuing hedging-pressure proxy. With 25 deep days in 90, a -0.3086% recent minimum and -0.3637% average premium, recurrence remains attractive despite only -0.0429% current predicted funding."
+  },
+  {
+   "rank": 14,
+   "sym": "NOMUSDT",
+   "p_hit": 0.38,
+   "archetype": "D",
+   "reason": "This quiet coin has 31 deep days in 90, a $4.62m market cap, OI/market cap of 34.5%, and a -0.227% intraday predicted trough. Prior 24- and 29.7-day episodes paid 51.17% and 35.9%, supporting tail depth, but improving predictions and no recent deep settlement keep probability near quiet-repeat-offender rates."
+  },
+  {
+   "rank": 15,
+   "sym": "RESOLVUSDT",
+   "p_hit": 0.54,
+   "archetype": "B",
+   "reason": "OI/market cap is 43.6%, price rose 34.2% over three days, and daily OI increased 34.1% on 6.07x normal perp volume. A fresh -0.4944% settled print and monitoring tag support recurrence, although current premium has returned to zero."
+  },
+  {
+   "rank": 16,
+   "sym": "HIVEUSDT",
+   "p_hit": 0.49,
+   "archetype": "D",
+   "reason": "The 30-day funding mean is -0.1839% and funding received totaled 18.21%, with 18 deep days in 90. The 24h predicted mean fell to -0.0546% from -0.0277% over 72h, but weekly OI contraction of 22.9% argues against extrapolating the earlier depth unchanged."
+  },
+  {
+   "rank": 17,
+   "sym": "ACEUSDT",
+   "p_hit": 0.48,
+   "archetype": "D",
+   "reason": "Price is down 30.3% monthly, while daily OI rose 29.8% and volume surged 5.02x. The 24h predicted mean is -0.4291%, the recent settled minimum -0.8244%, and HL's seven-day mean -0.0978%; latest Binance prediction near zero introduces normalization risk."
+  },
+  {
+   "rank": 18,
+   "sym": "RIFUSDT",
+   "p_hit": 0.46,
+   "archetype": "C",
+   "reason": "The +82.5% monthly return and -27.4% weekly reversal fit the historically high-depth rollover setup, with perp/spot volume 6.62x. However, OI fell 62.9% weekly and the latest prediction is +0.01%, so the 77.2% raw rollover hit rate is substantially discounted."
+  },
+  {
+   "rank": 19,
+   "sym": "HEIUSDT",
+   "p_hit": 0.48,
+   "archetype": "C",
+   "reason": "Price remains +35.0% over 30 days but fell 13.7% in 24h, with supply up 11.1%, OI/market cap 29.4%, and a monitoring tag. The -0.3836% recent funding minimum supports recurrence, while three-day OI contraction of 34.0% limits expected persistence."
+  },
+  {
+   "rank": 20,
+   "sym": "SPELLUSDT",
+   "p_hit": 0.48,
+   "archetype": "D",
+   "reason": "The seven-day funding mean is -0.2556%, its minimum -1.5953%, and the current prediction -0.1223%, against a 23.7% monthly price decline. Weekly OI is down 37.0% and only eight deep days occurred in 90, so the recent depth may be fading before the target week."
+  },
+  {
+   "rank": 21,
+   "sym": "AXSUSDT",
+   "p_hit": 0.53,
+   "archetype": "C",
+   "reason": "Three-day OI rose 80.1% during a 9.8% price gain, followed by a 9.6% daily price decline. A -0.582% settled minimum, -0.132% 24h predicted mean, and 14 deep days in 90 support renewed negative funding after the short-term pump."
+  },
+  {
+   "rank": 22,
+   "sym": "BARDUSDT",
+   "p_hit": 0.35,
+   "archetype": "D",
+   "reason": "BARD has 46 deep days in 90, price declines of 30.5% monthly and 52.9% over 60 days, and supply growth of 3.20%. A prior 56-day episode reached -16%, but current predicted funding is only -0.0099% and recent settlements remain shallow, keeping this a modest-probability tail-depth selection."
+  },
+  {
+   "rank": 23,
+   "sym": "KERNELUSDT",
+   "p_hit": 0.55,
+   "archetype": "D",
+   "reason": "There are 37 deep days in 90, a -0.3655% print on June 19, and a current premium of -0.5383% against just $0.345m daily spot turnover. The latest prediction is +0.01% and OI fell 14.5% in 24h, so recurrence is favored over sustained immediate depth."
+  },
+  {
+   "rank": 24,
+   "sym": "ENJUSDT",
+   "p_hit": 0.58,
+   "archetype": "D",
+   "reason": "ENJ has 55 deep days in 90 and a prior 50.8-day episode reaching -13.3%; price is down 42.8% over 60 days. Recent funding is much shallower, with a -0.1277% weekly minimum and OI down 20.4% weekly, reducing expected depth relative to the historical extreme."
+  },
+  {
+   "rank": 25,
+   "sym": "ZKCUSDT",
+   "p_hit": 0.43,
+   "archetype": "D",
+   "reason": "Price is down 27.3% monthly and circulating supply increased 4.35%, alongside a -1.0633% recent settled minimum and Bybit seven-day mean of -0.0926%. The last deep day was six days ago and weekly OI fell 44.6%, so renewed hedging pressure is needed for another deep phase."
+  },
+  {
+   "rank": 26,
+   "sym": "MIRAUSDT",
+   "p_hit": 0.46,
+   "archetype": "D",
+   "reason": "MIRA is down 38.4% over 30 days with supply up 4.87%, 11 deep days in 90, and a recent -0.4438% minimum. Its current premium is -0.332%, but predicted funding has normalized to +0.01% and OI is declining, limiting persistence conviction."
+  },
+  {
+   "rank": 27,
+   "sym": "ALLOUSDT",
+   "p_hit": 0.22,
+   "archetype": "C",
+   "reason": "The +323.5% monthly run and 28.5% drawdown from the monthly high create a high-depth post-pump possibility, with reported OI/market cap 30.4% and perp/spot volume 6.38x. Settled funding remains shallow and the OI history is repeated at $23.12m, so neither an active short build nor a high hit probability is assumed."
+  },
+  {
+   "rank": 28,
+   "sym": "MANTRAUSDT",
+   "p_hit": 0.54,
+   "archetype": "D",
+   "reason": "Price fell 18.7% monthly while supply rose 4.60%; OI increased 8.90% over three days despite a 5.51% price decline. Eighteen deep days in 90, a -0.2528% predicted trough, and a -0.3121% current premium support renewed short crowding, though the settled weekly minimum is only -0.1362%."
+  },
+  {
+   "rank": 29,
+   "sym": "TRUMPUSDT",
+   "p_hit": 0.56,
+   "archetype": "D",
+   "reason": "The seven-day means are negative across Binance (-0.045%), Bybit (-0.0529%), and HL (-0.0624%), with 15 deep days in 90. Daily OI rose 9.87% and the predicted trough reached -0.3695%, but the -0.1464% settled minimum suggests less depth than the leading squeeze names."
+  },
+  {
+   "rank": 30,
+   "sym": "0GUSDT",
+   "p_hit": 0.46,
+   "archetype": "D",
+   "reason": "Price is down 44.8% monthly and 55.1% over 60 days, with 20 deep days in 90 and current predicted funding of -0.1167%. No settlement breached -0.10% during the last week, and three-day OI declined 4.62%, so the prediction is treated as an onset warning rather than confirmed persistence."
+  },
+  {
+   "rank": 31,
+   "sym": "BLURUSDT",
+   "p_hit": 0.48,
+   "archetype": "D",
+   "reason": "The June 18 monitoring-tag addition accompanies a 54.0% 60-day decline and 16 deep days in 90, including a -0.1546% recent print. Current predicted funding is +0.01% and OI fell 10.2% over three days, so structural susceptibility rather than an active deep phase drives inclusion."
+  },
+  {
+   "rank": 32,
+   "sym": "METUSDT",
+   "p_hit": 0.26,
+   "archetype": "B",
+   "reason": "Price rose 51.9% and OI 91.7% over three days, with perp/spot volume 6.45x and a June margin-pair removal announcement. Funding predictions reached -0.1952%, but the settled weekly minimum is only -0.0526% and hourly OI has rolled over, keeping the quiet-coin probability restrained."
+  },
+  {
+   "rank": 33,
+   "sym": "ENSOUSDT",
+   "p_hit": 0.32,
+   "archetype": "D",
+   "reason": "ENSO has 15 deep days in 90, OI/market cap of 21.4%, a 24.0% monthly decline, and a recent spot-pair removal notice. The current predicted mean is only -0.0056% and hourly funding normalized, but its prior historical onset depth of 5.004 supports recurrence value."
+  },
+  {
+   "rank": 34,
+   "sym": "DYMUSDT",
+   "p_hit": 0.45,
+   "archetype": "B",
+   "reason": "Daily price and OI increased 8.0% and 25.1%, respectively, on 4.25x normal volume, with OI/market cap 20.5%. The -0.3293% settled minimum and -0.1373% 24h predicted mean indicate a fresh episode, although the latest prediction has returned to +0.01%."
+  },
+  {
+   "rank": 35,
+   "sym": "MOVEUSDT",
+   "p_hit": 0.43,
+   "archetype": "D",
+   "reason": "Price is down 27.2% monthly, supply is up 4.29%, and 15 deep days in 90 include a -0.297% recent minimum. The monitoring tag and thin $0.434m daily spot market support recurrence, but positive 24h mean premium and 20.0% weekly OI contraction argue that the previous phase is ending."
+  },
+  {
+   "rank": 36,
+   "sym": "CHIPUSDT",
+   "p_hit": 0.6,
+   "archetype": "D",
+   "reason": "CHIP has 34 deep days in its 66.7-day listing history, a 69.8% 60-day price decline, and a -0.2156% average premium. The recent settled minimum is only -0.1604% and seven-day mean -0.0457%, so relatively high hit probability is offset by modest expected depth."
+  },
+  {
+   "rank": 37,
+   "sym": "ONTUSDT",
+   "p_hit": 0.5,
+   "archetype": "D",
+   "reason": "Thirty-nine deep days in 90 and a prior -1.824% episode support recurrence against a 39.8% 60-day price decline and just $0.156m daily spot turnover. The last deep print was seven days ago and current prediction is +0.01%, so the frequent-offender base rate is discounted."
+  },
+  {
+   "rank": 38,
+   "sym": "SIGNUSDT",
+   "p_hit": 0.29,
+   "archetype": "D",
+   "reason": "SIGN has 29 deep days in 90, price down 49.3% over 60 days, supply up 3.62%, and a historical quiet-onset depth case of 6.512. Current predicted funding is +0.01%, premium is slightly positive, and weekly OI fell 26.0%, making this a low-probability but meaningful-depth recurrence reserve."
+  },
+  {
+   "rank": 39,
+   "sym": "XAIUSDT",
+   "p_hit": 0.26,
+   "archetype": "D",
+   "reason": "Following the June 19 margin-pair removal date, the predicted mean fell to -0.0672% from -0.0324% over 72h, with average premium -0.293%, daily OI +9.03%, and volume 2.96x normal. Only two deep days occurred in 90 and the settled weekly minimum is -0.0652%, preventing a higher onset probability."
+  },
+  {
+   "rank": 40,
+   "sym": "RONINUSDT",
+   "p_hit": 0.45,
+   "archetype": "D",
+   "reason": "RONIN is down 34.6% monthly with 12 deep days in 90, a -0.1165% recent settled minimum, and current premium -0.2819%. A historical quiet-onset case had depth 5.887, but the last deep print was seven days ago and weekly OI fell 18.3%, limiting confidence."
+  }
+ ],
+ "chronic_rule": [
+  "HOMEUSDT",
+  "REUSDT",
+  "SAHARAUSDT",
+  "PORTALUSDT",
+  "FIDAUSDT",
+  "IDUSDT",
+  "SPELLUSDT",
+  "SYNUSDT",
+  "ALICEUSDT",
+  "ZKCUSDT",
+  "TNSRUSDT",
+  "MIRAUSDT",
+  "HEIUSDT",
+  "ACEUSDT",
+  "ORCAUSDT",
+  "CHIPUSDT",
+  "TRUMPUSDT",
+  "BNTUSDT",
+  "AXSUSDT",
+  "KERNELUSDT",
+  "HIVEUSDT",
+  "GUNUSDT",
+  "MEGAUSDT",
+  "BICOUSDT",
+  "ENJUSDT",
+  "MOVEUSDT",
+  "SENTUSDT",
+  "GENIUSUSDT",
+  "RESOLVUSDT",
+  "KATUSDT",
+  "MANTRAUSDT",
+  "RIFUSDT",
+  "0GUSDT",
+  "BLURUSDT",
+  "ANIMEUSDT",
+  "LAYERUSDT",
+  "RONINUSDT",
+  "DYMUSDT",
+  "COOKIEUSDT",
+  "ONTUSDT"
+ ]
+}
